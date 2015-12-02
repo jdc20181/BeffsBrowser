@@ -63,5 +63,16 @@ Public Class BeffsBrowserMain
     Private Sub CloseWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseWindowToolStripMenuItem.Click
         Close()
     End Sub
-    
+       Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
+        Try
+            CType(Tabcontrol1.SelectedTab.Controls.Item(0), WebBrowser).Navigate("https://www.google.com/search?q=" & ToolStripTextBox1.Text)
+        Catch ex As Exception
+        End Try
+    End Sub
+      Private Sub me_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        Timer1.Start()
+        ToolStripLabel1.Text = Today
+
+    End Sub
    ' Some code has been removed because you dont need it just yet, see the extending the basics for more info'
