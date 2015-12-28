@@ -1,0 +1,8 @@
+Explaining the source code is simple, stuff that isn't needed like buttons to features or other things of that nature isn't included it helps 
+prevent unused code from casuing you errors. For the most part each button such as for Go forward back etc. are named some may not. 
+Also the history window isn't shown it is basically just a listbox that writes each line saved in a history.txt file from settings not directly from the text file
+so its like my.settings.history instead of history.txt it makes it easier to manage and later on a don't save history function will be available
+
+Contributing
+To contribute you need to let me know as this isn't connected to the project due to my limited internet resources my project is done offline and then releases are uploaded
+Please highlight or comment any changes you make or anything you add and add it to the bottom of any source code pages (unless referencing something etc.)
