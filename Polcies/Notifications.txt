@@ -1,4 +1,41 @@
-TOS And Private Policy 
+  Notifications and BeffsBrowser
+  
+  The notifications part of BeffsBrowser is Not part of the project itself, therefore to protect the integrity and security of BeffsBrowser Notifications in beffsbrowser will be referred to a secondary program that is licensed under a Set of TOS and private policy terms. 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  TOS And Private Policy 
 
 BeffsBrowser Notifications 
 
