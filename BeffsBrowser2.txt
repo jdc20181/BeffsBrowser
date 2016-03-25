@@ -1,0 +1,20 @@
+BeffsBrowser 2.0 is on the way!
+
+Improvments:
+
+-Faster Browsing
+
+-Startup Menu!
+
+-Start up load for better performance, you will need to wait about 30 secs before BeffsBrowser actually launches!
+
+
+-Created a WebEditor!
+
+-Added some misc improvments
+
+-Added a Private browser
+
+-Added Notifications (You will be required to turn them on to recieve them disabled by default. Please see notify policy for info.)
+
+More info is to come!
