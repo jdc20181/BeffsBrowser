@@ -2,12 +2,14 @@
 #Update!
 
 *Coming soon!*
+I am working on a new update here are the details:
+Version 1.5.0 
 
-I have a few issues to work out and here is a start of this list:
-- Flash Support
-- Bug: Last tab close the window close
-- Speed Issues
-- other various bugs
+- Flash Support (On hold) See <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Flash-Support">Flash Support</a> for more info. 
+- Bug: Last tab close the window close (Fixed)
+- Speed Issues (Fixed)
+- other various bugs (Mostly fixed)
+- See the full change log <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.0">here</a>
 
 Some features are leaving in version 1.5.1 and will be deemed decomissioned in version 1.5.0 read the details <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Decomissioned-Features-coming">here</a>
 
