@@ -1,5 +1,5 @@
 Imports System.Runtime.InteropServices
-Public Class beffscustomtabcontrol
+Public Class NewTabControlB
     Inherits System.Windows.Forms.TabControl
 
     Private _hotTabIndex As Int32 = -1
@@ -78,7 +78,8 @@ Public Class beffscustomtabcontrol
             Dim pt As Point = Me.PointToClient(Cursor.Position)
             Dim closeRect As Rectangle = GetCloseButtonRect(HotTabIndex)
             If closeRect.Contains(pt) Then
-                TabPages.RemoveAt(HotTabIndex)
+                MyBase.TabPages.Remove(MyBase.TabPages(HotTabIndex))
+                If MyBase.TabPages.Count = 0 Then Me.FindForm.Close()
                 m.Msg = WM_NULL
             End If
         End If
