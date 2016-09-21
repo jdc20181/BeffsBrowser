@@ -1,7 +1,7 @@
 
-#Update!
+#Version 1.5.0 has been released.
 
-*Coming soon!*
+
 I am working on a new update here are the details:
 Version 1.5.0 
 
