@@ -1,4 +1,11 @@
+#Version 1.5.1 *Coming Soon*
 
+I have started development on the next version which incudes changes, additions, and fixes. 
+
+ - Adding Keyboard Shortcut Controls 
+ - Making more Minor UI Adjustments. 
+ - Removing access to decomissioned features. 
+ - See the Full log <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.1-Coming-soon!">Here</a>
 #Version 1.5.0 has been released.
 
 
