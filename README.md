@@ -1,3 +1,5 @@
+As of Version 1.5.1 support for versions under 1.4.o are unsupported any bugs, or issues will be closed. Please update to get the latest bug fixes, enhancements, and features
+
 #Version 1.5.1 *Coming Soon*
 
 I have started development on the next version which incudes changes, additions, and fixes. 
