@@ -1,4 +1,4 @@
-As of Version 1.5.1 support for versions under 1.4.o are unsupported any bugs, or issues will be closed. Please update to get the latest bug fixes, enhancements, and features
+As of Version 1.5.1 support for versions under 1.4.0 are unsupported any bugs, or issues will be closed. Please update to get the latest bug fixes, enhancements, and features
 
 #Version 1.5.1 *Coming Soon*
 
