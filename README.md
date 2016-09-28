@@ -9,6 +9,7 @@ for news on this bug.
  - Begin Beta UI change 
  - Bug Fixes 
  - Changes based on User input (TBD)
+ 
 #Support for early versions of BeffsBrowser has ended. 
 
 It's time to update your application if you have a older version - (any version before 1.5.0 is unsupported now)
