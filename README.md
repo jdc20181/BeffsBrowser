@@ -1,4 +1,19 @@
-As of Version 1.5.1 support for versions under 1.4.0 are unsupported any bugs, or issues will be closed. Please update to get the latest bug fixes, enhancements, and features
+#Version 1.5.2 *Coming Soon*
+
+What will be in the next update:
+
+Bug! Crash when using Text To Speech in BeffsEasyNotes (see <a href="https://github.com/jdc20181/BeffsBrowser/issues/1">Here</a>
+for news on this bug. 
+
+ - More UI changes 
+ - Begin Beta UI change 
+ - Bug Fixes 
+ - Changes based on User input (TBD)
+#Support for early versions of BeffsBrowser has ended. 
+
+It's time to update your application if you have a older version - (any version before 1.5.0 is unsupported now)
+
+
 
 #Version 1.5.1 
 
