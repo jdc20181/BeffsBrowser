@@ -43,7 +43,7 @@ Public Class BugReport
         mail.Body = message.Text
           Dim SMTP As New SmtpClient("smtp@gmail.com")
         SMTP.EnableSsl = True
-        SMTP.Credentials = New System.Net.NetworkCredential("jdc20181@gmail.com", "Thumper18")
+        SMTP.Credentials = New System.Net.NetworkCredential("jdc20181@gmail.com", "*****************************")
         SMTP.Port = "587"
 
         SMTP.Send(mail)
