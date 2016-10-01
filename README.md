@@ -2,13 +2,14 @@
 
 What will be in the next update:
 
-Bug! Crash when using Text To Speech in BeffsEasyNotes (see <a href="https://github.com/jdc20181/BeffsBrowser/issues/1">Here</a>
-for news on this bug. 
+Bug! Crash when using Text To Speech in BeffsEasyNotes (*fixed*)
 
  - More UI changes 
  - Begin Beta UI change 
  - Bug Fixes 
  - Changes based on User input (TBD)
+ 
+ See the full log <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.2-Coming-Soon">Here</a>
  
 #Support for early versions of BeffsBrowser has ended. 
 
