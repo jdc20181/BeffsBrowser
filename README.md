@@ -1,4 +1,13 @@
-#Version 1.5.2 *Coming Soon*
+#Version 1.5.3 *In development*
+
+I am going to be doing a quick fix release sometime this week or next. This will be my only attempt in the short term future to deal with the .exe don't work bug, as I said in the issue, I really have no intentions on fixing it any time soon as long as the zip works. 
+
+More info will come as I can post it :)
+
+#Version 1.5.2 
+
+To get the update you will need to get the zip the .exe will not work. see this <a href="https://github.com/jdc20181/BeffsBrowser/issues/3">issue</a> for details. 
+It has been released!
 
 What will be in the next update:
 
@@ -9,7 +18,7 @@ Bug! Crash when using Text To Speech in BeffsEasyNotes (*fixed*)
  - Bug Fixes 
  - Changes based on User input (TBD)
  
- See the full log <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.2-Coming-Soon">Here</a>
+ See the full log <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.2">Here</a>
  
 #Support for early versions of BeffsBrowser has ended. 
 
