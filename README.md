@@ -2,7 +2,7 @@
 
 I am going to be doing a quick fix release sometime this week or next. This will be my only attempt in the short term future to deal with the .exe don't work bug, as I said in the issue, I really have no intentions on fixing it any time soon as long as the zip works. 
 
-More info will come as I can post it :)
+See the Log <a href = "https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.3-Bug-fixes-Patch-Release">Here</a>
 
 #Version 1.5.2 
 
