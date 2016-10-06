@@ -4,6 +4,7 @@ I am going to be doing a quick fix release sometime this week or next. This will
 
 See the Log <a href = "https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.3-Bug-fixes-Patch-Release">Here</a>
 
+The Patch Release may not be ready till next week. I have a few more things to do.
 #Version 1.5.2 
 
 To get the update you will need to get the zip the .exe will not work. see this <a href="https://github.com/jdc20181/BeffsBrowser/issues/3">issue</a> for details. 
