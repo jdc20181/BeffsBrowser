@@ -1,3 +1,7 @@
+#Official Website Redesign!
+A friend and I are working to get a new updated site put together. There you can get the latest release with a click of a button, FAQ answered and more. 
+
+
 #Version 1.5.4 *Coming soon!*
 
 *Final 1.5.0 Version*
