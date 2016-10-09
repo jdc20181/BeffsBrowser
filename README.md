@@ -1,7 +1,9 @@
-#Version 1.5.3 *In development*
+#Version 1.5.4 *Coming soon!*
 
-*Delay!
-I am not going to be able to release until I get a few issues taken care of with installation. I am working to find a alternative method. Updates will be posted as I can get them*
+*Final 1.5.0 Version*
+A new version is now going into development with 1.5.3 released. I need to make sure users can install Version 1.5.3, before I begin working. With that in mind and the log list of items I am working on for this version, it could be as late as December before I finish with this release. 
+
+#Version 1.5.3 
 
 I am going to be doing a quick fix release sometime this week or next. This will be my only attempt in the short term future to deal with the .exe don't work bug, as I said in the issue, I really have no intentions on fixing it any time soon as long as the zip works. 
 
@@ -30,25 +32,7 @@ It's time to update your application if you have a older version - (any version 
 
 
 
-#Version 1.5.1 
 
-I have started development on the next version which incudes changes, additions, and fixes. 
-
- - Adding Keyboard Shortcut Controls 
- - Making more Minor UI Adjustments. 
- - Removing access to decomissioned features.  
- - See the Full log <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.1-Coming-soon!">Here</a>
-
-#Version 1.5.0 
-- Flash Support (On hold) See <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Flash-Support">Flash Support</a> for more info. 
-- Bug: Last tab close the window close (Fixed)
-- Speed Issues (Fixed)
-- other various bugs (Mostly fixed)
-- See the full change log <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.0">here</a>
-
-Some features are leaving in version 1.5.1 and will be deemed decomissioned in version 1.5.0 read the details <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Decomissioned-Features-coming">here</a>
-
-don't worry! No major features are leaving!
 
 
 #About
