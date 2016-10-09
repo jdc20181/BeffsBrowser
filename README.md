@@ -1,5 +1,8 @@
 #Version 1.5.3 *In development*
 
+*Delay!
+I am not going to be able to release until I get a few issues taken care of with installation. I am working to find a alternative method. Updates will be posted as I can get them*
+
 I am going to be doing a quick fix release sometime this week or next. This will be my only attempt in the short term future to deal with the .exe don't work bug, as I said in the issue, I really have no intentions on fixing it any time soon as long as the zip works. 
 
 See the Log <a href = "https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.3-Bug-fixes-Patch-Release">Here</a>
