@@ -1,3 +1,7 @@
+#Install issues.
+
+I have already started working on Version 1.5.4 however, I will re - release Version 1.5.3 to see if it is fixed. Thanks!
+
 #Official Website Redesign!
 A friend and I are working to get a new updated site put together. There you can get the latest release with a click of a button, FAQ answered and more. 
 
