@@ -1,6 +1,7 @@
 #Version 1.5.4 *Coming soon!*
 
 *Final 1.5.0 Version*
+
 A new version is now going into development with 1.5.3 released. I need to make sure users can install Version 1.5.3, before I begin working. With that in mind and the log list of items I am working on for this version, it could be as late as December before I finish with this release. 
 See the full log on the next release <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.4">here</a>
 #Version 1.5.3 
