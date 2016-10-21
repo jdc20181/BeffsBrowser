@@ -1,3 +1,7 @@
+#Version 1.5.4 Pre-Release 
+
+I am pre-releasing the upcoming version to deal with install issues. If resolved, I will have this release done soon!
+
 #Install issues.
 
 I have already started working on Version 1.5.4 however, I will re - release Version 1.5.3 to see if it is fixed. Thanks!
