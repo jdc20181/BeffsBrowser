@@ -1,10 +1,9 @@
 #Version 1.5.4 Pre-Release 
 
-I am pre-releasing the upcoming version to deal with install issues. If resolved, I will have this release done soon!
+Update on install issues!
 
-#Install issues.
 
-I have already started working on Version 1.5.4 however, I will re - release Version 1.5.3 to see if it is fixed. Thanks!
+ It DOES work. However, until I figure out why, it does give install errors then, you will need win 8 or higher go to your start area where it shows new apps installed and run the BeffsBrowserSetup.exe with the Beffsbrowser Icon. Then you will have to click "Ignore" for about 3 to 5 min to get all the errors off and for it to install. I assure you ALL the files needed are included, and should NOT cause any issues. I have test installed it and it works.
 
 #Official Website Redesign!
 A friend and I are working to get a new updated site put together. There you can get the latest release with a click of a button, FAQ answered and more. 
