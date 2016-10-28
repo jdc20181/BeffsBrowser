@@ -1,5 +1,8 @@
 #Version 1.5.4 Pre-Release 
 
+*DO NOT INSTALL*
+If you have please uninstall the errors given will be resolved, and a new release will be uploaded shortly.
+
 Update on install issues!
 
 
