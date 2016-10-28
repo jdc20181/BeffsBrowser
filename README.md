@@ -1,12 +1,8 @@
 #Version 1.5.4 Pre-Release 
 
-*DO NOT INSTALL*
-If you have please uninstall the errors given will be resolved, and a new release will be uploaded shortly.
+Updated and ready to roll- 
 
-Update on install issues!
-
-
- It DOES work. However, until I figure out why, it does give install errors then, you will need win 8 or higher go to your start area where it shows new apps installed and run the BeffsBrowserSetup.exe with the Beffsbrowser Icon. Then you will have to click "Ignore" for about 3 to 5 min to get all the errors off and for it to install. I assure you ALL the files needed are included, and should NOT cause any issues. I have test installed it and it works.
+Unzip > Locate Windows installer > Open follow instructions > Go to your start panel and under all apps, if on windows 8.1 you will see it as a newly installed program, open it and BeffsBrowser will launch. 
 
 #Official Website Redesign!
 A friend and I are working to get a new updated site put together. There you can get the latest release with a click of a button, FAQ answered and more. 
