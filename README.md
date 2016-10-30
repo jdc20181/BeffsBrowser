@@ -1,4 +1,12 @@
-#Version 1.5.4 Pre-Release 
+#version 1.6.0 
+
+Since 1.5.4 was released with most of the new stuff, I thought that it may be best to do the rest with version 1.6.0 
+
+see the <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.6.0">Full log </a> for details.
+
+
+
+#Version 1.5.4 
 
 Updated and ready to roll- 
 
