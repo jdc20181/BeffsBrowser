@@ -1,3 +1,7 @@
+#The New Website Has Been Launched!
+
+Head on over to http://beffsbrowser.tk and check it out!
+
 #version 1.6.0 
 
 Since 1.5.4 was released with most of the new stuff, I thought that it may be best to do the rest with version 1.6.0 
