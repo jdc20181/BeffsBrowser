@@ -2,6 +2,8 @@
 
 Head on over to http://beffsbrowser.tk and check it out!
 
+You may experience issues in BeffsBrowser loading the site, it seems it isn't loading correctly. This will be fixed ASAP However, it will work like it is suppose to. Just scroll down to find the menu.
+
 #version 1.6.0 
 
 Since 1.5.4 was released with most of the new stuff, I thought that it may be best to do the rest with version 1.6.0 
