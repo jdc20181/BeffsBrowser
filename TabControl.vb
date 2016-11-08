@@ -1,3 +1,5 @@
+'The following Code is Licensed under the MIT License. And is Copyright of BeffsBrowser and its owner Jeffrey crowder
+
 Imports System.Runtime.InteropServices
 Public Class NewTabControlB
     Inherits System.Windows.Forms.TabControl
