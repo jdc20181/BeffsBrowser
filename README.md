@@ -1,3 +1,8 @@
+#Bugs!
+
+There are quite a few issues going on - some of which will take some time to come up with a plan to fix. 
+
+See that list <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Current-Issues-With-BeffsBrowser">Here</a>
 #The New Website Has Been Launched!
 
 Head on over to http://beffsbrowser.tk and check it out!
