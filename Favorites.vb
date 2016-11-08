@@ -1,4 +1,4 @@
-'The Following code is Licensed under the MIT License is copyright of BeffsBrowser Owned by Jeffrey crowder
+
 
 Imports System.IO
 
