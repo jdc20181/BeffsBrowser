@@ -1,81 +1,25 @@
-//This is for the Favories or Sites file in BeffsBrowser you will add a button and add this dim window as new sites window.show//
-Imports System.Xml
+'The Following code is Licensed under the MIT License is copyright of BeffsBrowser Owned by Jeffrey crowder
 
-Public Class Sites
+Imports System.IO
 
-    Private Sub frmSites_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        LoadList()
+Public Class NewFavs
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ListBox1.Items.AddRange(File.ReadAllLines(My.Settings.Favlist))
+
     End Sub
 
-    Private Sub LoadList()
-        lvwWebSites.Items.Clear()
-
-        Dim rdrXML As New XmlTextReader(My.Application.Info.DirectoryPath & "\" & My.Settings.XmlFileName1)
-        rdrXML.MoveToContent()
-
-        Dim ElementName As String = ""
-        Dim NextItem As Boolean = True
-        Dim objListViewItem As ListViewItem = Nothing
-
-        Do While rdrXML.Read
-            If NextItem Then
-                objListViewItem = New ListViewItem
-                NextItem = False
-            End If
-            Select Case rdrXML.NodeType
-                Case XmlNodeType.Element
-                    ElementName = rdrXML.Name
-                Case XmlNodeType.Text
-                    If ElementName = "Name" Then
-                        objListViewItem.Text = rdrXML.Value
-                    End If
-                    If ElementName = "URL" Then
-                        objListViewItem.SubItems.Add(rdrXML.Value)
-                        lvwWebSites.Items.Add(objListViewItem)
-                        NextItem = True
-                    End If
-            End Select
-        Loop
-        rdrXML.Close()
+    Private Sub DeleteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteToolStripMenuItem.Click
+        ListBox1.Items.Remove(ListBox1.SelectedItem)
+        File.WriteAllLines(My.Settings.Favlist, ListBox1.Items.Cast(Of String)())
     End Sub
 
-    Private Sub btnOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOK.Click
-        Dim wtrXML As New XmlTextWriter(My.Application.Info.DirectoryPath & "\" & My.Settings.XmlFileName1, System.Text.Encoding.UTF8)
-        With wtrXML
-            .Formatting = Formatting.Indented
-            .WriteStartDocument()
-            .WriteStartElement("WebSites")
-            Dim objListViewItem As New ListViewItem
-            For Each objListViewItem In lvwWebSites.Items
-                .WriteStartElement("WebSite")
-                .WriteElementString("Name", objListViewItem.Text)
-                .WriteElementString("URL", objListViewItem.SubItems(1).Text)
-                .WriteEndElement()
-            Next
-            .WriteEndElement()
-            .WriteEndDocument()
-            .Flush()
-            .Close()
-        End With
+    Private Sub NavigateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NavigateToolStripMenuItem.Click
+        BBMain.ToolStripTextBox1.Text = ListBox1.SelectedItem
+        BBMain.checkbox1.checked = True
+    End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
-
-    Private Sub btnAddSite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddSite.Click
-   Dim objListViewItem As New ListViewItem
-   objListViewItem.Text = txtWebSite.Text
-      objListViewItem.SubItems.Add(txtURL.Text)
-        lvwWebSites.Items.Add(objListViewItem)
-
-        txtWebSite.Text = ""
-        txtURL.Text = ""
-    End Sub
-
-    Private Sub btnRemoveSite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRemoveSite.Click
-        Dim indexes As ListView.SelectedIndexCollection = lvwWebSites.SelectedIndices
-        Dim index As Integer
-        For Each index In indexes
-            lvwWebSites.Items.RemoveAt(index)
-        Next
-    End Sub
-End Class 
+End Class
