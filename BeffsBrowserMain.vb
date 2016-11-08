@@ -1,4 +1,4 @@
-'The following code is licensed under MIT And is Copyright to BeffsBrowser and its owner Jeffrey Crowder
+
 Imports mshtml
 Imports BeffsBrowser.My.Resources
 Imports System.Net
