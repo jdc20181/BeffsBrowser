@@ -1,3 +1,13 @@
+#Version 1.6.0 is almost ready
+
+I have a few more things to patch up then it will be ready to go. 
+
+The update is jammed packed with many things that will improve overall stability and functioning of BeffsBrowser. 
+
+The issues with navigation are pending fix - as I think upgrading the under the hood component will fix that issue. 
+
+Many bugs - additions and improvments have been made - 
+
 #Bugs!
 
 There are quite a few issues going on - some of which will take some time to come up with a plan to fix. 
