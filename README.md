@@ -1,6 +1,6 @@
-#Version 1.6.0 is almost ready
+#Version 1.6.0 Has been Released!
 
-I have a few more things to patch up then it will be ready to go. 
+
 
 The update is jammed packed with many things that will improve overall stability and functioning of BeffsBrowser. 
 
