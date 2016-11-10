@@ -1,3 +1,5 @@
+*Important remember to uninstall the previous version before installing otherwise it will NOT work!*
+
 #Version 1.6.0 Has been Released!
 
 
