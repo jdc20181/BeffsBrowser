@@ -1,7 +1,7 @@
 'Not offical project code but a directory of code snippets'
 
 'Attention this code is archived!
-
+'Enter fullscreen
   ToolStripButton5.Visible = False
         ControlBox = False
         Me.WindowState = FormWindowState.Maximized
@@ -11,7 +11,16 @@
          Me.TopMost = True
           Me.FormBorderStyle = 0
          Me.TopMost = True
-        ToolStripButton6.Visible = True
+ToolStripButton6.Visible = True 
+'Exit Fullscreen
+'This code is the same but is being added to archive so it isnt confusing.
+  Me.WindowState = FormWindowState.Normal
+        Me.Size = MaximumSize
+        Me.FormBorderStyle = FormBorderStyle.Sizable
+        ToolStripButton5.Visible = True
+        ControlBox = True
+        Me.TopMost = False
+        ToolStripButton6.Visible = False
 ________________________________
 Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.Checked = True Then
