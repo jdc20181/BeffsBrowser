@@ -1,4 +1,18 @@
 'Not offical project code but a directory of code snippets'
+
+'Attention this code is archived!
+
+  ToolStripButton5.Visible = False
+        ControlBox = False
+        Me.WindowState = FormWindowState.Maximized
+        Me.Size = SystemInformation.PrimaryMonitorSize
+        Me.WindowState = 2
+         Me.Location = New Point(0, 0)
+         Me.TopMost = True
+          Me.FormBorderStyle = 0
+         Me.TopMost = True
+        ToolStripButton6.Visible = True
+________________________________
 Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.Checked = True Then
             ComboBox1.Text = "https://www.google.com/?gws_rd=ssl#q="
