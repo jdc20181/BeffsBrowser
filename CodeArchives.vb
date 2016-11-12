@@ -1,4 +1,5 @@
 'Not offical project code but a directory of code snippets'
+
 'Archived
 Public Sub exitfullscreen()
         Me.WindowState = FormWindowState.Normal
