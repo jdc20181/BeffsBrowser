@@ -1,5 +1,26 @@
 'Not offical project code but a directory of code snippets'
+'Archived
+Public Sub exitfullscreen()
+        Me.WindowState = FormWindowState.Normal
+        Me.Size = MaximumSize
+        Me.FormBorderStyle = FormBorderStyle.Sizable
+        ToolStripButton5.Visible = True
+        ControlBox = True
+        Me.TopMost = False
+        ToolStripButton6.Visible = False
+    End Sub
 
+'  Archived
+Public Sub gofullscreen()
+        Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+        Me.Size = SystemInformation.PrimaryMonitorSize
+        Me.Location = New Point(0, 0)
+        Me.TopMost = True
+        ToolStripButton5.Visible = False
+        ToolStripButton6.Visible = True
+
+    End Sub
+_________________________
 'New Code for fullscreen needs to be edited.
 Public Class frmMainForm
     Private Sub cmdCloseForm_Click(
