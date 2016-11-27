@@ -1,4 +1,23 @@
+
+
 *Important remember to uninstall the previous version before installing otherwise it will NOT work!*
+
+#Version 1.6.1 Beta *Coming December'16
+
+Happy Holidays!!!
+
+BeffsBrowser will be getting a update soon! I am almost done with just about everything there is mentioned <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.6.1-Coming-Soon">Here</a> and will let you know when the update is ready!
+
+You can also check for updates by hitting the Version Label on the ToolBar in-App and choose "Check for updates" if updates are availalbe a button will show for you to download the new zip. Remember to Close out BeffsBrowser, and uninstall the previous verions. 
+
+*Bug Alert!*
+
+I have discovered some more bugs some of which prevent the use of some popular features. I am working on these, and hope to get some of them taken care of before the release. If not hold tight as I will fix them in the releases to follow!
+
+*Expected Release Date*
+
+December 5th - December 15th 2016. 
+
 
 #Version 1.6.0 Has been Released!
 
