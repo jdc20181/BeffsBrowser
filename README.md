@@ -2,7 +2,7 @@
 
 *Important remember to uninstall the previous version before installing otherwise it will NOT work!*
 
-#Version 1.6.1 Beta *Coming December'16
+#Version 1.6.1 Beta *Coming December'16*
 
 Happy Holidays!!!
 
