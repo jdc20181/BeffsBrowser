@@ -16,7 +16,7 @@ I have discovered some more bugs some of which prevent the use of some popular f
 
 *Expected Release Date*
 
-December 5th - December 15th 2016. 
+*Update* It could be the beginning of '17 before a update is ready!
 
 
 #Version 1.6.0 Has been Released!
