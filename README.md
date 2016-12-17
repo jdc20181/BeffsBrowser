@@ -1,4 +1,8 @@
 
+*Update Delay!*
+
+Due to the holidays and the excitement of the new SpeedTest android app, I haven't had much time to work on BeffsBrowser, I am sorry about that and will get it ready as soon as I can! Have a merry Christmas!!
+
 
 *Important remember to uninstall the previous version before installing otherwise it will NOT work!*
 
