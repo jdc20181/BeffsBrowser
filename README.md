@@ -1,6 +1,9 @@
 
 *Update Delay!*
 
+Next update will be around in Febuary! This will give me extra time to add finishing touches and get features rolling!
+Thanks for using BeffsBrowser
+
 Due to the holidays and the excitement of the new SpeedTest android app, I haven't had much time to work on BeffsBrowser, I am sorry about that and will get it ready as soon as I can! Have a merry Christmas!!
 
 
