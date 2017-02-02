@@ -1,10 +1,8 @@
+#New Update Soon!
 
-*Update Delay!*
+I am going to begin working on a new release and will be ready by early March, the main thing is to fix some annoying errors, address some bad practices, and add a app cache system - And I also want to add Xbox Controller support for some of the features within BeffsBrowser. 
 
-Next update will be around in Febuary! This will give me extra time to add finishing touches and get features rolling!
-Thanks for using BeffsBrowser
-
-Due to the holidays and the excitement of the new SpeedTest android app, I haven't had much time to work on BeffsBrowser, I am sorry about that and will get it ready as soon as I can! Have a merry Christmas!!
+More information can be found in the offical [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/First-Update-of-the-new-year!)
 
 
 *Important remember to uninstall the previous version before installing otherwise it will NOT work!*
