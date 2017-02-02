@@ -216,3 +216,21 @@ Public Class BugReport
     Private Sub message_MouseClick(sender As Object, e As MouseEventArgs) Handles message.MouseClick
         message.Text = ""
     End Sub
+        _____________________
+        
+         'If Today = "04/06/2016" Then
+        'MsgBox("You should check for news or updates today!")
+        ' Try
+        '   int = int + 0.5
+        'Dim tab As New TabPage
+        '    Dim brws As New WebBrowser
+        '    brws.Dock = DockStyle.Fill
+        ' tab.Text = " New Tab"
+        '    '     tab.Controls.Add(brws)
+        '     Me.Tabcontrol1.TabPages.Add(tab)
+        '   Me.Tabcontrol1.SelectedTab = tab
+        '   brws.Navigate("http://beffsbrowser.codeplex.com")
+        '  brws.ScriptErrorsSuppressed = True
+        '   Catch ex As Exception
+        '   End Try
+        'End If
