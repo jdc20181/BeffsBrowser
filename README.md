@@ -1,5 +1,10 @@
 #New Update Soon!
 
+
+*Update will be ready tomorrow!*
+
+I got all of the items listed in the changelog except the Xbox controller support which will come around soon!
+
 I am going to begin working on a new release and will be ready by early March, the main thing is to fix some annoying errors, address some bad practices, and add a app cache system - And I also want to add Xbox Controller support for some of the features within BeffsBrowser. 
 
 More information can be found in the offical [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/First-Update-of-the-new-year!)
