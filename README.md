@@ -4,6 +4,7 @@ I am going to begin working on a new release and will be ready by early March, t
 
 More information can be found in the offical [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/First-Update-of-the-new-year!)
 
+I added a [Update Article ] (https://github.com/jdc20181/BeffsBrowser/wiki/1.6.1-Release-Announcment) on the release of 1.6.1
 Version 1.6.1 change log can be found below:
 
 #Version 1.6.1 Beta 
