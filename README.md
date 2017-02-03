@@ -15,13 +15,6 @@ BeffsBrowser will be getting a update soon! I am almost done with just about eve
 
 You can also check for updates by hitting the Version Label on the ToolBar in-App and choose "Check for updates" if updates are availalbe a button will show for you to download the new zip. Remember to Close out BeffsBrowser, and uninstall the previous verions. 
 
-*Bug Alert!*
-
-I have discovered some more bugs some of which prevent the use of some popular features. I am working on these, and hope to get some of them taken care of before the release. If not hold tight as I will fix them in the releases to follow!
-
-*Expected Release Date*
-
-*Update* It could be the beginning of '17 before a update is ready!
 
 
 #Version 1.6.0 Has been Released!
