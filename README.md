@@ -1,4 +1,10 @@
-#New Update Soon!
+#Announcment - License Changes
+
+After a long consideration, I have decided to change the license to MIT, the switch will be seamless and info is found in the official [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/License-Changes-Effective-Version-1.6.2)
+
+These Changes are effective as of 1.6.2 and are seamless. 
+
+#Version 1.6.1
 
 
 *Update has been released early!*
