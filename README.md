@@ -1,6 +1,6 @@
 #Version 1.6.2 ~ReleaseDate
 
-I will have the next version ready soon, but it will be mid-March before it is ready. 
+I will have the next version ready soon, but it will be mid-March before it is ready for download.
 
 
 #Announcment - License Changes
