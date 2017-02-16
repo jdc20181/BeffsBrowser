@@ -1,3 +1,8 @@
+#Version 1.6.2 ~ReleaseDate
+
+I will have the next version ready soon, but it will be mid-March before it is ready. 
+
+
 #Announcment - License Changes
 
 After a long consideration, I have decided to change the license to MIT, the switch will be seamless and info is found in the official [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/License-Changes-Effective-Version-1.6.2)
