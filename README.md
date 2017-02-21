@@ -2,6 +2,12 @@
 
 I will have the next version ready soon, but it will be mid-March before it is ready for download.
 
+*Release for Mid-March*
+
+I am now planning for the release for early to mid-march. One Last thing I want to address is having to uninstall the previous version, InstallShield is suppose to be able to just install it on top with the changes. But I am uncertain how to make this happen. 
+
+More information will be posted soon!
+
 
 #Announcment - License Changes
 
