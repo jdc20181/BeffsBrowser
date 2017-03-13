@@ -1,12 +1,15 @@
-#Version 1.6.2 ~ReleaseDate
 
-I will have the next version ready soon, but it will be mid-March before it is ready for download.
+#Website Maintaince. 
 
-*Release for Mid-March*
+I will be changing the website again soon, it just isn't good enough,I can't add stuff on the home page and so forth. The downtime will come as soon as the new site is done. 
 
-I am now planning for the release for early to mid-march. One Last thing I want to address is having to uninstall the previous version, InstallShield is suppose to be able to just install it on top with the changes. But I am uncertain how to make this happen. 
+Thanks!
 
-More information will be posted soon!
+
+#Version 1.6.2 ReleaseDate
+
+I will release the update on 3.21.17 (first day of spring!)
+
 
 
 #Announcment - License Changes
