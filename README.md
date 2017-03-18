@@ -1,3 +1,8 @@
+**Version 1.6.2 is ready to download ahead of the release date!**
+
+I got it uploaded so I can begin working on the next release. 
+
+
 # Update on "updating issue"
 
 Good news! I got it to install with the previous version installed, the only thing different is, it removes the shortcut for example if you put it on your task bar, it will no longer work (you just have to re-pin it). I will fix that as soon as I can!
