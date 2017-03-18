@@ -1,3 +1,6 @@
+**BeffsBrowser is now governed under the MIT license!**
+
+
 **Version 1.6.2 is ready to download ahead of the release date!**
 
 I got it uploaded so I can begin working on the next release. 
