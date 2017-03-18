@@ -6,12 +6,6 @@
 I got it uploaded so I can begin working on the next release. 
 
 
-# Update on "updating issue"
-
-Good news! I got it to install with the previous version installed, the only thing different is, it removes the shortcut for example if you put it on your task bar, it will no longer work (you just have to re-pin it). I will fix that as soon as I can!
-
-Version 1.6.2 will be launched 3.21.17 be sure to install the update!
-
 
 
 # Website Maintaince. 
@@ -21,9 +15,6 @@ I will be changing the website again soon, it just isn't good enough,I can't add
 Thanks!
 
 
-# Version 1.6.2 ReleaseDate
-
-I will release the update on 3.21.17 (first day of spring!)
 
 
 
