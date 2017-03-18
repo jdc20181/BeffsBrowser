@@ -1,18 +1,25 @@
+# Update on "updating issue"
 
-#Website Maintaince. 
+Good news! I got it to install with the previous version installed, the only thing different is, it removes the shortcut for example if you put it on your task bar, it will no longer work (you just have to re-pin it). I will fix that as soon as I can!
+
+Version 1.6.2 will be launched 3.21.17 be sure to install the update!
+
+
+
+# Website Maintaince. 
 
 I will be changing the website again soon, it just isn't good enough,I can't add stuff on the home page and so forth. The downtime will come as soon as the new site is done. 
 
 Thanks!
 
 
-#Version 1.6.2 ReleaseDate
+# Version 1.6.2 ReleaseDate
 
 I will release the update on 3.21.17 (first day of spring!)
 
 
 
-#Announcment - License Changes
+# Announcment - License Changes
 
 After a long consideration, I have decided to change the license to MIT, the switch will be seamless and info is found in the official [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/License-Changes-Effective-Version-1.6.2)
 
@@ -50,7 +57,7 @@ You can also check for updates by hitting the Version Label on the ToolBar in-Ap
 
 
 
-#Version 1.6.0 Has been Released!
+# Version 1.6.0 Has been Released!
 
 
 
@@ -60,12 +67,8 @@ The issues with navigation are pending fix - as I think upgrading the under the 
 
 Many bugs - additions and improvments have been made - 
 
-#Bugs!
 
-There are quite a few issues going on - some of which will take some time to come up with a plan to fix. 
-
-See that list <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Current-Issues-With-BeffsBrowser">Here</a>
-#The New Website Has Been Launched!
+# The New Website Has Been Launched!
 
 Head on over to http://beffsbrowser.tk and check it out!
 
