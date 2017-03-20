@@ -24,14 +24,13 @@ After a long consideration, I have decided to change the license to MIT, the swi
 
 These Changes are effective as of 1.6.2 and are seamless. 
 
-**License Changes will take effect on 3.21.17**
 
 *See [This](https://github.com/jdc20181/BeffsBrowser/wiki/License-Changes-Help-Wiki) wiki for help on the changes*
 
 *Got questions? Use [This](https://github.com/jdc20181/BeffsBrowser/issues/11) issue to ask questions.*
  
 
-#Version 1.6.1
+# Version 1.6.1
 
 
 *Update has been released early!*
@@ -46,7 +45,7 @@ More information can be found in the offical [wiki](https://github.com/jdc20181/
 I added a [Update Article ] (https://github.com/jdc20181/BeffsBrowser/wiki/1.6.1-Release-Announcment) on the release of 1.6.1
 Version 1.6.1 change log can be found below:
 
-#Version 1.6.1 Beta 
+# Version 1.6.1 Beta 
 
 Happy Holidays!!!
 
@@ -56,83 +55,45 @@ You can also check for updates by hitting the Version Label on the ToolBar in-Ap
 
 
 
-# Version 1.6.0 Has been Released!
-
-
-
-The update is jammed packed with many things that will improve overall stability and functioning of BeffsBrowser. 
-
-The issues with navigation are pending fix - as I think upgrading the under the hood component will fix that issue. 
-
-Many bugs - additions and improvments have been made - 
-
-
-# The New Website Has Been Launched!
-
-Head on over to http://beffsbrowser.tk and check it out!
-
-You may experience issues in BeffsBrowser loading the site, it seems it isn't loading correctly. This will be fixed ASAP However, it will work like it is suppose to. Just scroll down to find the menu.
-
-#version 1.6.0 
-
-Since 1.5.4 was released with most of the new stuff, I thought that it may be best to do the rest with version 1.6.0 
-
-see the <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.6.0">Full log </a> for details.
-
-
-
-#Version 1.5.4 
-
-Updated and ready to roll- 
-
-Unzip > Locate Windows installer > Open follow instructions > Go to your start panel and under all apps, if on windows 8.1 you will see it as a newly installed program, open it and BeffsBrowser will launch. 
-
-#Official Website Redesign!
-A friend and I are working to get a new updated site put together. There you can get the latest release with a click of a button, FAQ answered and more. 
-
-
-#Version 1.5.4 *Coming soon!*
-
-*Final 1.5.0 Version*
-
-A new version is now going into development with 1.5.3 released. I need to make sure users can install Version 1.5.3, before I begin working. With that in mind and the log list of items I am working on for this version, it could be as late as December before I finish with this release. 
-See the full log on the next release <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.4">here</a>
-#Version 1.5.3 
-
-I am going to be doing a quick fix release sometime this week or next. This will be my only attempt in the short term future to deal with the .exe don't work bug, as I said in the issue, I really have no intentions on fixing it any time soon as long as the zip works. 
-
-See the Log <a href = "https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.3-Bug-fixes-Patch-Release">Here</a>
-
-The Patch Release may not be ready till next week. I have a few more things to do.
-#Version 1.5.2 
-
-To get the update you will need to get the zip the .exe will not work. see this <a href="https://github.com/jdc20181/BeffsBrowser/issues/3">issue</a> for details. 
-It has been released!
-
-What will be in the next update:
-
-Bug! Crash when using Text To Speech in BeffsEasyNotes (*fixed*)
-
- - More UI changes 
- - Begin Beta UI change 
- - Bug Fixes 
- - Changes based on User input (TBD)
- 
- See the full log <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.2">Here</a>
- 
-#Support for early versions of BeffsBrowser has ended. 
-
-It's time to update your application if you have a older version - (any version before 1.5.0 is unsupported now)
-
-
-
-
-
 
 #About
 
-BeffsBrowser is a simple but outstanding browser, getting a upgrade, Version 2.0 will bring many improvements. One feature is the WebEditor, which can also be found in it's own project!
+A Simple but powerful Browser!
 
-#Open Source
-Licensed under the Mozilla Public License Version 2.0 
 
+
+# Open Source
+Licensed under The MIT License
+
+# System Requirements!
+
+**As of Version 1.6.2 these are the latest system requirements**
+
+
+*Minimum Requirements*
+
+  - Windows 7 (XP OR VISTA IS NO LONGER SUPPORTED!)
+
+  - 200 MB of storage space + 1GB for data storage (See below for details)
+
+  - 1GB of Ram
+  
+  
+*Recommended*
+
+Windows 7 or newer (Developed on Windows 8.1)
+
+500 MB of storage space for the applications and keep around 1-2 GB free for data storage (Favorites, History etc)
+
+1 GB of Ram or larger (I have 4GB on my machine so have at least that for best performance)
+
+**Additonal Space may be required**
+
+Depending on how many websites you save, how many sites you visit, and how often you clear that data, you will need to have  alittle more space open. 
+I estimated so HIGH because, I simply can't predict how much you will use. It really varies, if you don't navigate a bunch or clear history regularly, then you will have no issues using less than 1mb of space for that data.
+
+**Windows XP and Vista are no longer supported.**
+
+These are both very old Window's Versions both of which are getting the plug pulled by Microsoft or already have. 
+
+BeffsBrowser *may* work but it isn't guaranteed, as it uses a newer framework. 
