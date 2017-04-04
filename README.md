@@ -1,4 +1,10 @@
-**BeffsBrowser is now governed under the MIT license!**
+# Announcment
+
+The Calendar Featured in the next version is now it's own control/project. The current version released is behind the one in BeffsBrowser, the new version will be launched when 1.6.3 is released.
+
+[VBNetCalendar](https://github.com/jdc20181/VBNetCalendar)
+
+
 
 
 **Version 1.6.2 is ready to download ahead of the release date!**
