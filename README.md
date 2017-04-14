@@ -1,5 +1,9 @@
 # Announcment
 
+*Release will be delayed to early May!*
+
+
+
 The Calendar Featured in the next version is now it's own control/project. The current version released is behind the one in BeffsBrowser, the new version will be launched when 1.6.3 is released.
 
 [VBNetCalendar](https://github.com/jdc20181/VBNetCalendar)
@@ -35,30 +39,6 @@ These Changes are effective as of 1.6.2 and are seamless.
 
 *Got questions? Use [This](https://github.com/jdc20181/BeffsBrowser/issues/11) issue to ask questions.*
  
-
-# Version 1.6.1
-
-
-*Update has been released early!*
-
-New Trouble Shooting [wiki] (https://github.com/jdc20181/BeffsBrowser/wiki/Clearing-Data-and-restoring-data) Solution!
-I got all of the items listed in the changelog except the Xbox controller support which will come around soon!
-
-I am going to begin working on a new release and will be ready by early March, the main thing is to fix some annoying errors, address some bad practices, and add a app cache system - And I also want to add Xbox Controller support for some of the features within BeffsBrowser. 
-
-More information can be found in the offical [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/First-Update-of-the-new-year!)
-
-I added a [Update Article ] (https://github.com/jdc20181/BeffsBrowser/wiki/1.6.1-Release-Announcment) on the release of 1.6.1
-Version 1.6.1 change log can be found below:
-
-# Version 1.6.1 Beta 
-
-Happy Holidays!!!
-
-BeffsBrowser will be getting a update soon! I am almost done with just about everything there is mentioned <a href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.6.1-Coming-Soon">Here</a> and will let you know when the update is ready!
-
-You can also check for updates by hitting the Version Label on the ToolBar in-App and choose "Check for updates" if updates are availalbe a button will show for you to download the new zip. Remember to Close out BeffsBrowser, and uninstall the previous verions. 
-
 
 
 
