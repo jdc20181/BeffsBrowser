@@ -1,4 +1,29 @@
-# Announcment
+# Announcments
+
+
+Version 1.6.3 will be released soon!
+
+The Release will be packed with a lot of improvments, and additions making way for our Version 2.0 Celebration. 
+
+Highlights:
+
+- Revamping the SSL Identification system - Now all SECURE sites will have the Secure-Lock!
+
+- Game Center
+    - Slots: Bug fixes, and added "Quick Bets" 
+    - New! : Tappy Bird, another project of mine - Internet connection is required.
+    
+ - BeffsBrowser: Fix, Right-Click Paste URL was giving a error when it shouldn't have creating unexpected results. 
+ 
+ - Improved Private Browsing
+ 
+ - New: Weather, see the latest NWS Information! (Works with low bandwidth)
+ 
+ - New: Calendar, The Calendar is also a entire other project, and is MIT licensed. It is part of BeffsBrowser, and also split to its own project. 
+ 
+
+
+See all the release notes in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/1.6.3-Coming-Soon-Notes)!
 
 *Release will be delayed to early May!*
 
