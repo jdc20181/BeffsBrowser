@@ -1,7 +1,7 @@
 # Announcments
 
 
-Version 1.6.3 will be released soon!
+**Version 1.6.3 will be released soon!**
 
 The Release will be packed with a lot of improvments, and additions making way for our Version 2.0 Celebration. 
 
@@ -28,6 +28,7 @@ See all the release notes in the [wiki](https://github.com/jdc20181/BeffsBrowser
 *Release will be delayed to early May!*
 
 
+**Calendar Control**
 
 The Calendar Featured in the next version is now it's own control/project. The current version released is behind the one in BeffsBrowser, the new version will be launched when 1.6.3 is released.
 
@@ -36,10 +37,9 @@ The Calendar Featured in the next version is now it's own control/project. The c
 
 
 
-**Version 1.6.2 is ready to download ahead of the release date!**
+# Current Version 
 
-I got it uploaded so I can begin working on the next release. 
-
+1.6.2 is the current Version!
 
 
 
