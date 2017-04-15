@@ -1,5 +1,8 @@
 # Announcments
 
+**BeffsBrowser Birthday Celebration, Celebrating 2 years!, Version 2.0!**
+
+See the official [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Birthday-Celebration-Announcment-Version-2.0) for all the awesome details of the event!
 
 **Version 1.6.3 will be released soon!**
 
