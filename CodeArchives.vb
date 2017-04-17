@@ -237,3 +237,47 @@ Public Class BugReport
         '   Catch ex As Exception
         '   End Try
         'End If
+        
+        -----------------------
+        
+        Imports using
+System.Net
+
+    
+    Private Sub button3_Click_1(ByVal sender As Object, ByVal e As EventArgs)
+        Dim url As String = string.Empty
+        Dim urlProtocol As String = "http://"
+        'or https
+        If Not urlText.Text.Trim.Contains(urlProtocol) Then
+            url = (urlProtocol + urlText.Text)
+        Else
+            url = urlText.Text
+        End If
+        
+        If CheckURL(url) Then
+            Dim urlResult As Uri = New Uri(url)
+            webbrowser1.Navigate(url)
+        Else
+            webbrowser1.Navigate(("http://google.com/search?q=" + urlText.Text))
+        End If
+        
+    End Sub
+    
+    Private Function CheckURL(ByVal url As String) As Boolean
+        Dim req = CType(HttpWebRequest.Create(url),HttpWebRequest)
+        Dim isURLValid As Boolean = false
+        req.AllowAutoRedirect = false
+        Try 
+            Dim resp = req.GetResponse
+            Dim location = resp.Headers("Location")
+            If Not String.IsNullOrEmpty(location) Then
+                isURLValid = true
+            End If
+            
+        Catch  As System.Exception
+            isURLValid = false
+        End Try
+        
+        Return isURLValid
+    End Function
+------------------
