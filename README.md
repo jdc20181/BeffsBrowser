@@ -1,5 +1,10 @@
 # Announcments
 
+**Archive Notice**
+
+Version 1.5.0-1.6.0 are now archived. See the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.0-1.6.0-Support-Discontinued-Notice) for additional information. 
+
+
 **BeffsBrowser Birthday Celebration, Celebrating 2 years!, Version 2.0!**
 
 See the official [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Birthday-Celebration-Announcment-Version-2.0) for all the awesome details of the event!
