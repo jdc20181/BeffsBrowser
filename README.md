@@ -1,5 +1,16 @@
 # Announcments
 
+**Early Release for V 2.0**
+
+Pleased to announce I will start rapid development of V. 2.0 as soon as this version is released.
+
+Releases will be mutually "Scheduled" on a set date each month to pan out a years of releases, to get us to V3. 
+
+This plan will help BeffsBrowser mature - if a version will be delayed, or released early said date will be said. 
+
+Release notes will be released about 2-weeks prior to V2 release, V2 will be released pre-birthday due to the holiday. 
+
+
 **Archive Notice**
 
 Version 1.5.0-1.6.0 are now archived. See the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-1.5.0-1.6.0-Support-Discontinued-Notice) for additional information. 
