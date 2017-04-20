@@ -2,13 +2,20 @@
 
 **Early Release for V 2.0**
 
-Pleased to announce I will start rapid development of V. 2.0 as soon as this version is released.
+Pleased to announce I will start rapid development of V. 2.0 as soon as version 1.6.3 is released.
+
+V2 will be pre-released as Version 1.6.4, and will wrap up V1 for this project. 
+
+The Pre-Release will have bug fixes and finishing touches that will make a smoother transition into the new era of development. 
+
+See An Overview of v1 in this [Wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Comparing-V1-to-V2:-A-V2-Journey.)
+
+**New Release Schedule**
 
 Releases will be mutually "Scheduled" on a set date each month to pan out a years of releases, to get us to V3. 
 
 This plan will help BeffsBrowser mature - if a version will be delayed, or released early said date will be said. 
 
-Release notes will be released about 2-weeks prior to V2 release, V2 will be released pre-birthday due to the holiday. 
 
 
 **Archive Notice**
