@@ -1,0 +1,71 @@
+<html> 
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+      <meta http-equiv="X-UA-Compatible" content="IE=11" >
+      <meta http-equiv="X-UA-Compatible" content="IE=10" >
+      <meta http-equiv="X-UA-Compatible" content="IE=9" >
+      <meta http-equiv="X-UA-Compatible" content="IE=8" >
+      <meta http-equiv="X-UA-Compatible" content="IE=7" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" type = "text/css" href="main.css"/>
+<title>BeffsBrowser Home </title>
+</head>
+
+<header>
+    
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Home.html">Home</a>
+  <a href="../archives.html">Archives</a>
+  <a href="../support.html">Support</a>
+ <a href="https://github.com/jdc20181/BeffsBrowser/wiki/1.6.2-Release-Log-Coming-Soon">Current Release Feature Log</a>
+ <a href="https://github.com/jdc20181/BeffsBrowser/wiki/System-Requirements">System Requirements </a>
+<a href="https://github.com/jdc20181/BeffsBrowser/wiki/License-Changes-Effective-Version-1.6.2">License Changes as of 1.6.2</a>
+</div>
+<div class="top-header">
+<div id="main">
+  <span style="font-size:25px;cursor:pointer; color: #fff" onclick="openNav()">&#9776; Home</span>
+  </div>
+</div>
+</header>
+
+<div class="top-header">
+<h1> BeffsBrowser</h1>
+<p>"A Simple but Powerful Web Browser." - Written in Vb.net by a High School Student</p>
+<p></p>
+<a class = "btn padding text" href="https://github.com/jdc20181/BeffsBrowser/releases/download/1.6.2/Version.1.6.2.zip" Download>Download latest version 1.6.2</a>
+<div class="Mobile"></div>
+</div>
+<!--
+</div>-->
+<footer class="container centered small-text padding-64 black">
+    <h3>&copy; 2015-2017 BeffsBrowser </h3>
+    <P>BeffsBrowser is licensed under  <A HREF="https://github.com/jdc20181/BeffsBrowser/blob/master/LICENSE"> The MIT License </A></P>
+   <p>  Site Created By: <a href="http://www.instagram.com/nand.wa/" target="_blank">David Nandwa</a> </p>
+</footer>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+</html>
