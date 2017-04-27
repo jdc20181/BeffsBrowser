@@ -1,5 +1,9 @@
 # Announcments
 
+**Release will be delayed until Mid-May**
+
+I am now going for around the 12th-15th of May for the release. Sorry for the delay, there are some more things to address.
+
 **Version 1.6.3 will be released on the new scheduled date**
 
 I have a few more checks to go through make sure everything works smoothly, and then it will be ready for the release.
