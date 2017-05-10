@@ -1,5 +1,12 @@
 # Announcments
 
+**Website is down**
+
+I do appologize that the website is down, it is out of my control, it is due to some changes. I am working to get it back up and running. 
+
+Once the site is back up, I will release the new update. I have it ready to go, it just has to be uploaded. 
+
+
 **Release will be delayed until Mid-May**
 
 I am now going for around the 12th-15th of May for the release. Sorry for the delay, there are some more things to address.
