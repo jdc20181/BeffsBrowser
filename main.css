@@ -1,0 +1,253 @@
+a:link {
+text-decoration:none;
+color:white;
+}
+a:hover{
+text-decoration:underline;
+color:white;
+}
+a:visited{
+text-decoration:none;
+color:white;
+}
+a:active{
+text-decoration:none;
+color:white;
+}
+
+.padding{
+     padding-top:16px!important;
+     padding-bottom:16px!important
+     
+ }
+ .text{
+     font-size:18px!important
+     
+ }
+ 
+ .btn {
+     border:none;
+     display:inline-block;
+     outline:0;padding:6px 16px;
+     vertical-align:middle;
+     overflow:hidden;
+     text-decoration:none!important;
+     color:#fff;
+     background-color:#008080;
+     text-align:center;
+     cursor:pointer;
+     white-space:nowrap;
+     margin-left: 470px;
+     top: 50%;
+     left: 40%;
+     margin-right: 350px;
+     margin-bottom: 400px;
+     margin-top: 120px;
+ }
+ 
+
+
+
+/* The side navigation menu  */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2B687C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 14px;
+    margin: 5px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.centered {
+    text-align:center!important
+}
+
+.button {
+  border-radius: 2px;
+  background-color: #2B687C;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 90px;
+  height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 550px;
+  margin-right: 350px;
+  margin-top: 200px;
+  margin-bottom: 200px
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.small-text {
+    font-size:12px!important
+}
+.padding-64{
+    padding-top:64px!important;
+    padding-bottom:64px!important
+}
+
+.black {
+    color:#fff!important;
+    background-color:#05151d!important
+    
+}
+
+/*header {
+    background-image: url('http://wallpapercave.com/wp/TXafdmI.jpg')!important;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%
+}*/
+p{
+ text-align:center;
+ color: #F5F5F5;
+}
+h1{
+    text-align:center;
+    color: #F5F5F5;
+}
+
+.top-header {
+    background-color: #1A5276;
+}
+
+html, body {
+    background-color: #1A5276!important;
+}
+.btn {
+    margin-left: 24.5%;
+    width: 50%;
+    height: 4%;
+    text-align: center;
+    border-color: white;
+    border
+}
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s; 
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+   
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #1A5276;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.wn {
+    text-align: center;
+    margin-bottom:10%;
+    color:#fff;
+}
+
+footer {
+    margin-top: 10%;
+}
+ @media  (max-width: 524px) {
+    .btn {
+     visibility: hidden;
+      /*color:black;*/
+    }
+ .Mobile:Before{
+ content:"BeffsBrowser is for windows only! Please hop on a windows computer to install!";
+color:white;
+}
