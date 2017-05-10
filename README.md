@@ -1,10 +1,13 @@
 # Announcments
 
 
+**Version 1.6.3 has been released**
 
-
+Click [here](https://github.com/jdc20181/BeffsBrowser/releases/download/1.6.3/Version1.6.3.zip) for direct download. 
 
 **Website is down**
+
+*update* Temp website is up click [here](http://jdc20181.github.io/BeffsBrowser/)
 
 *Update* The site is still down due to some changes that the host is doing, I am currently transferring the host to here on github temporarly until everything is smoothly running. Version 1.6.3 will be officially be released later today.
 
