@@ -280,4 +280,15 @@ System.Net
         
         Return isURLValid
     End Function
-------------------
+___________________________________
+         Dim Result As DialogResult
+        If Tabcontrol1.TabCount = 2 Then
+            Result = MessageBox.Show("You have 2 or more Tabs open. Are you sure you wanna exit?", "BeffsBrowser is shutting down", MessageBoxButtons.YesNo)
+
+            'if user clicked no, cancel form closing
+        ElseIf Result = System.Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+
+
+        End If
+        ________________-
