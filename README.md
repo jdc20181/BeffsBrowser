@@ -1,6 +1,5 @@
 # Announcments
 
-
 **Version 1.6.3 has been released**
 
 Click [here](https://github.com/jdc20181/BeffsBrowser/releases/download/1.6.3/Version1.6.3.zip) for direct download. 
@@ -17,20 +16,10 @@ I do appologize that the website is down, it is out of my control, it is due to 
 Once the site is back up, I will release the new update. I have it ready to go, it just has to be uploaded. 
 
 
-**Release will be delayed until Mid-May**
-
-I am now going for around the 12th-15th of May for the release. Sorry for the delay, there are some more things to address.
-
-**Version 1.6.3 will be released on the new scheduled date**
-
-I have a few more checks to go through make sure everything works smoothly, and then it will be ready for the release.
-
-After it is released - I will begin working on V2! I am going to start working on it prior to the V 1.6.3 release, as I have pretty well finished this release - I delayed to May 5, because of a few arising issues. 
-
-The BeffsBrowser Birthday Celebration will kick off soon! Stay tuned for more news!
 
 
-**Version 1.6.3 will be released soon!**
+
+**Version 1.6.3 Release Notes**
 
 The Release will be packed with a lot of improvments, and additions making way for our Version 2.0 Celebration. 
 
@@ -57,7 +46,7 @@ Highlights:
 
 See all the release notes in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/1.6.3-Coming-Soon-Notes)!
 
-*Release will be delayed to early May!*
+
 
 **Early Release for V 2.0**
 
@@ -69,11 +58,6 @@ The Pre-Release will have bug fixes and finishing touches that will make a smoot
 
 See An Overview of v1 in this [Wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Comparing-V1-to-V2:-A-V2-Journey.)
 
-**New Release Schedule**
-
-Releases will be mutually "Scheduled" on a set date each month to pan out a years of releases, to get us to V3. 
-
-This plan will help BeffsBrowser mature - if a version will be delayed, or released early said date will be said. 
 
 
 
