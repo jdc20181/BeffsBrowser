@@ -180,6 +180,7 @@ h1{
 
 html, body {
     background-color: #1A5276!important;
+     margin:0;
 }
 .btn {
     margin-left: 24.5%;
