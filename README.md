@@ -1,5 +1,9 @@
 # Announcments
 
+**New Website is almost done!**
+
+The design will be very closely the same, however it will have several improvements.
+
 **Version 1.6.3 has been released**
 
 Click [here](https://github.com/jdc20181/BeffsBrowser/releases/download/1.6.3/Version1.6.3.zip) for direct download. 
