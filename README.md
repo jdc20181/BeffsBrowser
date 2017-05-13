@@ -1,8 +1,17 @@
 # Announcments
 
-**New Website is almost done!**
+**Changes to respo**
 
-The design will be very closely the same, however it will have several improvements.
+I am going to be reorganizing the respo and source code, as well as adding more source code from components of Beffsbrowser. 
+
+Things such as buttons that open different windows of features in BB will be excluded, this is simply because I want all the code to be organized. 
+
+Other Exclusions include SSL-Lock feature for security purposes.
+
+
+**New Website is done!**
+
+Site has been updated!
 
 **Version 1.6.3 has been released**
 
