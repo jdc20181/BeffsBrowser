@@ -1,67 +1,35 @@
-<html> 
+<html>
 <head>
-   <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
-      <meta http-equiv="X-UA-Compatible" content="IE=11" >
-      <meta http-equiv="X-UA-Compatible" content="IE=10" >
-      <meta http-equiv="X-UA-Compatible" content="IE=9" >
-      <meta http-equiv="X-UA-Compatible" content="IE=8" >
-      <meta http-equiv="X-UA-Compatible" content="IE=7" >
+   <link rel="stylesheet" type="text/css" href="main.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel = "stylesheet" type = "text/css" href="main.css"/>
-<title>BeffsBrowser Home </title>
+
 </head>
+<body>
 
-<header>
-    
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="archives.html">Archives</a>
-  <a href="https://github.com/jdc20181/BeffsBrowser/wiki/1.6.3-Coming-Soon-Notes">Current Release Feature Log</a>
- <a href="https://github.com/jdc20181/BeffsBrowser/wiki/System-Requirements">System Requirements </a>
-</div>
-<div class="top-header">
-<div id="main">
-  <span style="font-size:25px;cursor:pointer; color: #fff" onclick="openNav()">&#9776; Home</span>
-  </div>
-</div>
-</header>
+<div class="content">
 
-<div class="top-header">
-<h1> BeffsBrowser</h1>
-<p>"A Simple but Powerful Web Browser." - Written in Vb.net by a High School Student</p>
-<p></p>
-<a class = "btn padding text" href="https://github.com/jdc20181/BeffsBrowser/releases/download/1.6.3/Version1.6.3.zip" Download>Download latest version 1.6.3</a>
-<div class="Mobile"></div>
-</div>
-<!--
-</div>-->
-<footer class="container centered small-text padding-64 black">
-    <h3>&copy; 2015-2017 BeffsBrowser </h3>
-    <P>BeffsBrowser is licensed under  <A HREF="https://github.com/jdc20181/BeffsBrowser/blob/master/LICENSE"> The MIT License </A></P>
-   <p>  Site Created By: <a href="http://www.instagram.com/nand.wa/" target="_blank">David Nandwa</a> </p>
-</footer>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
-</script>
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-  }
-}
-</script>
+<ul>
+ <li> <a Class="active" href="index.html">Home</a></li>
+ <li> <a  href="Archives.html">Archives</a> </li>
+ <li> <a  href="Current Version ">Release Notes </a></li>
+   <!--<li> <a href="#"></a></li>-->
+</ul>
+  
+  <h1> BeffsBrowser </h1>
+  
+  <p>
+  "A Simple but powerful Webbrowser" - written in vb.net by a highschool student</p>
+  <p>
+  <br>
+  <a class="btn" href="https://github.com/jdc20181/BeffsBrowser/releases/download/1.6.3/Version1.6.3.zip" download>Download Current Version  1.6.3</a>
+ <p>
+   </p>
+   </div>
+  
+ <footer>
+ <p>  © 2015-2017 BeffsBrowser </p>
+   <br>
+   <p> BeffsBrowser is Licensed under the MIT license. </p>
+  </footer>
+</body>
 </html>
