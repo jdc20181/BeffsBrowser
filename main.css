@@ -1,31 +1,6 @@
-a:link {
-text-decoration:none;
-color:white;
-}
-a:hover{
-text-decoration:underline;
-color:white;
-}
-a:visited{
-text-decoration:none;
-color:white;
-}
-a:active{
-text-decoration:none;
-color:white;
-}
+/*button*/
 
-.padding{
-     padding-top:16px!important;
-     padding-bottom:16px!important
-     
- }
- .text{
-     font-size:18px!important
-     
- }
- 
- .btn {
+.btn {
      border:none;
      display:inline-block;
      outline:0;padding:6px 16px;
@@ -37,158 +12,172 @@ color:white;
      text-align:center;
      cursor:pointer;
      white-space:nowrap;
-     margin-left: 470px;
+     padding-top:16px!important;
+     padding-bottom:16px!important
      top: 50%;
      left: 40%;
      margin-right: 350px;
      margin-bottom: 400px;
      margin-top: 120px;
  }
- 
 
-
-
-/* The side navigation menu  */
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #2B687C;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #000;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 14px;
-    margin: 5px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-.centered {
-    text-align:center!important
-}
-
-.button {
-  border-radius: 2px;
-  background-color: #2B687C;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 15px;
-  padding: 20px;
-  width: 90px;
-  height: 50px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  margin-left: 550px;
-  margin-right: 350px;
-  margin-top: 200px;
-  margin-bottom: 200px
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 20px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.small-text {
+/* Button End */
+footer{
+   color:#fff!important;
+    background-color:#05151d!important;
+      text-align:center!important;
+     padding-top:64px!important;
+    padding-bottom:64px!important;
     font-size:12px!important
 }
-.padding-64{
-    padding-top:64px!important;
-    padding-bottom:64px!important
+
+body {
+    background: #1A5276;
+    color:white;
 }
 
-.black {
-    color:#fff!important;
-    background-color:#05151d!important
-    
+.content {
+    max-width: 500px;
+    margin:auto;
+    background-color: #1A5276!important;
+    padding: 10px;
+    Text-align:center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2B687C;
 }
 
-/*header {
-    background-image: url('http://wallpapercave.com/wp/TXafdmI.jpg')!important;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%
-}*/
-p{
- text-align:center;
- color: #F5F5F5;
-}
-h1{
-    text-align:center;
-    color: #F5F5F5;
+li {
+    float: left;
 }
 
-.top-header {
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #2B687C;
+}
+
+.active {
     background-color: #1A5276;
 }
-
-html, body {
-    background-color: #1A5276!important;
-     margin:0;
+@media only screen and (max-device-width : 320px)
+   .content {
+    max-width: 250px;
+    margin: auto;
+    background: white;
+    padding: 10px;
 }
-.btn {
-    margin-left: 24.5%;
-    width: 50%;
-    height: 4%;
-    text-align: center;
-    border-color: white;
-    border
+@media screen (max-width: 600px){
+    ul.topnav ul.right, 
+    ul.topnav li {float: none;}
+}
+/* Accordion CSS*/
+.accordion {
+	width: 100%;
+	max-width: 360px;
+	margin: 3em auto 2em;
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.accordion .link {
+	font-size: 0.85em;
+	font-weight: 700;
+	color: #4d4d4d;
+	
+	cursor: pointer;
+	padding: 15px 15px 15px 3em;
+	border-bottom: 1px solid #ccc;
+	display: block;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+/** ========================
+* Diseño iconos font-awesome
+============================= **/
+
+.accordion li i {
+	position: absolute;
+	top: 12px;
+	left: 16px;
+
+	font-size: 1em;
+	color: #595959;
+
+	-webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+
+	font-size: 1.2em;
+
+}
+/**===================================
+* Conf. clase link al estar activo submenu (con js)
+====================================**/
+.accordion li.open .link {
+	color: #b63b4d;
+}
+.accordion li.open i {
+	color: #b63b4d;
+}
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/**=======================
+* Submenu
+==========================**/
+.submenu {
+	display: none;
+	background: #444359;
+	font-size: 0.95em;
+}
+.submenu li {
+	border-bottom: 1px solid #4b4a5e;
+}
+.submenu a {
+	display: block;
+	text-decoration: none;
+	color: #d9d9d9;
+	padding: 12px;
+	padding-left: 3.5em;
+	-webkit-transition: all 0.25 ease;
+  -moz-transition: all 0.25 ease;
+	-o-transition: all 0.25 ease;
+	transition: all 0.25 ease;
+}
+.submenu a:hover {
+	background: #b63b4d;
+	color: #fff;
 }
 button.accordion {
     background-color: #eee;
@@ -200,7 +189,7 @@ button.accordion {
     text-align: left;
     outline: none;
     font-size: 15px;
-    transition: 0.4s; 
+    transition: 0.4s;
 }
 
 button.accordion.active, button.accordion:hover {
@@ -213,7 +202,6 @@ button.accordion:after {
     color: #777;
     float: right;
     margin-left: 5px;
-   
 }
 
 button.accordion.active:after {
@@ -222,8 +210,9 @@ button.accordion.active:after {
 
 div.panel {
     padding: 0 18px;
-    background-color: #1A5276;
+    background-color: white;
     max-height: 0;
+    max-width: 360px;
     overflow: hidden;
     transition: 0.6s ease-in-out;
     opacity: 0;
@@ -232,23 +221,5 @@ div.panel {
 div.panel.show {
     opacity: 1;
     max-height: 500px;
-}
-
-.wn {
-    text-align: center;
-    margin-bottom:10%;
-    color:#fff;
-}
-
-footer {
-    margin-top: 10%;
-}
- @media  (max-width: 524px) {
-    .btn {
-     visibility: hidden;
-      /*color:black;*/
-    }
- .Mobile:Before{
- content:"BeffsBrowser is for windows only! Please hop on a windows computer to install!";
-color:white;
+    max-width: 360px;
 }
