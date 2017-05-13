@@ -229,3 +229,12 @@ div.panel.show {
     max-height: 500px;
     max-width: 360px;
 }
+@media  (max-width: 524px) {
+    .btn {
+     visibility: hidden;
+      /*color:black;*/
+    }
+ .Mobile:Before{
+ content:"BeffsBrowser is for windows only! Please hop on a windows computer to install!";
+color:white;
+}
