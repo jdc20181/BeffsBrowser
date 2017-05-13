@@ -1,5 +1,8 @@
 /*button*/
-
+.btn-container{
+	text-align:center;
+margin:auto;
+}
 .btn {
      border:none;
      display:inline-block;
