@@ -10,7 +10,7 @@ See all the release notes in the [wiki](https://github.com/jdc20181/BeffsBrowser
 
 
 
-#About
+# About
 
 A Simple but powerful Browser!
 
