@@ -1,5 +1,15 @@
 # Announcments
 
+**Version 2.0 Planned release is June 24th**
+
+For now it is planned for June 24th, but it may take extra time or all features may not be in the release. I am also adding Birthday Celebration designs. These will be removed in a small patch update which may include missing features, and other misc fixes. 
+
+Expect the 2.0.1 Release in July sometime - The Birthday Celebrations will last until after BB's Birthday on July 4th. 
+
+Because of the holiday I am releasing it early. 
+
+At this time it is FOR SURE going to be released on June 24th, and then a small patch will be applied sometime Mid July.
+
 
 
 **Version 1.6.3 has been released**
