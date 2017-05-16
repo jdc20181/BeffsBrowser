@@ -6,9 +6,7 @@ For now it is planned for June 24th, but it may take extra time or all features 
 
 Expect the 2.0.1 Release in July sometime - The Birthday Celebrations will last until after BB's Birthday on July 4th. 
 
-Because of the holiday I am releasing it early. 
-
-At this time it is FOR SURE going to be released on June 24th, and then a small patch will be applied sometime Mid July.
+Because of the holiday I am releasing it earlier than the Birthday date of BB
 
 
 
