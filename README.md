@@ -1,5 +1,10 @@
 # Announcments
 
+**Beta Testing Launch Scheduled Soon!**
+
+See the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/BeffsBrowser-Beta-Edition-Details) for details.
+
+
 **Version 2.0 Planned release is June 24th**
 
 For now it is planned for June 24th, but it may take extra time or all features may not be in the release. I am also adding Birthday Celebration designs. These will be removed in a small patch update which may include missing features, and other misc fixes. 
