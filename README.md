@@ -1,10 +1,8 @@
 # Announcments
 
-~~**Beta Testing Launch Scheduled Soon!**~~
+**Good news!**
 
-~~See the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/BeffsBrowser-Beta-Edition-Details) for details.~~
-
-Cancelled. Due to some issues it isn't going to be possible. Too many security risks with Webkit and Cefsharp isn't working properly so development **ONLY ON THE BETA VERSION** is going to be ceased. Again it will NOT be released.
+Good news is I finally found a new web engine to power BeffsBrowser, so by Version 2.5 Expect the change to take shape. I have a lot of work ahead to make this change. 
 
 
 **Version 2.0 Planned release is June 24th**
