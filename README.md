@@ -7,7 +7,7 @@ All older versions than a set interval will be removed. This come as Codeplex on
 
 **Good news!**
 
-Good news is I finally found a new web engine to power BeffsBrowser, so by Version 2.5 Expect the change to take shape. I have a lot of work ahead to make this change. 
+The Gecko Engine is now in BeffsBrowser. All is running smoothly!
 
 
 **Version 2.0 Planned release is June 24th**
