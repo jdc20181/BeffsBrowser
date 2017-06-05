@@ -1,5 +1,10 @@
 # Announcments
 
+**Archives will be discontinued for old versions**
+
+All older versions than a set interval will be removed. This come as Codeplex one of the first hosting places for this project is shutting down. While they are going into a read only basis, that is not withstanding the test of time of the open source inititive. So to uphold my respects to and being a member of the open source community archives from Codeplex will be removed perminantly. These are unstable and useless anyhow. You will not see any change or reflection of archives here on the github site or future archives. 
+
+
 **Good news!**
 
 Good news is I finally found a new web engine to power BeffsBrowser, so by Version 2.5 Expect the change to take shape. I have a lot of work ahead to make this change. 
