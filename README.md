@@ -1,5 +1,13 @@
 # Announcments
 
+**Changes to Url Box Shortcuts**
+
+Some changes are coming for the "Right click paste" Shortcut that has been around for some time. This change will be effective immediately. 
+
+[wiki](https://github.com/jdc20181/BeffsBrowser/wiki/URL-Box-ShortCut-Changes)
+
+Updates will be posted in the wiki when available.
+
 **Archives will be discontinued for old versions**
 
 All older versions than a set interval will be removed. This come as Codeplex one of the first hosting places for this project is shutting down. While they are going into a read only basis, that is not withstanding the test of time of the open source inititive. So to uphold my respects to and being a member of the open source community archives from Codeplex will be removed perminantly. These are unstable and useless anyhow. You will not see any change or reflection of archives here on the github site or future archives. 
@@ -20,17 +28,12 @@ Because of the holiday I am releasing it earlier than the Birthday date of BB
 
 
 
-**Version 1.6.3 has been released**
-
-Click [here](https://github.com/jdc20181/BeffsBrowser/releases/download/1.6.3/Version1.6.3.zip) for direct download. 
-
-See all the release notes in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/1.6.3-Coming-Soon-Notes)!
 
 
 
 # About
 
-A Simple but powerful Browser!
+A Simple but powerful Browser using the Gecko Webbrowser engine!
 
 
 # Open Source
