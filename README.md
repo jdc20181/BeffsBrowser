@@ -6,7 +6,7 @@ Due to the transition of the Browser Engine - some things aren't going to be ava
 
 Currently there is no gurantee this will be solved before release. The following will become unavailable:
 
-- Save Page
+~~- Save Page~~ *Resolved*
 
 - Print 
 
