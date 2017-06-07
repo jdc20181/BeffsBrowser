@@ -1,5 +1,10 @@
 # Announcments
 
+**Updated Source Tree**
+
+The New source code has been added, I removed any unneccessary code e.g. opening another feature etc. Only the much needed code is given. 
+
+
 **Temp. Removal of some features**
 
 Due to the transition of the Browser Engine - some things aren't going to be available Temporarily. I will let you know if this changes.
@@ -8,7 +13,7 @@ Currently there is no gurantee this will be solved before release. The following
 
 ~~- Save Page~~ *Resolved*
 
-- Print 
+~~Print~~ *Pending Resolved*
 
 - Print Preview
 
