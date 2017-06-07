@@ -1,5 +1,20 @@
 # Announcments
 
+**Temp. Removal of some features**
+
+Due to the transition of the Browser Engine - some things aren't going to be available Temporarily. I will let you know if this changes.
+
+Currently there is no gurantee this will be solved before release. The following will become unavailable:
+
+- Save Page
+
+- Print 
+
+- Print Preview
+
+Sorry for any inconvience, these are things I am currently working on resolving. 
+
+
 **New System Requirements**
 
 These may be subject to change before the release, this is because the new browser engine has a few more dependencies than the old, so it is going to need a little more room to breathe.
