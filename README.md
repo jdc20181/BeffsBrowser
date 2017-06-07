@@ -1,5 +1,11 @@
 # Announcments
 
+**New System Requirements**
+
+These may be subject to change before the release, this is because the new browser engine has a few more dependencies than the old, so it is going to need a little more room to breathe.
+
+See [Wiki](https://github.com/jdc20181/BeffsBrowser/wiki/System-Requirements)
+
 **Release is almost ready!**
 
 There is a few features that I just added that needs to have some Shortcuts added, and other different things a like. 
@@ -43,32 +49,31 @@ A Simple but powerful Browser using the Gecko Webbrowser engine!
 
 
 # Open Source
-Licensed under The MIT License
+Licensed under The MIT License!
 
 # System Requirements!
 
-**As of Version 1.6.2 these are the latest system requirements**
+**New Requirements**
 
 *Minimum Requirements*
 
-  - Windows 7 (XP OR VISTA IS NO LONGER SUPPORTED!)
+Windows 7 or newer
 
-  - 200 MB of storage space + 1GB for data storage (See below for details)
+.NET Framework 4.5.0 or newer. 
 
-  - 1GB of Ram
-  
-*Recommended*
+850MB Space needed (350MB for the application, 500MB for data storage)
 
-Windows 7 or newer (Developed on Windows 8.1)
+1GB RAM 
 
-500 MB of storage space for the applications and keep around 1-2 GB free for data storage (Favorites, History etc)
+*Reccomended*
 
-1 GB of Ram or larger (I have 4GB on my machine so have at least that for best performance)
+Windows 8 or newer
 
-**Additonal Space may be required**
+350MB for App, 1GB-2GB for Data
 
-Depending on how many websites you save, how many sites you visit, and how often you clear that data, you will need to have  alittle more space open. 
-I estimated so HIGH because, I simply can't predict how much you will use. It really varies, if you don't navigate a bunch or clear history regularly, then you will have no issues using less than 1mb of space for that data.
+4GB of RAM or more.
+
+*Subject to change better calculated specifics will be ready before the update*
 
 **Windows XP and Vista are no longer supported.**
 
