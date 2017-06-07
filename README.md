@@ -65,7 +65,7 @@ A Simple but powerful Browser using the Gecko Webbrowser engine!
 
 # Open Source
 Licensed under The MIT License!
-
+ 
 # System Requirements!
 
 **New Requirements**
