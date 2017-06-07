@@ -1,5 +1,11 @@
 # Announcments
 
+**Release is almost ready!**
+
+There is a few features that I just added that needs to have some Shortcuts added, and other different things a like. 
+
+I will have some more updates on things changing soon, I also updated the wiki article below talking about the URL box shortcut changes.
+
 **Changes to Url Box Shortcuts**
 
 Some changes are coming for the "Right click paste" Shortcut that has been around for some time. This change will be effective immediately. 
