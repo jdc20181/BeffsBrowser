@@ -1,18 +1,8 @@
 # Announcments
 
-**Release Removed**
+**Re-Release is ready!**
 
-I am re-releasing V2 because of an issue. 
-
-
-**Version 2.0 is ready for download**
-
-Ahead of the release date, Version 2.0 is ready, there are a few bugs, that I didn't catch when developing  - that will be resolved in a patch update. Sorry about these bugs!
-
-**Bugs List**
-
-At this time it looks like the Forward/Back is the only things that aren't working correctly, this was a typo on my end when I was transiitoning to Gecko. This will be fixed by next week. 
-
+Since it was so minor, I simply removed the release.The new release solves the issue. 
 
 **Happy Birthday to BB!**
 
@@ -95,7 +85,8 @@ Windows 7 or newer
 
 .NET Framework 4.5.0 or newer. 
 
-850MB Space needed (350MB for the application, 500MB for data storage)
+
+105MB Space is needed for the application.
 
 1GB RAM 
 
@@ -103,7 +94,7 @@ Windows 7 or newer
 
 Windows 8 or newer
 
-350MB for App, 1GB-2GB for Data
+105 MB for the Application.
 
 4GB of RAM or more.
 
