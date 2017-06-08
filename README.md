@@ -1,6 +1,14 @@
 # Announcments
 
+**Delayed Release**
+
+V2 will be delayed. Due to some errors, I am unable to release V2, it has to do with Gecko, and I am not sure what is causing it. 
+
+**If it is not resolved, BeffsBrowser will be discontinued**
+
+
 **Happy Birthday to BB!**
+
 Here is a [Birthday](https://jdc20181.github.io/BeffsBrowser/Birthday.html) Message from myself, celebrating BBs' 2nd birthday!
 
 **Updated Source Tree**
