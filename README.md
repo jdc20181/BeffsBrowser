@@ -1,5 +1,8 @@
 # Announcments
 
+**Happy Birthday to BB!**
+Here is a [Birthday](https://jdc20181.github.io/BeffsBrowser/Birthday.html) Message from myself, celebrating BBs' 2nd birthday!
+
 **Updated Source Tree**
 
 The New source code has been added, I removed any unneccessary code e.g. opening another feature etc. Only the much needed code is given. 
@@ -10,10 +13,6 @@ The New source code has been added, I removed any unneccessary code e.g. opening
 Due to the transition of the Browser Engine - some things aren't going to be available Temporarily. I will let you know if this changes.
 
 Currently there is no gurantee this will be solved before release. The following will become unavailable:
-
-~~- Save Page~~ *Resolved*
-
-~~Print~~ *Pending Resolved*
 
 - Print Preview
 
