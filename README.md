@@ -4,7 +4,6 @@
 
 V2 will be delayed. Due to some errors, I am unable to release V2, it has to do with Gecko, and I am not sure what is causing it. 
 
-**If it is not resolved, BeffsBrowser will be discontinued**
 
 
 **Happy Birthday to BB!**
