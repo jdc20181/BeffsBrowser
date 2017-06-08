@@ -4,7 +4,7 @@
 
 V2 will be delayed. Due to some errors, I am unable to release V2, it has to do with Gecko, and I am not sure what is causing it. 
 
-
+**Issue will delay until further notice.** 
 
 **Happy Birthday to BB!**
 
