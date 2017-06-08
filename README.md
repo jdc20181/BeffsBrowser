@@ -1,5 +1,8 @@
 # Announcments
 
+*Version 2.0 is ready for download*
+
+
 **Release is back on!**
 
 I will be releasing BB 2.0 later today, ahead of the June24th date!
