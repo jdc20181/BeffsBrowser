@@ -2,7 +2,7 @@
 
 **Re-Release is ready!**
 
-Since it was so minor, I simply removed the release.The new release solves the issue. 
+Since it was so minor, I simply removed the Old release.The new release solves the issue. 
 
 **Happy Birthday to BB!**
 
