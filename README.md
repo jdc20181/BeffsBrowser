@@ -1,11 +1,18 @@
 # Announcments
 
-*Version 2.0 is ready for download*
+**Release Removed**
+
+I am re-releasing V2 because of an issue. 
 
 
-**Release is back on!**
+**Version 2.0 is ready for download**
 
-I will be releasing BB 2.0 later today, ahead of the June24th date!
+Ahead of the release date, Version 2.0 is ready, there are a few bugs, that I didn't catch when developing  - that will be resolved in a patch update. Sorry about these bugs!
+
+**Bugs List**
+
+At this time it looks like the Forward/Back is the only things that aren't working correctly, this was a typo on my end when I was transiitoning to Gecko. This will be fixed by next week. 
+
 
 **Happy Birthday to BB!**
 
