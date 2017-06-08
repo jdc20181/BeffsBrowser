@@ -1,10 +1,8 @@
 # Announcments
 
-**Delayed Release**
+**Release is back on!**
 
-V2 will be delayed. Due to some errors, I am unable to release V2, it has to do with Gecko, and I am not sure what is causing it. 
-
-**Issue will delay until further notice.** 
+I will be releasing BB 2.0 later today, ahead of the June24th date!
 
 **Happy Birthday to BB!**
 
