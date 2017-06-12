@@ -1,4 +1,9 @@
 # Announcments
+
+**Version 2.1 Patch Release to come next month sometime**
+
+See all the notes in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.1.0-Patch-Release-Coming-Soon!)
+
 **Notice Feature was removed because of transition**
 
 I removed the SSL Lock Feature for the time being - More information on the replacement will be released later. 
