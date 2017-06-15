@@ -1,11 +1,5 @@
 # Announcments
 
-**Introducing BB PodCast Blog!**
-
-Coming soon, I will be uploading podcasts, about BB, and even include things like tutorials. 
-
-More Details later today, AND my first podcast too :P
-
 
 **Version 2.1 Patch Release to come next month sometime**
 
