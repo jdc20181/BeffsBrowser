@@ -1,5 +1,11 @@
 # Announcments
 
+**Now being Developed on Windows 10!**
+
+Starting this next release, upgrades to the .NET framework will change the requirements for BeffsBrowser, once this change is in effect, some versions of Windows will be unsupported. I appologize to any inconvience and plan to continue supporting all Windows 7 or Newer versions until discontinued by Microsoft.
+
+Thanks for being a valuable member to the open source community!
+
 
 **Version 2.1 Patch Release to come next month sometime**
 
