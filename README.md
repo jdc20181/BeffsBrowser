@@ -1,5 +1,10 @@
 # Announcments
 
+**Version 2.1.0 Delayed**
+
+Due to installer issues, with using a new version of VS, the installshield I use does not support community '17. 
+
+
 **Windows 10 Version coming soon!**
 
 Exclusively for Windows 10 users, a new version of BeffsBrowser aside of the main project will be released. You will get updates less often than the Stable Version. And Most of all it will be much lighter!
