@@ -1,5 +1,13 @@
 # Announcments
 
+**Server maintenance**
+
+I am working on the DNS records of the beffsbrowser domain name, you will still have direct access using the following:
+
+https://jdc20181.github.io/BeffsBrowser/
+
+
+
 **Version 2.1.0 Delayed**
 
 Due to installer issues, with using a new version of VS, the installshield I use does not support community '17. 
