@@ -1,5 +1,15 @@
 # Announcments
 
+**Beffsbrowser to participate in Day of action to save Net Neutrality**
+
+The future of the internet is at stake, in the hands of the foolish, stand up and defend the net. 
+
+https://www.battleforthenet.com/july12/
+
+
+Parts of github tomorrow will run strange, and BeffsBrowser will be a proud supporter to keep Net Neutrality!
+
+
 **Server maintenance**
 
 I am working on the DNS records of the beffsbrowser domain name, you will still have direct access using the following:
