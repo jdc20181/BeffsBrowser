@@ -1,5 +1,13 @@
 # Announcments
 
+**BeffsBrowser 2.1.0 is ready**
+
+You will need to uninstall BeffsBrowser, and remove all data of BeffsBrowser before installing this update. 
+
+P.S. Pin to task bar, otherwise you will have a hard time figuring out how to launch.
+
+
+
 **Beffsbrowser to participate in Day of action to save Net Neutrality**
 
 The future of the internet is at stake, in the hands of the foolish, stand up and defend the net. 
