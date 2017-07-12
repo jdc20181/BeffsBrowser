@@ -7,69 +7,6 @@ You will need to uninstall BeffsBrowser, and remove all data of BeffsBrowser bef
 P.S. Pin to task bar, otherwise you will have a hard time figuring out how to launch.
 
 
-
-**Beffsbrowser to participate in Day of action to save Net Neutrality**
-
-The future of the internet is at stake, in the hands of the foolish, stand up and defend the net. 
-
-https://www.battleforthenet.com/july12/
-
-
-Parts of github tomorrow will run strange, and BeffsBrowser will be a proud supporter to keep Net Neutrality!
-
-
-**Server maintenance**
-
-I am working on the DNS records of the beffsbrowser domain name, you will still have direct access using the following:
-
-https://jdc20181.github.io/BeffsBrowser/
-
-
-
-**Version 2.1.0 Delayed**
-
-Due to installer issues, with using a new version of VS, the installshield I use does not support community '17. 
-
-
-**Windows 10 Version coming soon!**
-
-Exclusively for Windows 10 users, a new version of BeffsBrowser aside of the main project will be released. You will get updates less often than the Stable Version. And Most of all it will be much lighter!
-
-
-
-
-
-**Now being Developed on Windows 10!**
-
-Starting this next release, upgrades to the .NET framework will change the requirements for BeffsBrowser, once this change is in effect, some versions of Windows will be unsupported. I appologize to any inconvience and plan to continue supporting all Windows 7 or Newer versions until discontinued by Microsoft.
-
-Thanks for being a valuable member to the open source community!
-
-
-**Version 2.1 Patch Release to come next month sometime**
-
-See all the notes in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.1.0-Patch-Release-Coming-Soon!)
-
-**Notice Feature was removed because of transition**
-
-I removed the SSL Lock Feature for the time being - More information on the replacement will be released later. 
-
-**Re-Release is ready!**
-
-Since it was so minor, I simply removed the Old release.The new release solves the issue. 
-
-**Happy Birthday to BB!**
-
-Here is a [Birthday](https://jdc20181.github.io/BeffsBrowser/Birthday.html) Message from myself, celebrating BBs' 2nd birthday!
-
-
-**New System Requirements**
-
-These may be subject to change before the release, this is because the new browser engine has a few more dependencies than the old, so it is going to need a little more room to breathe.
-
-See [Wiki](https://github.com/jdc20181/BeffsBrowser/wiki/System-Requirements)
-
-
 # About
 
 A Simple but powerful Browser using the Gecko Webbrowser engine!
@@ -97,7 +34,7 @@ Windows 7 or newer
 
 Windows 8 or newer
 
-105 MB for the Application.
+100 MB for the Application.
 
 4GB of RAM or more.
 
