@@ -5,7 +5,9 @@ Will be Pre-Released soon!
 
 *Key Differences*
 
-- Chromium
+~~- Chromium~~
+
+Won't happen, chromium doesn't want to work like it should, so it is off the table. 
 
 - Eventually will offer Dual Browsing - Set it up by using settings.
 
