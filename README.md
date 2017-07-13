@@ -1,5 +1,14 @@
 # Announcments
 
+**Version 2.2 will be coming soon!**
+
+Development on the next release has begun, in the next release you will need to uninstall one last time, as I am switching to a professional version of the installer, provided for open source projects by Advance Installer. 
+
+This should be the last time you will need to do this - after which you will be able to install updates. 
+
+
+
+
 **BeffsBrowser 2.1.0 is ready**
 
 You will need to uninstall BeffsBrowser, and remove all data of BeffsBrowser before installing this update. 
