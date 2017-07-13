@@ -6,7 +6,7 @@ Development on the next release has begun, in the next release you will need to 
 
 This should be the last time you will need to do this - after which you will be able to install updates. 
 
-
+All the details of the next release are in this [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.2-Coming-Soon).
 
 
 **BeffsBrowser 2.1.0 is ready**
