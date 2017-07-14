@@ -527,6 +527,13 @@ Public Class BBMain
         End If
     End Sub
 
+    Private Sub PrintToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintToolStripMenuItem.Click
+
+
+        CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Navigate("javascript:print()")
+
+
+    End Sub
 	#Region "Test - Close tabs to right"
     Private Sub RemoveTabsToRight(tabControl As TabControl, tabPage As TabPage)
         Dim index = tabControl.TabPages.IndexOf(tabPage)
