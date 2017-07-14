@@ -1,5 +1,10 @@
 # Announcments
 
+**Release Delayed for a long time**
+
+A sudden error, forced the removal of several key features of BB, with that said, until it is resolved and those are restored, BeffsBrowser is going into inactive mode. 
+
+
 **Version 2.2 will be coming soon!**
 
 Development on the next release has begun, in the next release you will need to uninstall one last time, as I am switching to a professional version of the installer, provided for open source projects by Advance Installer. 
