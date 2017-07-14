@@ -13,14 +13,18 @@ Public Class BBMain
 
     Private Sub Loading(ByVal sender As Object, ByVal e As Gecko.GeckoProgressEventArgs)
 
+       Tabcontrol1.SelectedTab.Text = CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).DocumentTitle
+        If Tabcontrol1.SelectedTab.Text = Nothing Then
+            Tabcontrol1.SelectedTab.Text = CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Url.ToString
+        End If
         ToolStripProgressBar1.Maximum = e.MaximumProgress
         ToolStripProgressBar1.Value = e.MaximumProgress
+        Me.Cursor = Cursors.AppStarting
     End Sub
 
     Private Sub Done(ByVal sender As Object, ByVal e As Gecko.Events.GeckoDocumentCompletedEventArgs)
-        Tabcontrol1.SelectedTab.Text = CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).DocumentTitle
+        Me.Cursor = Cursors.Default
         ToolStripTextBox1.Text = CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Url.ToString
-     
         Save_History()
 
 
@@ -33,7 +37,7 @@ Public Class BBMain
 
             Dim siteNodes = wb.Document.GetElementsByClassName("site")
             For Each n As GeckoHtmlElement In siteNodes
-                'n.TextContent = "Site"
+             
                 n.TextContent = names(nameIndex)
                 nameIndex += 1
             Next
@@ -45,6 +49,9 @@ Public Class BBMain
                 urlIndex += 1
             Next
         End If
+
+
+     
     End Sub
   
 
@@ -89,6 +96,8 @@ Public Class BBMain
 
     End Sub
     Private Sub BBMain_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Tabcontrol1.ContextMenuStrip = ContextMenuStrip2
+
         ToolStripTextBox1.Control.ContextMenuStrip = ContextMenuStrip1
         If My.Settings.MenuSetting = False Then
             MenuStrip1.Visible = False
@@ -124,7 +133,8 @@ Public Class BBMain
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 0.5
-            CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Refresh()
+                     CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Reload()
+
         Catch ex As Exception
 
         End Try
@@ -163,7 +173,7 @@ Public Class BBMain
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 1
-            CType(Tabcontrol1.SelectedTab.Controls.Item(0), WebBrowser).GoBack()
+            CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).GoBack()
         Catch ex As Exception
 
         End Try
@@ -329,7 +339,7 @@ Public Class BBMain
         'ToolStripButton6.Visible = False
         ' ToolStripButton5.Visible = True
         Me.WindowState = FormWindowState.Normal
-        Me.Size = MaximumSize
+        Me.Size = New Drawing.Size(1446, 772)  ' MaximumSize
         Me.FormBorderStyle = FormBorderStyle.Sizable
         Fullscreen.Visible = True
         ControlBox = True
@@ -343,7 +353,8 @@ Public Class BBMain
         Dim file As System.IO.StreamWriter
         file = My.Computer.FileSystem.OpenTextFileWriter(FavPath, True)
         For Each Str As String In NewFavs.ListBox1.Items
-            file.WriteLine(Str)
+         file.WriteLine(CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Url.ToString())
+
         Next
         file.Close()
     End Sub
@@ -516,5 +527,16 @@ Public Class BBMain
         End If
     End Sub
 
-
+	#Region "Test - Close tabs to right"
+    Private Sub RemoveTabsToRight(tabControl As TabControl, tabPage As TabPage)
+        Dim index = tabControl.TabPages.IndexOf(tabPage)
+        Dim i As Integer
+        For i = tabControl.TabCount - 1 To index + 1 Step -1
+            tabControl.TabPages.RemoveAt(i)
+        Next
+    End Sub
+    Private Sub CloseTabsToRightToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseTabsToRightToolStripMenuItem.Click
+        RemoveTabsToRight(Me.Tabcontrol1, Me.Tabcontrol1.SelectedTab)
+    End Sub
+#End Region
 End Class
