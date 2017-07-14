@@ -6,8 +6,23 @@ Development on the next release has begun, in the next release you will need to 
 
 This should be the last time you will need to do this - after which you will be able to install updates. 
 
+
+*Feature Overview*
+
+The biggest highlights of this upcoming update include:
+
+- Start Page enhancments
+- Private Browsing Upgrades 
+- Bug Fixes (a few major ones)
+- More Control over tabs.
+- Printing support
+
+And many more misc things!
+
 All the details of the next release are in this [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.2-Coming-Soon).
 
+
+**Release Date**
 Currently, the plan is to release the next update the last week of the July around the 28th is the approx. Date. The next release will be a bug fixes update, but it is a important update, including printing support and other misc bug fixes. 
 
 Failure to get the latest updates when they become available can force you to have to manually reinstall BB to get new features and improvments. 
