@@ -3,15 +3,7 @@
 Will be Pre-Released soon! 
 
 
-*Key Differences*
 
-~~- Chromium~~
-
-Won't happen, chromium doesn't want to work like it should, so it is off the table. 
-
-- Eventually will offer Dual Browsing - Set it up by using settings.
-
-- Can run right beside Main Releases of BeffsBrowser
 
 Some other notes:
 
@@ -26,3 +18,15 @@ Updates will be less frequent than the main release. Doesn't mean they won't occ
 Bugs will occur during the beta period, because I am using a newer .net framework, and Chromium, it will be instable for a while, please understand this before using it, those who wish to get good use out of BB please use the main releases. 
 
 Source Code offered will be minified, and will be only the core components, excluding unnecessary items e.g. Close window. 
+
+Main Browser
+
+Private Browsing 
+
+Settings
+
+History 
+
+Disable Cache
+
+File browser
