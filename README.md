@@ -31,7 +31,7 @@ All the details of the next release are in this [wiki](https://github.com/jdc201
 Currently, the plan is to release the next update the last week of the July around the 28th is the approx. Date. The next release will be a bug fixes update, but it is a important update, including printing support and other misc bug fixes. 
 
 Failure to get the latest updates when they become available can force you to have to manually reinstall BB to get new features and improvments. 
-
+ 
 **BeffsBrowser 2.1.0 is ready**
 
 You will need to uninstall BeffsBrowser, and remove all data of BeffsBrowser before installing this update. 
