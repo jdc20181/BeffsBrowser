@@ -2,7 +2,7 @@
 
 **Release Delayed for a long time**
 
-A sudden error, forced the removal of several key features of BB, with that said, until it is resolved and those are restored, BeffsBrowser is going into inactive mode. 
+The error is being resolved slowly. Expect the release to be delayed. 
 
 
 **Version 2.2 will be coming soon!**
