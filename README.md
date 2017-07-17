@@ -1,8 +1,10 @@
 # Announcments
 
-**Release Delayed for a long time**
+**Back up and running**
 
-The error is being resolved slowly. Expect the release to be delayed. 
+I am back to work! I got the issue resolved, it resolved by itself, so I am back at it, working on the next release. Expect this release within the first couple weeks in August. 
+
+
 
 
 **Version 2.2 will be coming soon!**
