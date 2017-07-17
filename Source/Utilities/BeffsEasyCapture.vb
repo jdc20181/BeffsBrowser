@@ -10,14 +10,9 @@ Public Class beffseasycapture
         graph = Graphics.FromImage(capture)
         graph.CopyFromScreen(area.X, area.Y, 0, 0, area.Size, CopyPixelOperation.SourceCopy)
         PictureBox1.Image = capture
-        information()
+        Me.Opacity = 1
     End Sub
-    Public Sub information()
-        PopupNotifier1.TitleText = "Your ScreenShot is ready."
-        PopupNotifier1.ContentText = "Click here to view your screenshot"
-        PopupNotifier1.Popup()
 
-    End Sub
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click, SaveToolStripMenuItem.Click
         Dim save As New SaveFileDialog
         Try
@@ -43,10 +38,6 @@ Public Class beffseasycapture
 #End Region
 
   
-
-    Private Sub PopupNotifier1_Click(sender As Object, e As EventArgs) Handles PopupNotifier1.Click
-        Me.Opacity = 1
-    End Sub
 
  
     Private Sub CopyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click
