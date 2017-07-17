@@ -1,5 +1,12 @@
 # Announcments
 
+**Source Code Update**
+
+I updated the source code, and officially released the source code for private browsing. Things that are in development aren't released until functional. A new policy is being created to explain the concept and reasons behind this. 
+
+Thanks!
+
+
 **Back up and running**
 
 I am back to work! I got the issue resolved, it resolved by itself, so I am back at it, working on the next release. Expect this release within the first couple weeks in August. 
