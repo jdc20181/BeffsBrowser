@@ -5,6 +5,11 @@
 
 I updated the source code, and officially released the source code for private browsing. Things that are in development aren't released until functional. A new policy is being created to explain the concept and reasons behind this. 
 
+Added Source code for Arcade games, including the Mathquiz which is discontinued, it is marked for non production and is in archives. 
+
+[See all the arcade source code](https://github.com/jdc20181/BeffsBrowser/tree/master/Source/Arcade)
+
+
 Thanks!
 
 
