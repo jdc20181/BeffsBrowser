@@ -1,5 +1,8 @@
 # Announcments
 
+**Update is almost done 2.2**
+
+The next update is almost done, and will be released on a Pre-Release in a week or so. 
 
 **Source Code Update**
 
