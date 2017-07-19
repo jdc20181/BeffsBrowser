@@ -1,6 +1,6 @@
 Public Class beffseasycapture
-#Region "MainEvents"
-    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click, CaptureToolStripMenuItem.Click
+    
+   Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click, CaptureToolStripMenuItem.Click
         Me.Opacity = 0
         Dim area As Rectangle
         Dim capture As System.Drawing.Bitmap
@@ -10,9 +10,16 @@ Public Class beffseasycapture
         graph = Graphics.FromImage(capture)
         graph.CopyFromScreen(area.X, area.Y, 0, 0, area.Size, CopyPixelOperation.SourceCopy)
         PictureBox1.Image = capture
-        Me.Opacity = 1
-    End Sub
+        information()
+        AutoSave()
 
+    End Sub
+    Public Sub information()
+        Me.Opacity = 1
+
+
+    End Sub
+    
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click, SaveToolStripMenuItem.Click
         Dim save As New SaveFileDialog
         Try
@@ -27,19 +34,15 @@ Public Class beffseasycapture
 
         End Try
     End Sub
+    
+    
+    Public Sub AutoSave()
+Me.PictureBox1.Image.Save(IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyPictures, "ScreenShot-" & Now.ToString("ddd_dd_MM_yyyy_hh_mm_ss")))
+        End Sub
 
 
-   
 
-  
-#End Region
-#Region "Others"
 
-#End Region
-
-  
-
- 
     Private Sub CopyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click
         My.Computer.Clipboard.Clear()
 
