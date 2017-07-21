@@ -1,0 +1,113 @@
+<head>
+     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "708d7f18-7958-4c09-b737-8feba87b9a25",
+       
+      autoRegister: false, /* Set to true to automatically prompt visitors */
+      subdomainName: 'https://beffsspeedtestproject.onesignal.com',   
+      notifyButton: {
+      enable: false, /* Set to false to hide */
+        size: 'large', /* One of 'small', 'medium', or 'large' */
+        theme: 'inverse', /* One of 'default' (red-white) or 'inverse" (white-red) */
+        position: 'bottom-right', /* Either 'bottom-left' or 'bottom-right' */
+        offset: {
+            bottom: '0px',
+            left: '0px', /* Only applied if bottom-left */
+            right: '0px' /* Only applied if bottom-right */
+        },
+        prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
+        showCredit: false, /* Hide the OneSignal logo */
+        text: {
+            'tip.state.unsubscribed': 'Subscribe to notifications',
+            'tip.state.subscribed': "You're subscribed to notifications",
+            'tip.state.blocked': "You've blocked notifications",
+            'message.prenotify': 'Click to subscribe to notifications',
+            'message.action.subscribed': "Thanks for subscribing!",
+            'message.action.resubscribed': "You're subscribed to notifications",
+            'message.action.unsubscribed': "You won't receive notifications again",
+            'dialog.main.title': 'Manage Site Notifications',
+            'dialog.main.button.subscribe': 'SUBSCRIBE',
+            'dialog.main.button.unsubscribe': 'UNSUBSCRIBE',
+            'dialog.blocked.title': 'Unblock Notifications',
+            'dialog.blocked.message': "Follow these instructions to allow notifications:"
+           }
+    }
+}]);
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <!-- <script>window.location = "http://jdc20181.github.io/SpeedTest/maintenance.html";</script>-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="./Styles/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+<body class="bodystyle">
+<div class="bar"> 
+     <h2>Notifications Center </h2>
+     </div>
+<!--<div class="isa_info">
+         <button type='button' class='close' onclick='$(this).parent().remove();'>&#10007;</button>
+    <h3>Subscribe to updates</h3>
+<p> This is a new feature click the button below to subscribe! </p>
+  </div>-->
+     <p>Click the button to subscribe - to unsubscribe  click the "Unsubscribe" button below. </p>
+     <p> It's free</p> 
+     <p> opt out any time you like</p>
+     <p> Get instant updates and news!</p>
+     
+     <p> Thanks for using speedtest</p>
+     <p> If you don't see the blue button it means you are already subscribed! </p>
+ <a class="button" href="#" id="subscribe-link" style="display: none;">Subscribe to Notifications</a>
+    <a class="button" href="#" id="unsubscribe-link" style="display: none;">Unsubscribe from Notifications</a>
+    <script>
+        function unsubscribe() {
+            OneSignal.push(function() {
+              OneSignal.setSubscription(false);
+            });
+            event.preventDefault();
+        }
+        var OneSignal = window.OneSignal || [];
+        /* This example assumes you've already initialized OneSignal */
+        OneSignal.push(function() {
+            // If we're on an unsupported browser, do nothing
+            if (!OneSignal.isPushNotificationsSupported()) {
+                return;
+            }
+            OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+                if (isEnabled) {                  
+                    document.getElementById("unsubscribe-link").addEventListener('click', unsubscribe);
+                    document.getElementById("unsubscribe-link").style.display = '';
+                } else {
+                    // The user is not subscribed
+                    // Don't show anything
+                }
+            });
+        });
+    </script>
+    <script>
+        function subscribe() {
+            OneSignal.push(["registerForPushNotifications"]);
+            event.preventDefault();
+        }
+        var OneSignal = OneSignal || [];
+        /* This example assumes you've already initialized OneSignal */
+        OneSignal.push(function() {
+            // If we're on an unsupported browser, do nothing
+            if (!OneSignal.isPushNotificationsSupported()) {
+                return;
+            }
+            OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+                if (isEnabled) {
+                    // The user is subscribed to notifications
+                    // Don't show anything
+                } else {
+                    document.getElementById("subscribe-link").addEventListener('click', subscribe);
+                    document.getElementById("subscribe-link").style.display = '';
+                }
+            });
+        }); 
+    </script>
+    </body>
