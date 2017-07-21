@@ -1,0 +1,76 @@
+<html>
+<head>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "708d7f18-7958-4c09-b737-8feba87b9a25",
+        safari_web_id: 'web.onesignal.auto.4d68c5e3-f56f-4052-bfb7-4c135295bfe6',
+      autoRegister: false, /* Set to true to automatically prompt visitors */
+      subdomainName: 'https://beffsspeedtestproject.onesignal.com',   
+      notifyButton: {
+      enable: false, /* Set to false to hide */
+        size: 'large', /* One of 'small', 'medium', or 'large' */
+        theme: 'inverse', /* One of 'default' (red-white) or 'inverse" (white-red) */
+        position: 'bottom-right', /* Either 'bottom-left' or 'bottom-right' */
+        offset: {
+            bottom: '0px',
+            left: '0px', /* Only applied if bottom-left */
+            right: '0px' /* Only applied if bottom-right */
+        },
+        prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
+        showCredit: false, /* Hide the OneSignal logo */
+        text: {
+            'tip.state.unsubscribed': 'Subscribe to notifications',
+            'tip.state.subscribed': "You're subscribed to notifications",
+            'tip.state.blocked': "You've blocked notifications",
+            'message.prenotify': 'Click to subscribe to notifications',
+            'message.action.subscribed': "Thanks for subscribing!",
+            'message.action.resubscribed': "You're subscribed to notifications",
+            'message.action.unsubscribed': "You won't receive notifications again",
+            'dialog.main.title': 'Manage Site Notifications',
+            'dialog.main.button.subscribe': 'SUBSCRIBE',
+            'dialog.main.button.unsubscribe': 'UNSUBSCRIBE',
+            'dialog.blocked.title': 'Unblock Notifications',
+            'dialog.blocked.message': "Follow these instructions to allow notifications:"
+           }
+    }
+}]);
+  </script>
+   <link rel="stylesheet" type="text/css" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="content">
+
+<ul>
+ <li> <a  href="index.html">Home</a></li>
+ <li> <a  href="Archives.html">Archives</a> </li>
+ <li> <a  href="https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.1.0-Patch-Release-Coming-Soon!">Release Notes </a></li>
+   <!--<li> <a href="#"></a></li>-->
+</ul>
+  <script src="https://widget.battleforthenet.com/widget.js" async></script>
+
+  <h1> BeffsBrowser </h1>
+  
+  <p>
+  "A Simple but powerful Webbrowser" - written in vb.net by a highschool student</p>
+  <p>
+  <br>
+     <div class="bttn-container">
+ <a class="btn" href="#" id="subscribe-link" style="display: none;">Subscribe to Notifications</a>
+
+    <a class="btn" href="#" id="unsubscribe-link" style="display: none;">Unsubscribe from Notifications</a>
+
+   
+   </div>
+  
+ <footer>
+ <p>  © 2015-2017 BeffsBrowser </p>
+   <br>
+   <p> BeffsBrowser is Licensed under the MIT license. </p>
+  </footer> 
+</body>
+</html>
