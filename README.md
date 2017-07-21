@@ -1,5 +1,6 @@
 # Announcments
 
+
 **Update is almost done 2.2**
 
 The next update is almost done, and will be released on a Pre-Release in a week or so. 
@@ -14,13 +15,6 @@ Added Source code for Arcade games, including the Mathquiz which is discontinued
 
 
 Thanks!
-
-
-**Back up and running**
-
-I am back to work! I got the issue resolved, it resolved by itself, so I am back at it, working on the next release. Expect this release within the first couple weeks in August. 
-
-
 
 
 **Version 2.2 will be coming soon!**
@@ -43,18 +37,6 @@ The biggest highlights of this upcoming update include:
 And many more misc things!
 
 All the details of the next release are in this [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.2-Coming-Soon).
-
-
-**Release Date**
-Currently, the plan is to release the next update the last week of the July around the 28th is the approx. Date. The next release will be a bug fixes update, but it is a important update, including printing support and other misc bug fixes. 
-
-Failure to get the latest updates when they become available can force you to have to manually reinstall BB to get new features and improvments. 
- 
-**BeffsBrowser 2.1.0 is ready**
-
-You will need to uninstall BeffsBrowser, and remove all data of BeffsBrowser before installing this update. 
-
-P.S. Pin to task bar, otherwise you will have a hard time figuring out how to launch.
 
 
 # About
