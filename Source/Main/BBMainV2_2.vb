@@ -61,7 +61,7 @@ Public Class BBMain
 
 
         ToolStripTextBox1.ShortcutsEnabled = False
-        Try
+  
             Dim tab As New TabPage
             Dim brws As New GeckoWebBrowser
             brws.Dock = DockStyle.Fill
@@ -74,13 +74,11 @@ Public Class BBMain
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
 
-         
-        Catch ex As Exception
-        End Try
+     
     End Sub
 
     Public Sub Favload()
-        Try
+     
             int = int + 0.5
             Dim tab As New TabPage
             Dim brws As New GeckoWebBrowser
@@ -91,8 +89,7 @@ Public Class BBMain
             Me.Tabcontrol1.SelectedTab = tab
             brws.Navigate(ToolStripTextBox1.Text)
 
-        Catch ex As Exception
-        End Try
+     
 
     End Sub
     Public Sub RestoreStartUp()
@@ -103,7 +100,7 @@ Public Class BBMain
         For Each itm In File.ReadAllLines(HistoryPath)
 
 
-            Try
+         
 
                 Dim tab As New TabPage
                 Dim brws As New GeckoWebBrowser
@@ -118,7 +115,6 @@ Public Class BBMain
                 int = int + 1
             Catch ex As Exception
 
-            End Try
             System.IO.File.WriteAllText(HistoryPath, "")
 
         Next
@@ -149,23 +145,20 @@ Public Class BBMain
 
 #Region "navigation controls"
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click, RefreshToolStripMenuItem.Click
-        Try
+      
             Dim brws As New GeckoWebBrowser
 
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 0.5
             CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Reload()
-        Catch ex As Exception
-
-        End Try
-
+      
     End Sub
 
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
 
 
-        Try
+     
             Dim brws As New GeckoWebBrowser
 
             AddHandler brws.ProgressChanged, AddressOf Loading
@@ -173,39 +166,33 @@ Public Class BBMain
             int = int + 1
             CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Navigate(ToolStripTextBox1.Text)
             RestoreSave()
-        Catch ex As Exception
-        End Try
+   
     End Sub
 
     Private Sub ForwardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ForwardToolStripMenuItem.Click, ToolStripButton11.Click
-        Try
+       
             Dim brws As New GeckoWebBrowser
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 1
             CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).GoForward()
-        Catch ex As Exception
-
-        End Try
+    
 
     End Sub
 
     Private Sub BackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BackToolStripMenuItem.Click, ToolStripButton9.Click
 
-        Try
+   
             Dim brws As New GeckoWebBrowser
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 1
             CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).GoBack()
-        Catch ex As Exception
-
-        End Try
+   
     End Sub
 
     Private Sub NewTabToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewTabToolStripMenuItem.Click, ToolStripButton10.Click
-        Try
-
+      
             Dim tab As New TabPage
             Dim brws As New GeckoWebBrowser
             brws.Dock = DockStyle.Fill
@@ -217,9 +204,7 @@ Public Class BBMain
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 1
-        Catch ex As Exception
-
-        End Try
+     
 
     End Sub
 
@@ -278,29 +263,19 @@ Public Class BBMain
 #Region "Utility"
    
     Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
-        Try
+   
             Dim brws As New GeckoWebBrowser
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 0.5
             CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Navigate(My.Settings.SearchP & ToolStripTextBox1.Text)
-        Catch ex As Exception
-        End Try
+     
     End Sub
   
   
 
 #End Region
-#Region "Random"
-  
 
-  
-
-
-
-
-
-#End Region
 
 
 
@@ -310,7 +285,7 @@ Public Class BBMain
 #End Region
 #Region "MoreItems mostly random and newer"
     Private Sub ToolStripButton7_Click(sender As Object, e As EventArgs) Handles ToolStripButton7.Click
-        Try
+     
             Dim tab As New TabPage
             Dim brws As New GeckoWebBrowser
             AddHandler brws.ProgressChanged, AddressOf Loading
@@ -324,9 +299,6 @@ Public Class BBMain
             brws.Navigate(My.Settings.HomeSpace) 'change it to your browser control name
             My.Settings.Save()
             My.Settings.Reload()
-        Catch ex As Exception
-
-        End Try
 
 
     End Sub
@@ -341,7 +313,7 @@ Public Class BBMain
     ByVal sender As Object, ByVal e As KeyEventArgs) _
     Handles ToolStripTextBox1.KeyDown
 
-        Try
+    
             If (e.KeyCode = Keys.Enter) Then
                 Dim brws As New GeckoWebBrowser
 
@@ -350,9 +322,7 @@ Public Class BBMain
                 int = int + 0.5
                 CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Navigate(ToolStripTextBox1.Text)
             End If
-        Catch ex As Exception
-
-        End Try
+ 
     End Sub
 
 
@@ -420,7 +390,7 @@ Public Class BBMain
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
         If CheckBox2.Checked = True Then
-            Try
+           
                 int = int + 0.5
                 Dim tab As New TabPage
                 Dim brws As New GeckoWebBrowser
@@ -430,8 +400,7 @@ Public Class BBMain
                 Me.Tabcontrol1.TabPages.Add(tab)
                 Me.Tabcontrol1.SelectedTab = tab
                 brws.Navigate(ToolStripTextBox1.Text)
-            Catch ex As Exception
-            End Try
+        
         Else
             'do nothing 
 
@@ -439,7 +408,7 @@ Public Class BBMain
     End Sub
  
     Public Sub Updates()
-        Try
+       
             Dim tab As New TabPage
             Dim brws As New GeckoWebBrowser
             AddHandler brws.ProgressChanged, AddressOf Loading
@@ -453,23 +422,9 @@ Public Class BBMain
             brws.Navigate("http://" + CheckForUpdates.TextBox1.Text) 'change it to your browser control name
             My.Settings.Save()
             My.Settings.Reload()
-        Catch ex As Exception
-
-        End Try
+    
 
     End Sub
-
-
-
- 
-
-
-
-
-
-   
-
-
 
 #End Region
 #Region "Misc Items"
@@ -519,7 +474,7 @@ Public Class BBMain
 
 #Region "StartPagev2 "
     Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
-        Try
+      
 
             Dim tab As New TabPage
             Dim brws As New GeckoWebBrowser
@@ -532,9 +487,7 @@ Public Class BBMain
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 1
-        Catch ex As Exception
-
-        End Try
+     
     End Sub
    
 #End Region
@@ -572,29 +525,27 @@ Public Class BBMain
     Private Sub PasteAndGoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PasteAndGoToolStripMenuItem.Click
         If My.Computer.Clipboard.ContainsText Then
             ToolStripTextBox1.Paste()
-            Try
+           
                 Dim brws As New GeckoWebBrowser
 
                 AddHandler brws.ProgressChanged, AddressOf Loading
                 AddHandler brws.DocumentCompleted, AddressOf Done
                 int = int + 1
                 CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Navigate(ToolStripTextBox1.Text)
-            Catch ex As Exception
-            End Try
+           
         End If
     End Sub
 
     Private Sub PasteAndSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PasteAndSearchToolStripMenuItem.Click
         If My.Computer.Clipboard.ContainsText Then
             ToolStripTextBox1.Paste()
-            Try
+          
                 Dim brws As New GeckoWebBrowser
                 AddHandler brws.ProgressChanged, AddressOf Loading
                 AddHandler brws.DocumentCompleted, AddressOf Done
                 int = int + 0.5
                 CType(Tabcontrol1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Navigate(My.Settings.SearchP & ToolStripTextBox1.Text)
-            Catch ex As Exception
-            End Try
+         
         End If
     End Sub
 
