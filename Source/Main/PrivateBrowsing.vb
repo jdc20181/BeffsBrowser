@@ -56,40 +56,36 @@ Public Class PrivateBrowsing
     Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
 
 
-        Try
+     
             Dim brws As New GeckoWebBrowser
 
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 0.5
             CType(TabControl1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Navigate(ToolStripTextBox1.Text)
-        Catch ex As Exception
-        End Try
+     
     End Sub
 
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
 
-        Try
+       
             Dim brws As New GeckoWebBrowser
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 0.5
             CType(TabControl1.SelectedTab.Controls.Item(0), GeckoWebBrowser).GoBack()
-        Catch ex As Exception
 
-        End Try
+  
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
-        Try
+       
             Dim brws As New GeckoWebBrowser
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 0.5
             CType(TabControl1.SelectedTab.Controls.Item(0), GeckoWebBrowser).GoForward()
-        Catch ex As Exception
-
-        End Try
+        
     End Sub
 
     Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
@@ -100,7 +96,7 @@ Public Class PrivateBrowsing
 
     Private Sub PrivateBrowsing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ExitFullScreen.Visible = False
-        Try
+       
 
             Dim tab As New TabPage
             Dim brws As New GeckoWebBrowser
@@ -117,9 +113,7 @@ Public Class PrivateBrowsing
             Dim nsIWebBrowser As nsIWebBrowser = DirectCast(field.GetValue(brws), nsIWebBrowser)
             'this might be null if called right before initialization of browser
             Xpcom.QueryInterface(Of nsILoadContext)(nsIWebBrowser).SetPrivateBrowsing(True)
-        Catch ex As Exception
-
-        End Try
+   
 
 
     End Sub
@@ -130,20 +124,18 @@ Public Class PrivateBrowsing
     End Sub
 
     Private Sub ToolStripButton7_Click(sender As Object, e As EventArgs) Handles ToolStripButton7.Click
-        Try
+      
             Dim brws As New GeckoWebBrowser
 
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 0.5
             CType(TabControl1.SelectedTab.Controls.Item(0), GeckoWebBrowser).Reload()
-        Catch ex As Exception
-
-        End Try
+      
     End Sub
 
     Private Sub ToolStripButton10_Click(sender As Object, e As EventArgs) Handles ToolStripButton10.Click
-        Try
+     
 
             Dim tab As New TabPage
             Dim brws As New GeckoWebBrowser
@@ -156,9 +148,7 @@ Public Class PrivateBrowsing
             AddHandler brws.ProgressChanged, AddressOf Loading
             AddHandler brws.DocumentCompleted, AddressOf Done
             int = int + 1
-        Catch ex As Exception
-
-        End Try
+   
     End Sub
 
     Private Sub Fullscreen_Click(sender As Object, e As EventArgs) Handles Fullscreen.Click
