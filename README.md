@@ -1,9 +1,10 @@
 # Announcments
 
+**Version 2.2 Announcment**
 
-**Update is almost done 2.2**
+Again I appologize in advance but Version 2.2.0 will need to be downloaded manually, and BB 2.1 will have to be uninstalled manually. After this time you will not have to manually uninstall anymore.
 
-The next update is almost done, and will be released on a Pre-Release in a week or so. 
+Expected release is Sometime in August, I will have more details soon!
 
 **Source Code Update**
 
