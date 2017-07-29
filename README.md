@@ -1,21 +1,16 @@
 # Announcments
 
+**Arcade Feature is being depreciated!**
+
+A Depreciation Life Cycle and the reason behind this is explained in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Depreciation-of-Arcade-Moving-BeffsBrowser-Forward)
+
+
 **Version 2.2 Announcment**
 
 Again I appologize in advance but Version 2.2.0 will need to be downloaded manually, and BB 2.1 will have to be uninstalled manually. After this time you will not have to manually uninstall anymore.
 
 Expected release is Sometime in August, I will have more details soon!
 
-**Source Code Update**
-
-I updated the source code, and officially released the source code for private browsing. Things that are in development aren't released until functional. A new policy is being created to explain the concept and reasons behind this. 
-
-Added Source code for Arcade games, including the Mathquiz which is discontinued, it is marked for non production and is in archives. 
-
-[See all the arcade source code](https://github.com/jdc20181/BeffsBrowser/tree/master/Source/Arcade)
-
-
-Thanks!
 
 
 **Version 2.2 will be coming soon!**
