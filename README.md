@@ -29,6 +29,7 @@ The biggest highlights of this upcoming update include:
 - Bug Fixes (a few major ones)
 - More Control over tabs.
 - Printing support
+- UI Adjustments/Enhancments
 
 And many more misc things!
 
