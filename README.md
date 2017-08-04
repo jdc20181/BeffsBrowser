@@ -1,5 +1,12 @@
 # Announcments
 
+**Version  2.2 Will be ready soon!**
+
+I am applying some final touches for this release. This is a large update, and includes a lot of changes and fixes that will make BeffsBrowser a more stable application. 
+
+Release date is approx - next week sometime!
+
+
 **Arcade Feature is being depreciated!**
 
 A Depreciation Life Cycle and the reason behind this is explained in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Depreciation-of-Arcade-Moving-BeffsBrowser-Forward)
