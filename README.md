@@ -1,11 +1,8 @@
 # Announcments
 
-**Version  2.2 Will be ready soon!**
+**Version 2.2.0 has been released!**
 
-I am applying some final touches for this release. This is a large update, and includes a lot of changes and fixes that will make BeffsBrowser a more stable application. 
-
-Release date is approx - next week sometime!
-
+Please uninstall Version 2.1 before installing, should be the last time you have to manually uninstall.
 
 **Arcade Feature is being depreciated!**
 
