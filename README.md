@@ -1,5 +1,21 @@
 # Announcments
 
+**Version 2.3**
+
+The Fall Update, Version 2.3, will be released in late September, early October. You can view the release notes in the wiki, however, they are not finalized so please be aware they are subject to change until the few weeks before the release. 
+
+
+**Archive Policy**
+
+A new Archive Policy has been published in the wiki, you can read it [here](https://github.com/jdc20181/BeffsBrowser/wiki/Archive-Policy)
+
+*Simply Said Summary*
+
+The new policy will reflect on effeciency in the open source community, providing a constructive policy pointing out what happens when you don't update. Support for older versions are removed every so often (everything is said in the wiki) - making outdated versions discontinued. 
+
+In short, you should keep your application up to date with the latest version to avoid missing bug fixes and resolving issues which you may post about well after they are resolved with the next release. 
+
+
 **Version 2.2.0 has been released!**
 
 Please uninstall Version 2.1 before installing, should be the last time you have to manually uninstall.
