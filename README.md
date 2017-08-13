@@ -2,7 +2,7 @@
 
 **Version 2.3**
 
-The Fall Update, Version 2.3, will be released in late September, early October. You can view the release notes in the wiki, however, they are not finalized so please be aware they are subject to change until the few weeks before the release. 
+The Fall Update, Version 2.3, will be released in late September, early October. See the notes in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.3-Planning). Please understand they are subject to change and even mentioned to not be final. Currently everything listed is being tested or has been tested. A final draft of release notes will be released before the release of Version 2.3 
 
 
 **Archive Policy**
