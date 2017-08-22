@@ -1,5 +1,13 @@
 # Announcments
 
+**Prep for Extensions**
+
+The release is taking an extra month to complete due to the addition of extensions, this mechanism will control v1 of the extesnions system in BeffsBrowser. API/SDK docs will be in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Extensions-SDK-API-V1)
+
+The docs are not finished yet. And subject to change before release. 
+
+
+
 **Version 2.3**
 
 The Fall Update, Version 2.3, will be released in late September, early October. See the notes in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.3-Planning). Please understand they are subject to change and even mentioned to not be final. Currently everything listed is being tested or has been tested. A final draft of release notes will be released before the release of Version 2.3 
