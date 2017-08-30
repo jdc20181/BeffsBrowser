@@ -2,6 +2,10 @@
 
 **Prep for Extensions**
 
+*Extensions Delayed*
+
+Due to unforseen issues, extensions are being delayed to a later release. 
+
 The release is taking an extra month to complete due to the addition of extensions, this mechanism will control v1 of the extensions system in BeffsBrowser. API/SDK docs will be in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Extensions-SDK-API-V1)
 
 The docs are not finished yet. And subject to change before release. 
