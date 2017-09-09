@@ -1,9 +1,8 @@
 # Announcments
 
-**Plans for extensions cancelled**
+**BeffsMedia**
 
-Extensions will not become a part of BeffsBrowser. Maybe in the future
-
+New feature coming soon! [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Media-Player-Beta)
 
 **Version 2.3**
 
