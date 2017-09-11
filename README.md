@@ -1,5 +1,13 @@
 # Announcments
 
+**Version 2.3 Delayed to October**
+
+Doing some general maintenance on BeffsBrowser, including code clean up, and removal of older features that are not used. They will of course be archived.
+
+Additional issues have also caused the delay, as they are going to be investigated further. 
+
+
+
 **BeffsMedia**
 
 New feature coming soon! [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Media-Player-Beta)
