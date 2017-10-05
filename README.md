@@ -12,8 +12,7 @@ During each Release, however, you will get those fixes in addition to whatever n
 
 **Version 2.3, Release Date**
 
-Target Release date is October 20th. 
-
+Target Release date is October 20th. *This date may change as we get closer to Oct. 20*
 
 
 **Version 2.3 Delayed to October**
