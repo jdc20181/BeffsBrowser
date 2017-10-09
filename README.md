@@ -1,5 +1,8 @@
 # Announcments
 
+**Version 2.3, Release Date**
+
+Hopefully, I can finish 2.3 up tomorrow, and have it released by the evening. 
 
 **Patch Upgrades**
 
@@ -8,12 +11,6 @@ After the 2.3 release, smaller releases will come about in-between the next vers
 During each Release, however, you will get those fixes in addition to whatever new features there is to offer. 
 
 "Speed" Building is the concern, as the next major build of BeffsBrowser will not be due until June 2018. 
-
-
-**Version 2.3, Release Date**
-
-Target Release date is October 20th. *This date may change as we get closer to Oct. 20*
-
 
 **Version 2.3 Delayed to October**
 
