@@ -1,0 +1,4 @@
+Dim numberofmonitors As Integer = Screen.AllScreens.Length
+        If numberofmonitors > 1 Then
+            Me.Bounds = Screen.AllScreens(1).Bounds
+        End If
