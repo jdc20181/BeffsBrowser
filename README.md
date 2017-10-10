@@ -4,13 +4,6 @@
 
 Version 2.3 has a lot of fixes and improvments!
 
-**Patch Upgrades**
-
-After the 2.3 release, smaller releases will come about in-between the next version. So instead of 2.4, something like 2.3.1 will be released, which will include more minor adjustments and bug fixes. These are NOT "update" releases these are patches, so only new users will be obligated to have that version. 
-
-During each Release, however, you will get those fixes in addition to whatever new features there is to offer. 
-
-"Speed" Building is the concern, as the next major build of BeffsBrowser will not be due until June 2018. 
 
 **BeffsMedia**
 
