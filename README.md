@@ -1,5 +1,11 @@
 # Announcments
 
+**Important notice about Version 2.3**
+
+The splash screen was not removed, as it was forgotten about, and the version on the splash screen is NOT accurate. The latest version is posted on the main form. Will be fixed in version 2.3.1
+
+
+
 **Version 2.3 has been released!**
 
 Version 2.3 has a lot of fixes and improvments!
