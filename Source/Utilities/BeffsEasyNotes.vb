@@ -1,10 +1,5 @@
-'Some changes updated from the new upcoming release All code is shown, this hasn't been organized so its a pretty messy. 
-'A Custom Rich Text Box control enables you to be able to print from the richtextbox, I named my RTB Textbox1. 
-'IMPORTANT YOU MUST HAVE THE CUSTOMIZED RICH TEXT CONTROL FOR SOME OF THE FOLLOWING TO WORK PLEASE SEE Richtextboxprintctrl.vb for more info
-
-
 Imports System.IO
-
+Imports System.Speech.Synthesis
 Public Class BeffsEasyNotes
     Private currentFile As String
     Private checkPrint As Integer
@@ -156,11 +151,17 @@ Public Class BeffsEasyNotes
 
     End Sub
 
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
 
         ToolStripLabel1.Enabled = False
         'calling the below function to start the context ment (when the user right click the richtextbox
         InitializeMyContextMenu()
+
+        Me.WindowState = FormWindowState.Maximized
+
     End Sub
 
     Private Sub InitializeMyContextMenu()
@@ -178,9 +179,9 @@ Public Class BeffsEasyNotes
         contextMenu1.MenuItems.Add(menuItem2)
         contextMenu1.MenuItems.Add(menuItem3)
         ' Assign mainMenu1 to the rich text box.
-        TextBox1.ContextMenu = contextMenu1
+        textbox1.ContextMenu = contextMenu1
     End Sub
-   
+
 
 
 
@@ -190,72 +191,72 @@ Public Class BeffsEasyNotes
 
     Private Sub IncreaseToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles IncreaseToolStripMenuItem1.Click
         Try
-            TextBox1.SelectionFont = New Font(TextBox1.SelectionFont.FontFamily, Int(TextBox1.SelectionFont.SizeInPoints + 5))
+            textbox1.SelectionFont = New Font(textbox1.SelectionFont.FontFamily, Int(textbox1.SelectionFont.SizeInPoints + 5))
         Catch ex As Exception
         End Try
-        TextBox1.Focus()
+        textbox1.Focus()
     End Sub
 
     Private Sub DecreaseToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles DecreaseToolStripMenuItem1.Click
         Try
-            TextBox1.SelectionFont = New Font(TextBox1.SelectionFont.FontFamily, Int(TextBox1.SelectionFont.SizeInPoints - 5))
+            textbox1.SelectionFont = New Font(textbox1.SelectionFont.FontFamily, Int(textbox1.SelectionFont.SizeInPoints - 5))
         Catch ex As Exception
         End Try
-        TextBox1.Focus()
+        textbox1.Focus()
 
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
-        If TextBox1.SelectionFont.Bold = True Then
-            If TextBox1.SelectionFont.Italic = True Then
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Regular + FontStyle.Italic)
+        If textbox1.SelectionFont.Bold = True Then
+            If textbox1.SelectionFont.Italic = True Then
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Regular + FontStyle.Italic)
             Else
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Regular)
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Regular)
             End If
 
-        ElseIf TextBox1.SelectionFont.Bold = False Then
-            If TextBox1.SelectionFont.Italic = True Then
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Bold + FontStyle.Italic)
+        ElseIf textbox1.SelectionFont.Bold = False Then
+            If textbox1.SelectionFont.Italic = True Then
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Bold + FontStyle.Italic)
             Else
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Bold)
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Bold)
             End If
         End If
-        TextBox1.Focus()
+        textbox1.Focus()
     End Sub
 
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
-        If TextBox1.SelectionFont.Italic = True Then
-            If TextBox1.SelectionFont.Bold = True Then
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Regular + FontStyle.Bold)
+        If textbox1.SelectionFont.Italic = True Then
+            If textbox1.SelectionFont.Bold = True Then
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Regular + FontStyle.Bold)
             Else
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Regular)
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Regular)
             End If
 
-        ElseIf TextBox1.SelectionFont.Italic = False Then
-            If TextBox1.SelectionFont.Bold = True Then
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Italic + FontStyle.Bold)
+        ElseIf textbox1.SelectionFont.Italic = False Then
+            If textbox1.SelectionFont.Bold = True Then
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Italic + FontStyle.Bold)
             Else
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Italic)
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Italic)
             End If
         End If
-        TextBox1.Focus()
+        textbox1.Focus()
     End Sub
 
     Private Sub NewToolStripButton_Click(sender As Object, e As EventArgs) Handles NewToolStripButton.Click
-        If TextBox1.Modified Then
+        If textbox1.Modified Then
 
             Dim answer As Integer
             answer = MessageBox.Show("The current document has not been saved, would you like to continue without saving?", "Unsaved Document", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
             If answer = Windows.Forms.DialogResult.Yes Then
-                TextBox1.Clear()
+                textbox1.Clear()
             Else
                 Exit Sub
             End If
 
         Else
 
-            TextBox1.Clear()
+            textbox1.Clear()
 
         End If
 
@@ -280,24 +281,24 @@ Public Class BeffsEasyNotes
 
         Select Case strExt
             Case ".RTF"
-                TextBox1.LoadFile(OpenFileDialog1.FileName, RichTextBoxStreamType.RichText)
+                textbox1.LoadFile(OpenFileDialog1.FileName, RichTextBoxStreamType.RichText)
             Case Else
                 Dim txtReader As System.IO.StreamReader
                 txtReader = New System.IO.StreamReader(OpenFileDialog1.FileName)
-                TextBox1.Text = txtReader.ReadToEnd
+                textbox1.Text = txtReader.ReadToEnd
                 txtReader.Close()
                 txtReader = Nothing
-                TextBox1.SelectionStart = 0
-                TextBox1.SelectionLength = 0
+                textbox1.SelectionStart = 0
+                textbox1.SelectionLength = 0
         End Select
 
         currentFile = OpenFileDialog1.FileName
-        TextBox1.Modified = False
+        textbox1.Modified = False
         Me.Text = "Editor: " & currentFile.ToString()
 
     End Sub
     Private Sub OpenToolStripButton_Click(sender As Object, e As EventArgs) Handles OpenToolStripButton.Click
-        If TextBox1.Modified Then
+        If textbox1.Modified Then
 
             Dim answer As Integer
             answer = MessageBox.Show("The current document has not been saved, would you like to continue without saving?", "Unsaved Document", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -326,17 +327,17 @@ Public Class BeffsEasyNotes
 
         Select Case strExt
             Case ".RTF"
-                TextBox1.SaveFile(currentFile)
+                textbox1.SaveFile(currentFile)
             Case Else
                 ' to save as plain text
                 Dim txtWriter As System.IO.StreamWriter
                 txtWriter = New System.IO.StreamWriter(currentFile)
-                txtWriter.Write(TextBox1.Text)
+                txtWriter.Write(textbox1.Text)
                 txtWriter.Close()
                 txtWriter = Nothing
-                TextBox1.SelectionStart = 0
-                TextBox1.SelectionLength = 0
-                TextBox1.Modified = False
+                textbox1.SelectionStart = 0
+                textbox1.SelectionLength = 0
+                textbox1.Modified = False
         End Select
 
         Me.Text = "Editor: " & currentFile.ToString()
@@ -344,76 +345,78 @@ Public Class BeffsEasyNotes
     End Sub
     Private Sub CutToolStripButton_Click(sender As Object, e As EventArgs) Handles CutToolStripButton.Click
         My.Computer.Clipboard.Clear()
-        If TextBox1.SelectionLength > 0 Then
-            My.Computer.Clipboard.SetText(TextBox1.SelectedText)
+        If textbox1.SelectionLength > 0 Then
+            My.Computer.Clipboard.SetText(textbox1.SelectedText)
 
         End If
-        TextBox1.SelectedText = ""
+        textbox1.SelectedText = ""
     End Sub
 
     Private Sub CopyToolStripButton_Click(sender As Object, e As EventArgs) Handles CopyToolStripButton.Click
         My.Computer.Clipboard.Clear()
-        If TextBox1.SelectionLength > 0 Then
+        If textbox1.SelectionLength > 0 Then
+            My.Computer.Clipboard.SetText(textbox1.SelectedText)
+
         Else
-            My.Computer.Clipboard.SetText(TextBox1.SelectedText)
+
 
         End If
     End Sub
 
     Private Sub PasteToolStripButton_Click(sender As Object, e As EventArgs) Handles PasteToolStripButton.Click
         If My.Computer.Clipboard.ContainsText Then
-            TextBox1.Paste()
+            textbox1.Paste()
         End If
     End Sub
 
     Private Sub FontColorsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FontColorsToolStripMenuItem.Click
         ColorDialog1.ShowDialog()
-        TextBox1.ForeColor = ColorDialog1.Color
+        textbox1.ForeColor = ColorDialog1.Color
     End Sub
 
     Private Sub FontsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles FontsToolStripMenuItem1.Click
         FontDialog1.ShowDialog()
-        TextBox1.Font = FontDialog1.Font
+        textbox1.Font = FontDialog1.Font
     End Sub
 
     Private Sub BoldToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BoldToolStripMenuItem.Click
-        If TextBox1.SelectionFont.Bold = True Then
-            If TextBox1.SelectionFont.Italic = True Then
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Regular + FontStyle.Italic)
+        If textbox1.SelectionFont.Bold = True Then
+            If textbox1.SelectionFont.Italic = True Then
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Regular + FontStyle.Italic)
             Else
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Regular)
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Regular)
             End If
 
-        ElseIf TextBox1.SelectionFont.Bold = False Then
-            If TextBox1.SelectionFont.Italic = True Then
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Bold + FontStyle.Italic)
+        ElseIf textbox1.SelectionFont.Bold = False Then
+            If textbox1.SelectionFont.Italic = True Then
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Bold + FontStyle.Italic)
             Else
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Bold)
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Bold)
             End If
         End If
-        TextBox1.Focus()
+        textbox1.Focus()
     End Sub
 
     Private Sub ItalicsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ItalicsToolStripMenuItem.Click
-        If TextBox1.SelectionFont.Italic = True Then
-            If TextBox1.SelectionFont.Bold = True Then
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Regular + FontStyle.Bold)
+        If textbox1.SelectionFont.Italic = True Then
+            If textbox1.SelectionFont.Bold = True Then
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Regular + FontStyle.Bold)
             Else
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Regular)
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Regular)
             End If
 
-        ElseIf TextBox1.SelectionFont.Italic = False Then
-            If TextBox1.SelectionFont.Bold = True Then
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Italic + FontStyle.Bold)
+        ElseIf textbox1.SelectionFont.Italic = False Then
+            If textbox1.SelectionFont.Bold = True Then
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Italic + FontStyle.Bold)
             Else
-                TextBox1.SelectionFont = New Font(Me.TextBox1.SelectionFont, FontStyle.Italic)
+                textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Italic)
             End If
         End If
-        TextBox1.Focus()
+        textbox1.Focus()
     End Sub
 
     Private Sub SaveAsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveAsToolStripMenuItem.Click
-        SaveFileDialog1.Title = "RTE - Save File"
+        SaveFileDialog1.Title = "BeffsEasyNotes - Save File"
         SaveFileDialog1.DefaultExt = "rtf"
         SaveFileDialog1.Filter = "Rich Text Files|*.rtf|Text Files|*.txt|HTML Files|*.htm|All Files|*.*"
         SaveFileDialog1.FilterIndex = 1
@@ -427,32 +430,30 @@ Public Class BeffsEasyNotes
 
         Select Case strExt
             Case ".RTF"
-                TextBox1.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.RichText)
+                textbox1.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.RichText)
             Case Else
                 Dim txtWriter As System.IO.StreamWriter
                 txtWriter = New System.IO.StreamWriter(SaveFileDialog1.FileName)
-                txtWriter.Write(TextBox1.Text)
+                txtWriter.Write(textbox1.Text)
                 txtWriter.Close()
                 txtWriter = Nothing
-                TextBox1.SelectionStart = 0
-                TextBox1.SelectionLength = 0
+                textbox1.SelectionStart = 0
+                textbox1.SelectionLength = 0
         End Select
 
         currentFile = SaveFileDialog1.FileName
-        TextBox1.Modified = False
+        textbox1.Modified = False
         Me.Text = "Editor: " & currentFile.ToString()
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("This is built from a richtextbox for quality retro style documents that still are used today! This is a easy to use utility of BeffsBrowser! Version 0.1 Beta")
+        MsgBox("BeffsEasyNotes - Version 2.0 ")
     End Sub
 
     Private Sub BeffsEasyNotes_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        'display message on form closing
         Dim Result As DialogResult
         Result = MessageBox.Show("Are you sure you wanna exit Any unsaved Progresss will be lost?", "Save your work before leaving!", MessageBoxButtons.YesNo)
 
-        'if user clicked no, cancel form closing
         If Result = System.Windows.Forms.DialogResult.No Then
             e.Cancel = True
         End If
@@ -466,10 +467,10 @@ Public Class BeffsEasyNotes
     Private Sub PrintPreviewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintPreviewToolStripMenuItem.Click
         PrintPreviewDialog1.Document = PrintDocument1
         PrintPreviewDialog1.ShowDialog()
-    
+
     End Sub
 
-  
+
     Private Sub PrintToolStripButton_Click(sender As Object, e As EventArgs) Handles PrintToolStripButton.Click
         PrintDialog1.Document = PrintDocument1
 
@@ -479,26 +480,31 @@ Public Class BeffsEasyNotes
     End Sub
 
     Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
-        TextBox1.SelectionIndent = 20
-        TextBox1.BulletIndent = 10
-        TextBox1.SelectionBullet = True
+        textbox1.SelectionIndent = 20
+        textbox1.BulletIndent = 10
+        textbox1.SelectionBullet = True
     End Sub
 
     Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs)
         Dim strInput As String
-        strInput = TextBox1.Text
+        strInput = textbox1.Text
         Dim strSplit() As String
         strSplit = strInput.Split(CChar(" "))
         MsgBox("Number of words: " & strSplit.Length)
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
+    Public Sub wordcount()
         Dim strInput As String
         strInput = textbox1.Text
         Dim strSplit() As String
         strSplit = strInput.Split(CChar(" "))
         ToolStripLabel1.Text = "Total Words " & strSplit.Length
+        If textbox1.Text = "" Then
+            ToolStripLabel1.Text = "Total Words" & " " & "0"
+        Else
+            ' do nothing
+        End If
     End Sub
 
     Private Sub BeffsEasyListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BeffsEasyListToolStripMenuItem.Click
@@ -507,77 +513,76 @@ Public Class BeffsEasyNotes
     End Sub
 
     Private Sub AddToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddToolStripMenuItem.Click
-        TextBox1.BulletIndent = 10
-        TextBox1.SelectionBullet = True
+        textbox1.BulletIndent = 10
+        textbox1.SelectionBullet = True
     End Sub
 
     Private Sub RemoveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RemoveToolStripMenuItem.Click
-        TextBox1.SelectionBullet = False
+        textbox1.SelectionBullet = False
     End Sub
 
     Private Sub UnderLineToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UnderLineToolStripMenuItem.Click
 
-        If Not TextBox1.SelectionFont Is Nothing Then
+        If Not textbox1.SelectionFont Is Nothing Then
 
-            Dim currentFont As System.Drawing.Font = TextBox1.SelectionFont
+            Dim currentFont As System.Drawing.Font = textbox1.SelectionFont
             Dim newFontStyle As System.Drawing.FontStyle
 
-            If TextBox1.SelectionFont.Underline = True Then
+            If textbox1.SelectionFont.Underline = True Then
                 newFontStyle = FontStyle.Regular
             Else
                 newFontStyle = FontStyle.Underline
             End If
 
-            TextBox1.SelectionFont = New Font(currentFont.FontFamily, currentFont.Size, newFontStyle)
+            textbox1.SelectionFont = New Font(currentFont.FontFamily, currentFont.Size, newFontStyle)
 
         End If
     End Sub
 
     Private Sub NoneToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NoneToolStripMenuItem.Click
-        TextBox1.SelectionIndent = 0
+        textbox1.SelectionIndent = 0
     End Sub
 
     Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
-        TextBox1.SelectionIndent = 5
+        textbox1.SelectionIndent = 5
     End Sub
 
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
-        TextBox1.SelectionIndent = 10
+        textbox1.SelectionIndent = 10
     End Sub
 
     Private Sub ToolStripButton4_Click_1(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
-        If Not TextBox1.SelectionFont Is Nothing Then
+        If Not textbox1.SelectionFont Is Nothing Then
 
-            Dim currentFont As System.Drawing.Font = TextBox1.SelectionFont
+            Dim currentFont As System.Drawing.Font = textbox1.SelectionFont
             Dim newFontStyle As System.Drawing.FontStyle
 
-            If TextBox1.SelectionFont.Underline = True Then
+            If textbox1.SelectionFont.Underline = True Then
                 newFontStyle = FontStyle.Regular
             Else
                 newFontStyle = FontStyle.Underline
             End If
 
-            TextBox1.SelectionFont = New Font(currentFont.FontFamily, currentFont.Size, newFontStyle)
+            textbox1.SelectionFont = New Font(currentFont.FontFamily, currentFont.Size, newFontStyle)
 
         End If
     End Sub
 
     Private Sub NormalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NormalToolStripMenuItem.Click
-        If Not TextBox1.SelectionFont Is Nothing Then
+        If Not textbox1.SelectionFont Is Nothing Then
 
-            Dim currentFont As System.Drawing.Font = TextBox1.SelectionFont
+            Dim currentFont As System.Drawing.Font = textbox1.SelectionFont
             Dim newFontStyle As System.Drawing.FontStyle
             newFontStyle = FontStyle.Regular
 
-            TextBox1.SelectionFont = New Font(currentFont.FontFamily, currentFont.Size, newFontStyle)
+            textbox1.SelectionFont = New Font(currentFont.FontFamily, currentFont.Size, newFontStyle)
 
         End If
     End Sub
 
     Private Sub PrintDocument1_BeginPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles PrintDocument1.BeginPrint
 
-        ' Adapted from Microsoft's example for extended richtextbox control
-        '
+
         checkPrint = 0
 
     End Sub
@@ -585,26 +590,78 @@ Public Class BeffsEasyNotes
 
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
 
-        ' Adapted from Microsoft's example for extended richtextbox control
-        '
-        ' Print the content of the RichTextBox. Store the last character printed.
-        checkPrint = TextBox1.Print(checkPrint, TextBox1.TextLength, e)
+        checkPrint = textbox1.Print(checkPrint, textbox1.TextLength, e)
 
-        ' Look for more pages
-        If checkPrint < TextBox1.TextLength Then
+
+        If checkPrint < textbox1.TextLength Then
             e.HasMorePages = True
         Else
             e.HasMorePages = False
         End If
 
     End Sub
+    Private Sub textbox1_TextChanged_1(sender As Object, e As EventArgs) Handles textbox1.TextChanged
+        wordcount()
+    End Sub
 
-    
+
+
+    Private Sub PictureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PictureToolStripMenuItem.Click
+        InsertPicture()
+    End Sub
+    Public Sub InsertPicture()
+        Try
+            Dim GetPicture As New OpenFileDialog
+            GetPicture.Filter = "PNGs (*.png), Bitmaps (*.bmp), GIFs (*.gif), JPEGs (*.jpg)|*.bmp;*.gif;*.jpg;*.png|PNGs (*.png)|*.png|Bitmaps (*.bmp)|*.bmp|GIFs (*.gif)|*.gif|JPEGs (*.jpg)|*.jpg"
+            GetPicture.FilterIndex = 1
+            GetPicture.InitialDirectory = "C:\"
+            If GetPicture.ShowDialog = Windows.Forms.DialogResult.OK Then
+                Dim SelectedPicture As String = GetPicture.FileName
+                Dim Picture As Bitmap = New Bitmap(SelectedPicture)
+                Dim cboard As Object = Clipboard.GetData(System.Windows.Forms.DataFormats.Text)
+                Clipboard.SetImage(Picture)
+                Dim PictureFormat As DataFormats.Format = DataFormats.GetFormat(DataFormats.Bitmap)
+                If textbox1.CanPaste(PictureFormat) Then
+                    textbox1.Paste(PictureFormat)
+                End If
+                Clipboard.Clear()
+                Clipboard.SetText(cboard)
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+    Private Sub SpellCheckToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+    Public Property DetectUrls As Boolean
+
+    Private Sub ProtectToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProtectToolStripMenuItem.Click
+        textbox1.SelectionProtected = True
+        UnProtectToolStripMenuItem.Visible = True
+        ProtectToolStripMenuItem.Visible = False
+    End Sub
+
+    Private Sub UnProtectToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UnProtectToolStripMenuItem.Click
+        textbox1.SelectionProtected = False
+        UnProtectToolStripMenuItem.Visible = False
+        ProtectToolStripMenuItem.Visible = True
+    End Sub
+
+    Private Sub textbox1_LinkClicked(sender As Object, e As LinkClickedEventArgs) Handles textbox1.LinkClicked
+
+        BBMain.CheckBox2.Checked = True
+        BBMain.ToolStripTextBox1.Text = e.LinkText
+
+    End Sub
+    Private Sub Link_Clicked(sender As Object, e As System.Windows.Forms.LinkClickedEventArgs)
+        System.Diagnostics.Process.Start(e.LinkText)
+        BBMain.CheckBox2.Checked = True
+        BBMain.ToolStripTextBox1.Text = e.LinkText
+    End Sub 'Link_Clicked
+
+    Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
+        textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Strikeout)
+        textbox1.Focus()
+    End Sub
+
 End Class
-
-
-
-
-
-  
-
