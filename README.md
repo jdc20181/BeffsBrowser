@@ -1,5 +1,8 @@
 # Announcments
 
+**Discord**
+https://discord.gg/kz4Bxw9
+
 **Version 2.3.1 Patch**
 
 Version 2.3.1 is going to be focused around stability and other improvements. So far there is a lot in progress, things like adding a combined Navigation and search function, non-valid URLs will be thought of as a search rather as a website. Some other bugs and fixes are also being addressed (and so much more is to be added!). 
