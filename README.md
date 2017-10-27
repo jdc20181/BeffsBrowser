@@ -1,27 +1,18 @@
 # Announcments
 
+**Version 2.3.1 Release**
+
+Version 2.3.1 has been released early. 
 
 
 **Version 2.3.1 Patch**
 
-Release Date will be announced by November 1. Currently Finalizing for release. 
 
+ 
 Version 2.3.1 is going to be packed full of fixes improvments, and some new features. 
 
 
 See the full feature log in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/2.3.1-Patch-Release-Coming-soon)
-
-
-**Important notice about Version 2.3**
-
-The splash screen was not removed, as it was forgotten about, and the version on the splash screen is NOT accurate. The latest version is posted on the main form. Will be fixed in version 2.3.1
-
-
-
-**Version 2.3 has been released!**
-
-Version 2.3 has a lot of fixes and improvments!
-
 
 
 
