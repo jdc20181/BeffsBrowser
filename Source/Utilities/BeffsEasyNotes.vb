@@ -49,21 +49,7 @@ Public Class BeffsEasyNotes
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
-        ' Create a SaveFileDialog to request a path and file name to save to.
-        Dim saveFile1 As New SaveFileDialog()
-
-        ' Initialize the SaveFileDialog to specify the RTF extension for the file.
-        saveFile1.DefaultExt = "*.rtf"
-        saveFile1.Filter = "RTF Files|*.rtf"
-
-        ' Determine if the user selected a file name from the saveFileDialog.
-        If (saveFile1.ShowDialog() = System.Windows.Forms.DialogResult.OK) _
-            And (saveFile1.FileName.Length) > 0 Then
-
-            ' Save the contents of the RichTextBox into the file.
-            TextBox1.SaveFile(saveFile1.FileName, _
-                RichTextBoxStreamType.PlainText)
-        End If
+        SaveFile(currentFile)
     End Sub
 
     Private Sub UndoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UndoToolStripMenuItem.Click
@@ -153,15 +139,47 @@ Public Class BeffsEasyNotes
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Settings.AutoSave = "Enabled" Then
+            Timer1.Start()
+        ElseIf My.Settings.AutoSave = "Disabled" Then
+            Timer1.Stop()
+        End If
+        If My.Settings.darkmode = "Enabled" Then
+            MenuStrip1.BackColor = ColorTranslator.FromHtml("#333")
+            MenuStrip1.ForeColor = ColorTranslator.FromHtml("#FFF")
+            ToolStrip1.BackColor = ColorTranslator.FromHtml("#333")
+            ToolStrip1.ForeColor = ColorTranslator.FromHtml("#FFF")
+            textbox1.ForeColor = ColorTranslator.FromHtml("#FFF")
+            textbox1.BackColor = ColorTranslator.FromHtml("#333")
+            ToolStripStatusLabel1.BackColor = ColorTranslator.FromHtml("#333")
+            ToolStripStatusLabel1.ForeColor = ColorTranslator.FromHtml("#FFF")
+            ToolStripStatusLabel2.BackColor = ColorTranslator.FromHtml("#333")
+            ToolStripStatusLabel2.ForeColor = ColorTranslator.FromHtml("#FFF")
+            StatusStrip1.BackColor = ColorTranslator.FromHtml("#333")
+            StatusStrip1.ForeColor = ColorTranslator.FromHtml("#FFF")
+        ElseIf My.Settings.darkmode = "Disabled" Then
+            MenuStrip1.BackColor = ColorTranslator.FromHtml("#FFF")
+            MenuStrip1.ForeColor = ColorTranslator.FromHtml("#333")
+            ToolStrip1.BackColor = ColorTranslator.FromHtml("#FFF")
+            ToolStrip1.ForeColor = ColorTranslator.FromHtml("#333")
+            textbox1.ForeColor = ColorTranslator.FromHtml("#333")
+            textbox1.BackColor = ColorTranslator.FromHtml("#FFF")
+            ToolStripStatusLabel1.BackColor = ColorTranslator.FromHtml("#FFF")
+            ToolStripStatusLabel1.ForeColor = ColorTranslator.FromHtml("#333")
+            ToolStripStatusLabel2.BackColor = ColorTranslator.FromHtml("#FFF")
+            ToolStripStatusLabel2.ForeColor = ColorTranslator.FromHtml("#333")
+            StatusStrip1.BackColor = ColorTranslator.FromHtml("#FFF")
+            StatusStrip1.ForeColor = ColorTranslator.FromHtml("#333")
+        End If
 
 
 
-        ToolStripLabel1.Enabled = False
         'calling the below function to start the context ment (when the user right click the richtextbox
         InitializeMyContextMenu()
 
         Me.WindowState = FormWindowState.Maximized
 
+    
     End Sub
 
     Private Sub InitializeMyContextMenu()
@@ -314,33 +332,9 @@ Public Class BeffsEasyNotes
 
         End If
     End Sub
-    Dim saveFile As New SaveFileDialog()
     Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
-        If currentFile = "" Then
-            SaveAsToolStripMenuItem_Click(Me, e)
-            Exit Sub
-        End If
+        SaveFile(currentFile)
 
-        Dim strExt As String
-        strExt = System.IO.Path.GetExtension(currentFile)
-        strExt = strExt.ToUpper()
-
-        Select Case strExt
-            Case ".RTF"
-                textbox1.SaveFile(currentFile)
-            Case Else
-                ' to save as plain text
-                Dim txtWriter As System.IO.StreamWriter
-                txtWriter = New System.IO.StreamWriter(currentFile)
-                txtWriter.Write(textbox1.Text)
-                txtWriter.Close()
-                txtWriter = Nothing
-                textbox1.SelectionStart = 0
-                textbox1.SelectionLength = 0
-                textbox1.Modified = False
-        End Select
-
-        Me.Text = "Editor: " & currentFile.ToString()
 
     End Sub
     Private Sub CutToolStripButton_Click(sender As Object, e As EventArgs) Handles CutToolStripButton.Click
@@ -451,9 +445,11 @@ Public Class BeffsEasyNotes
     End Sub
 
     Private Sub BeffsEasyNotes_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        'display message on form closing
         Dim Result As DialogResult
         Result = MessageBox.Show("Are you sure you wanna exit Any unsaved Progresss will be lost?", "Save your work before leaving!", MessageBoxButtons.YesNo)
 
+        'if user clicked no, cancel form closing
         If Result = System.Windows.Forms.DialogResult.No Then
             e.Cancel = True
         End If
@@ -493,15 +489,25 @@ Public Class BeffsEasyNotes
         MsgBox("Number of words: " & strSplit.Length)
 
     End Sub
+    Public Sub charater_count()
 
+        ToolStripStatusLabel2.Text = "Total Characters" & " " & textbox1.Text.Length.ToString()
+
+
+        If textbox1.Text = "" Then
+            ToolStripStatusLabel2.Text = "Total Characters" & " " & "0"
+        End If
+    End Sub
     Public Sub wordcount()
+        charater_count()
+
         Dim strInput As String
         strInput = textbox1.Text
         Dim strSplit() As String
         strSplit = strInput.Split(CChar(" "))
-        ToolStripLabel1.Text = "Total Words " & strSplit.Length
+        ToolStripStatusLabel1.Text = "Total Words " & strSplit.Length
         If textbox1.Text = "" Then
-            ToolStripLabel1.Text = "Total Words" & " " & "0"
+            ToolStripStatusLabel1.Text = "Total Words" & " " & "0"
         Else
             ' do nothing
         End If
@@ -630,22 +636,9 @@ Public Class BeffsEasyNotes
         Catch ex As Exception
         End Try
     End Sub
-    Private Sub SpellCheckToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
-    End Sub
     Public Property DetectUrls As Boolean
 
-    Private Sub ProtectToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProtectToolStripMenuItem.Click
-        textbox1.SelectionProtected = True
-        UnProtectToolStripMenuItem.Visible = True
-        ProtectToolStripMenuItem.Visible = False
-    End Sub
-
-    Private Sub UnProtectToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UnProtectToolStripMenuItem.Click
-        textbox1.SelectionProtected = False
-        UnProtectToolStripMenuItem.Visible = False
-        ProtectToolStripMenuItem.Visible = True
-    End Sub
 
     Private Sub textbox1_LinkClicked(sender As Object, e As LinkClickedEventArgs) Handles textbox1.LinkClicked
 
@@ -659,9 +652,56 @@ Public Class BeffsEasyNotes
         BBMain.ToolStripTextBox1.Text = e.LinkText
     End Sub 'Link_Clicked
 
+
+
+
+
+    
+
     Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
         textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Strikeout)
         textbox1.Focus()
+    End Sub
+
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        EasyNoteSettings.Show()
+
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+    Private Sub SaveFile(ByVal strFileName As String)
+
+        If strFileName = String.Empty Then
+            strFileName = My.Computer.FileSystem.SpecialDirectories.MyDocuments & Date.Now.ToString("MM-dd-yyyy HH\hmm\minss\s") & ".rtf"
+
+        End If
+
+        Dim strExt As String = System.IO.Path.GetExtension(strFileName).ToUpper()
+
+        Select Case strExt
+            Case ".RTF"
+                textbox1.SaveFile(strFileName)
+            Case Else
+                ' to save as plain text
+                Dim txtWriter As System.IO.StreamWriter
+                txtWriter = New System.IO.StreamWriter(strFileName)
+                txtWriter.Write(textbox1.Text)
+                txtWriter.Close()
+                txtWriter = Nothing
+                textbox1.SelectionStart = 0
+                textbox1.SelectionLength = 0
+                textbox1.Modified = False
+        End Select
+
+        Me.Text = "Editor: " & strFileName
+
+    End Sub
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        SaveFile(currentFile)
+        Timer1.Stop()
+
     End Sub
 
 End Class
