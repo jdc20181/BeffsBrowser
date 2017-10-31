@@ -14,7 +14,7 @@ Due sometime in Novemberish/Early December bigger release planned for 2.3.2, so 
 
 
 
-** Current Version: Version 2.3.1 Patch**
+**Current Version: Version 2.3.1 Patch**
 
 
 
