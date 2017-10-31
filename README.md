@@ -1,15 +1,14 @@
 # Announcments
 
-**Version 2.3.1 Release**
+**Version 2.3.2**
 
-Version 2.3.1 has been released early. 
+Due sometime in Novemberish/Early December bigger release planned for 2.3.2, so it may be delayed. 
+
+[wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.3.2-Coming-soon)
 
 
-**Version 2.3.1 Patch**
+** Current Version: Version 2.3.1 Patch**
 
-
- 
-Version 2.3.1 is going to be packed full of fixes improvments, and some new features. 
 
 
 See the full feature log in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/2.3.1-Patch-Release-Coming-soon)
