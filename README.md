@@ -1,10 +1,17 @@
 # Announcments
 
+**Changes to Compatible OS is coming soon**
+
+Read some of the changes: [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Changes-to-Supported-OS-Versions)
+
+
 **Version 2.3.2**
 
 Due sometime in Novemberish/Early December bigger release planned for 2.3.2, so it may be delayed. 
 
 [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.3.2-Coming-soon)
+
+
 
 
 ** Current Version: Version 2.3.1 Patch**
