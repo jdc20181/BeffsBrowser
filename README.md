@@ -1,5 +1,15 @@
 # Announcments
 
+**Website is Updated**
+
+The Website is no longer redirected to the old jdc20181.io.gituhb etc etc etc, rather everything is via BeffsBrowser.tk directly. It is still hosted here on github, it is just changes to the domain name. You should be redirected automatically if you type in the old address. 
+
+Information on HTTPS:
+
+HTTPS is not enabled for custom domains, however, downloads of BeffsBrowser releases come directly from this respo and not associated with HTTPS on the website. Everything is still secure. 
+
+
+
 **Changes to Compatible OS is coming soon**
 
 Read some of the changes: [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Changes-to-Supported-OS-Versions)
