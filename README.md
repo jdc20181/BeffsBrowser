@@ -17,7 +17,7 @@ Read some of the changes: [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/C
 
 **Version 2.3.2**
 
-Pushed to January at earliest. bigger release planned for 2.3.2, so it may be delayed. 
+Expected Release date: December/January 2017/2018
 
 [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.3.2-Coming-soon)
 
