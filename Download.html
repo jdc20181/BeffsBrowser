@@ -1,0 +1,44 @@
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   <title>BeffsBrowser-Home</title>
+</head>
+<body onload="countdown()">
+
+<div class="content">
+
+<script type="text/javascript">
+var ss = 10;
+function countdown() {
+ss = ss-1;
+if (ss<0) {
+window.location="https://github.com/jdc20181/BeffsBrowser/releases/download/2.3.1/BeffsBrowser.msi";
+}
+else {
+document.getElementById("countdown").innerHTML=ss;
+window.setTimeout("countdown()", 1000);
+}
+}
+</script>
+
+<table width="100%" height="600px" style="text-align:center;">
+<tr><td valign="center"><h3>Downloading in: (<span id="countdown">10</span>)</h3></td></tr>
+</table>
+</center>
+</body>
+</html>
+
+
+  
+
+   </div>
+  
+ <footer>
+ <p>  © 2015-2017 BeffsBrowser </p>
+   <br>
+   <p> BeffsBrowser is Licensed under the MIT license. </p>
+  </footer> 
+</body>
+</html>
