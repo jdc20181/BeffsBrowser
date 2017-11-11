@@ -1,0 +1,252 @@
+/*button*/
+body{
+     margin: 0 0 0 0;
+}
+.bar{
+    text-align:center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #003c8f; /*#2A867B;*/	/*#3f3f3f;*/
+    background-color:	#003c8f;       /*#2A867B;*/ /*#3f3f3f;*/
+ 
+    }
+.btn-container{
+	text-align:center;
+margin:auto;
+}
+.btn {
+  border:none;
+     display:inline-block;
+     outline:0;padding:6px 16px;
+     vertical-align:middle;
+     overflow:hidden;
+     text-decoration:none!important;
+     color:#fff;
+     background-color:#003c8f;
+     text-align:center;
+     cursor:pointer;
+     white-space:nowrap;
+     padding-top:16px!important;
+     padding-bottom:16px!important;
+     top: 50%;
+     left: 40%;
+    /* margin-right: 350px;*/
+     margin-bottom: 400px;
+     margin-top: 120px;
+     width: 100%;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+ }
+
+/* Button End */
+footer{
+   color:#fff!important;
+    background-color:#003c8f!important;
+      text-align:center!important;
+     padding-top:64px!important;
+    padding-bottom:64px!important;
+    font-size:12px!important
+}
+
+body {
+    background: #1565c0;
+    color:white;
+}
+
+.content {
+    max-width: 500px;
+    margin:auto;
+    background-color: #1565c0!important;
+    padding: 10px;
+    Text-align:center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   /* background-color: #2B687C;*/
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:hover:not(.active) {
+    /*background-color: #2B687C;*/
+}
+
+.active {
+    background-color: #1565c0;
+}
+@media only screen and (max-device-width : 320px)
+   .content {
+    max-width: 250px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+@media screen (max-width: 600px){
+    ul.topnav ul.right, 
+    ul.topnav li {float: none;}
+}
+/* Accordion CSS*/
+.accordion {
+	width: 100%;
+	max-width: 360px;
+	margin: 3em auto 2em;
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.accordion .link {
+	font-size: 0.85em;
+	font-weight: 700;
+	color: #4d4d4d;
+	
+	cursor: pointer;
+	padding: 15px 15px 15px 3em;
+	border-bottom: 1px solid #ccc;
+	display: block;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+/** ========================
+* Diseño iconos font-awesome
+============================= **/
+
+.accordion li i {
+	position: absolute;
+	top: 12px;
+	left: 16px;
+
+	font-size: 1em;
+	color: #595959;
+
+	-webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+
+	font-size: 1.2em;
+
+}
+/**===================================
+* Conf. clase link al estar activo submenu (con js)
+====================================**/
+.accordion li.open .link {
+	color: #b63b4d;
+}
+.accordion li.open i {
+	color: #b63b4d;
+}
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/**=======================
+* Submenu
+==========================**/
+.submenu {
+	display: none;
+	background: #444359;
+	font-size: 0.95em;
+}
+.submenu li {
+	border-bottom: 1px solid #4b4a5e;
+}
+.submenu a {
+	display: block;
+	text-decoration: none;
+	color: #d9d9d9;
+	padding: 12px;
+	padding-left: 3.5em;
+	-webkit-transition: all 0.25 ease;
+  -moz-transition: all 0.25 ease;
+	-o-transition: all 0.25 ease;
+	transition: all 0.25 ease;
+}
+.submenu a:hover {
+	background: #b63b4d;
+	color: #fff;
+}
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    max-width: 360px;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    max-width: 360px;
+}
+@media  (max-width: 524px) {
+    .btn {
+     visibility: hidden;
+      /*color:black;*/
+    }
+ .Mobile:Before{
+ content:"BeffsBrowser is for windows only! Please hop on a windows computer to install!";
+color:white;
+}
