@@ -2,6 +2,16 @@
 
 **Website is Updated**
 
+
+*additonal updates*
+
+Added new Color scheme to, StartPage and the BeffsBrowser website. 
+
+StartPage is currently being transfered to a domain [bbstart.tk](http://bbstart.tk), you will notice the site is down during the transition. 
+
+
+*original update*
+
 The Website is no longer redirected to the old jdc20181.io.gituhb etc etc etc, rather everything is via BeffsBrowser.tk directly. It is still hosted here on github, it is just changes to the domain name. You should be redirected automatically if you type in the old address. 
 
 Information on HTTPS:
