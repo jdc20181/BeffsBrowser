@@ -1,5 +1,11 @@
 # Announcments
 
+**LightBrowse**
+
+A new Browser is awakening! [LightBrowse](https://github.com/jdc20181/BeffsBrowser/wiki/Introducing-LightBrowse:-A-Simple-lighter,-but-powerful-Browser) - Its a sub-project based on the same core concepts to BeffsBrowser. 
+
+
+
 **Start Page will be re-enabled in the new update**
 
 With some under the hood changes, with the URL, you will no longer be able to use BeffsBrowser until the next update, without forseeing this, I went through with the changes, as the result Startpage is not going to work due to the code in BeffsBrowser, after the update no more downtime should be neccessary. 
