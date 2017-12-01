@@ -1,6 +1,8 @@
 # Announcments
 
+**Version 2.3.2 Release almost ready**
 
+Working on the last minute touch ups, then a release announcment will be made!
 
 
 **Changes to Compatible OS is coming soon**
