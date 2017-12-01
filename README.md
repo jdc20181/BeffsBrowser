@@ -1,35 +1,5 @@
 # Announcments
 
-**LightBrowse**
-
-A new Browser is awakening! [LightBrowse](https://github.com/jdc20181/BeffsBrowser/wiki/Introducing-LightBrowse:-A-Simple-lighter,-but-powerful-Browser) - Its a sub-project based on the same core concepts to BeffsBrowser. 
-
-
-
-**Start Page will be re-enabled in the new update**
-
-With some under the hood changes, with the URL, you will no longer be able to use BeffsBrowser until the next update, without forseeing this, I went through with the changes, as the result Startpage is not going to work due to the code in BeffsBrowser, after the update no more downtime should be neccessary. 
-
-
-
-**Website is Updated**
-
-
-
-*additonal updates*
-
-Added new Color scheme to, StartPage and the BeffsBrowser website. 
-
-StartPage is currently being transfered to a domain [bbstart.tk](http://bbstart.tk), you will notice the site is down during the transition. 
-
-
-*original update*
-
-The Website is no longer redirected to the old jdc20181.io.gituhb etc etc etc, rather everything is via BeffsBrowser.tk directly. It is still hosted here on github, it is just changes to the domain name. You should be redirected automatically if you type in the old address. 
-
-Information on HTTPS:
-
-HTTPS is not enabled for custom domains, however, downloads of BeffsBrowser releases come directly from this respo and not associated with HTTPS on the website. Everything is still secure. 
 
 
 
@@ -85,3 +55,10 @@ A new Archive Policy has been published in the wiki, you can read it [here](http
 The new policy will reflect on effeciency in the open source community, providing a constructive policy pointing out what happens when you don't update. Support for older versions are removed every so often (everything is said in the wiki) - making outdated versions discontinued. 
 
 In short, you should keep your application up to date with the latest version to avoid missing bug fixes and resolving issues which you may post about well after they are resolved with the next release. 
+
+
+# LightBrowse
+
+
+A new Browser is awakening! [LightBrowse](https://github.com/jdc20181/BeffsBrowser/wiki/Introducing-LightBrowse:-A-Simple-lighter,-but-powerful-Browser) - Its a sub-project based on the same core concepts to BeffsBrowser. 
+
