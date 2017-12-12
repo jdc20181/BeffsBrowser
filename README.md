@@ -1,8 +1,21 @@
 # Announcments
 
-**Version 2.3.2 Release almost ready**
+**Version 2.4.0 has began development**
 
-Working on the last minute touch ups, then a release announcment will be made!
+There is already a long to-do list, you can view that in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.4.0)
+
+V. 2.4 is focused on making BB stable and more reliable as well as improvements and new features. 
+
+
+
+
+
+**Version 2.3.2 has been released!**
+
+This release was focused on many things, and is packed with features and updates that make BeffsBrowser more stable. 
+
+[Wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.3.2-Coming-soon)
+
 
 
 **Changes to Compatible OS is coming soon**
@@ -10,22 +23,7 @@ Working on the last minute touch ups, then a release announcment will be made!
 Read some of the changes: [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Changes-to-Supported-OS-Versions)
 
 
-**Version 2.3.2**
-
-Release will be the last Fall release of the year, and will be done hopefully no later than December 20.
-
-[wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.3.2-Coming-soon)
-
-
-
-
-**Current Version: Version 2.3.1 Patch**
-
-
-
-See the full feature log in the [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/2.3.1-Patch-Release-Coming-soon)
-
-
+_______________________________________________________________________
 
 # About
 
