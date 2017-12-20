@@ -44,7 +44,7 @@ Licensed under The [MIT License](https://github.com/jdc20181/BeffsBrowser/blob/m
  
 # System Requirements!
 
-See [System Requirements](https://github.com/jdc20181/BeffsBrowser/blob/master/Information/SystemRequirements.md)
+See [System Requirements](https://github.com/jdc20181/BeffsBrowser/wiki/System-Requirements)
 
 # Archive Policy
 
