@@ -1,5 +1,11 @@
 # Announcments
 
+**Version 2.4.0 has been released, 2.4.2 is undergoing development**
+
+Version 2.4.2 will include much that wasn't included in 2.4.0, as well as a bunch of other new features and fixes. [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.4.2)
+
+
+
 **Version 2.4.0 has began development**
 
 There is more time for much of the todo list to be completed in 2.4.2, due to an installer issue the "installed" version will display as 2.4.1.
