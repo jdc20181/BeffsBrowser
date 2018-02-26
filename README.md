@@ -1,5 +1,12 @@
 # Announcments
 
+**Development Delays:**
+
+The next release will be scheduled near the Beginning of April at the EARLIEST. This release is going to take extra time due to some of the new core features being added. 
+
+
+
+
 **Version 2.4.0 has been released, 2.4.2 is undergoing development**
 
 Version 2.4.2 will include much that wasn't included in 2.4.0, as well as a bunch of other new features and fixes. [wiki](https://github.com/jdc20181/BeffsBrowser/wiki/Version-2.4.2)
