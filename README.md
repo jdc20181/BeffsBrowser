@@ -2,6 +2,8 @@
 
 **Development Delays:**
 
+*update* BeffsBrowser will get an update very soon to push the new updating mechanism, and much more! Sorry for the delays! 
+
 The next release will be scheduled near the Beginning of April at the EARLIEST. This release is going to take extra time due to some of the new core features being added. 
 
 
