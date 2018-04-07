@@ -1,5 +1,9 @@
 # Announcments
 
+**Pre-Release Testing**
+
+Testing for V. 2.4.2 will begin with a Pre-Release that is partially incomplete, and does not include all of the things listed for the update. The test will include the new update system, but will not include the core (which uses a different method of checking for updates). After the upgrade to the updates system I will push a new update approx. 7 days, and will be an additional Test release. These will be labeled as "Version 2.4.2A B C etc" If it takes 20 test updates to inquire consisitancy as well as accuracy and security - it will be so. The "Core" upgrades to the updates system will begin being pushed in the OFFICIAL Release of 2.4.2. You will not need to update to the new version if you do not wish to. More info will come soon!
+
 **Development Delays:**
 
 *update* BeffsBrowser will get an update very soon to push the new updating mechanism, and much more! Sorry for the delays! 
