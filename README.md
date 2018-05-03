@@ -1,8 +1,16 @@
 # Announcments
 
-**Pre-Release Testing**
+**Testing Release along side stable release**
 
-Testing for V. 2.4.2 will begin with a Pre-Release that is partially incomplete, and does not include all of the things listed for the update. The test will include the new update system, but will not include the core (which uses a different method of checking for updates). After the upgrade to the updates system I will push a new update approx. 7 days, and will be an additional Test release. These will be labeled as "Version 2.4.2A B C etc" If it takes 20 test updates to inquire consisitancy as well as accuracy and security - it will be so. The "Core" upgrades to the updates system will begin being pushed in the OFFICIAL Release of 2.4.2. You will not need to update to the new version if you do not wish to. More info will come soon!
+Version 2.4.2 will be released as both a stable and beta version only the Beta version will have the new auto updating system, this version will be released later today, or tomorrow, the stable release has been pushed, and is available for install. 
+
+Both Versions will update to 2.4.3 - which will include the auto updating system. 
+
+2.4.3 will also begin the transition to the new system to which updates are checked and installed.
+
+
+
+
 
 **Development Delays:**
 
