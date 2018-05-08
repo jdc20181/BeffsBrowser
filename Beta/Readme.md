@@ -17,3 +17,7 @@ BETA FEATURES:
 - Auto Updating
 
 - Dual-Core Browsing (Private/Normal modes)
+
+- SafeCore Features 
+  - SiteSafe, an anti-fraud,phishing and spoofing detection system using an XML database. 
+  
