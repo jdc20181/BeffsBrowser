@@ -2,12 +2,7 @@
 
 **Testing Release along side stable release**
 
-Version 2.4.2 will be released as both a stable and beta version only the Beta version will have the new auto updating system, this version will be released later today, or tomorrow, the stable release has been pushed, and is available for install. 
-
-Both Versions will update to 2.4.3 - which will include the auto updating system. 
-
-2.4.3 will also begin the transition to the new system to which updates are checked and installed.
-
+Version 2.4.2 has been released, the testing release isn't 100% ready and will be released tomorrow (5/12)
 
 
 
