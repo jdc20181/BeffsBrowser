@@ -1,5 +1,16 @@
 # Announcments
 
+**Introducing the NEW BeffsBrowser Website!**
+
+The site will remain hosted here on Github, but under a new domain name! I will redirect users to the new domain until the old domain expires. 
+
+http://beffsbrowser.org
+
+SSL (https) is coming soon! 
+
+Redesign and updates are coming as well!
+
+
 **Testing Release along side stable release**
 
 Version 2.4.2 has been released, the testing release isn't 100% ready and will be released tomorrow (5/12)
