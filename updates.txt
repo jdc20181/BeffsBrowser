@@ -1,3 +1,1 @@
 2.4.3
-
-//Test Release of Autoupdate system, checks for latest version via text file, can be updated as needed.
