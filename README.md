@@ -2,11 +2,17 @@
 
 **Introducing the NEW BeffsBrowser Website!**
 
+**Website is temp. Down**
+
+There is a few glitches being worked out, and I am in contact with github to see how to resolve the issues being experienced. 
+
+
+
 The site will remain hosted here on Github, but under a new domain name! I will redirect users to the new domain until the old domain expires. 
 
-http://beffsbrowser.org
+https://beffsbrowser.org
 
-SSL (https) is coming soon! 
+
 
 Redesign and updates are coming as well!
 
