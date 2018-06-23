@@ -1,5 +1,10 @@
 # Announcments
 
+**Website Updates**
+
+Over the next few weeks I am going to begin updating the website, and fix some issues with it being unresponsive on mobile devices. I already fixed an issue of the information it being for windows only. 
+
+
 **Introducing the NEW BeffsBrowser Website!**
 
 SSL + New domain!
