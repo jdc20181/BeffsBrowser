@@ -6,7 +6,9 @@ BeffsBrowser is celebrating 3 years! [Read More](https://github.com/jdc20181/Bef
 
 
 
+**StartPage is discontinued**
 
+StartPage is being removed. It will be relaunched soon, and locally stored. 
 
 **Changes to Compatible OS is coming soon**
 
