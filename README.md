@@ -21,12 +21,7 @@ _______________________________________________________________________
 
 A Simple but powerful Browser using the Gecko Webbrowser engine!
 
-# Contact 
 
-
-Join the [BeffsBrowser Discord](https://discord.gg/kz4Bxw9)
-
-Got issues? Open a Ticket! 
 
 
 # License
