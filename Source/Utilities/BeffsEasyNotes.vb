@@ -39,7 +39,7 @@ Public Class BeffsEasyNotes
                 TextBox1.Clear()
             End If
         Else
-            'If textbox's text is still the same, notepad will show the OpenFileDialog
+            
             OpenFileDialog1.ShowDialog()
             Try
                 TextBox1.Text = My.Computer.FileSystem.ReadAllText(OpenFileDialog1.FileName)
@@ -48,10 +48,9 @@ Public Class BeffsEasyNotes
         End If
     End Sub
 
-    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click   
         SaveFile(currentFile)
     End Sub
-
     Private Sub UndoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UndoToolStripMenuItem.Click
         'check if textbox can undo
         If TextBox1.CanUndo Then
@@ -59,7 +58,6 @@ Public Class BeffsEasyNotes
         Else
         End If
     End Sub
-
     Private Sub RedoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RedoToolStripMenuItem.Click
         'check if textbox can undo
         If TextBox1.CanRedo Then
@@ -67,12 +65,10 @@ Public Class BeffsEasyNotes
         Else
         End If
     End Sub
-
     Private Sub CutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CutToolStripMenuItem.Click
         My.Computer.Clipboard.Clear()
         If TextBox1.SelectionLength > 0 Then
             My.Computer.Clipboard.SetText(TextBox1.SelectedText)
-
         End If
         TextBox1.SelectedText = ""
     End Sub
@@ -108,12 +104,6 @@ Public Class BeffsEasyNotes
             MsgBox("Text not found.")
         End If
     End Sub
-
-
-
-
-
-
     Private Sub LeftToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LeftToolStripMenuItem.Click
         TextBox1.SelectionAlignment = HorizontalAlignment.Left
         LeftToolStripMenuItem.Checked = True
@@ -139,38 +129,14 @@ Public Class BeffsEasyNotes
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Timer2.Interval = My.Settings.AutoSaveInterval
+
         If My.Settings.AutoSave = "Enabled" Then
             Timer1.Start()
         ElseIf My.Settings.AutoSave = "Disabled" Then
             Timer1.Stop()
         End If
-        If My.Settings.darkmode = "Enabled" Then
-            MenuStrip1.BackColor = ColorTranslator.FromHtml("#333")
-            MenuStrip1.ForeColor = ColorTranslator.FromHtml("#FFF")
-            ToolStrip1.BackColor = ColorTranslator.FromHtml("#333")
-            ToolStrip1.ForeColor = ColorTranslator.FromHtml("#FFF")
-            textbox1.ForeColor = ColorTranslator.FromHtml("#FFF")
-            textbox1.BackColor = ColorTranslator.FromHtml("#333")
-            ToolStripStatusLabel1.BackColor = ColorTranslator.FromHtml("#333")
-            ToolStripStatusLabel1.ForeColor = ColorTranslator.FromHtml("#FFF")
-            ToolStripStatusLabel2.BackColor = ColorTranslator.FromHtml("#333")
-            ToolStripStatusLabel2.ForeColor = ColorTranslator.FromHtml("#FFF")
-            StatusStrip1.BackColor = ColorTranslator.FromHtml("#333")
-            StatusStrip1.ForeColor = ColorTranslator.FromHtml("#FFF")
-        ElseIf My.Settings.darkmode = "Disabled" Then
-            MenuStrip1.BackColor = ColorTranslator.FromHtml("#FFF")
-            MenuStrip1.ForeColor = ColorTranslator.FromHtml("#333")
-            ToolStrip1.BackColor = ColorTranslator.FromHtml("#FFF")
-            ToolStrip1.ForeColor = ColorTranslator.FromHtml("#333")
-            textbox1.ForeColor = ColorTranslator.FromHtml("#333")
-            textbox1.BackColor = ColorTranslator.FromHtml("#FFF")
-            ToolStripStatusLabel1.BackColor = ColorTranslator.FromHtml("#FFF")
-            ToolStripStatusLabel1.ForeColor = ColorTranslator.FromHtml("#333")
-            ToolStripStatusLabel2.BackColor = ColorTranslator.FromHtml("#FFF")
-            ToolStripStatusLabel2.ForeColor = ColorTranslator.FromHtml("#333")
-            StatusStrip1.BackColor = ColorTranslator.FromHtml("#FFF")
-            StatusStrip1.ForeColor = ColorTranslator.FromHtml("#333")
-        End If
+ 
 
 
 
@@ -179,7 +145,6 @@ Public Class BeffsEasyNotes
 
         Me.WindowState = FormWindowState.Maximized
 
-    
     End Sub
 
     Private Sub InitializeMyContextMenu()
@@ -440,9 +405,7 @@ Public Class BeffsEasyNotes
         Me.Text = "Editor: " & currentFile.ToString()
     End Sub
 
-    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("BeffsEasyNotes - Version 2.0 ")
-    End Sub
+ 
 
     Private Sub BeffsEasyNotes_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         'display message on form closing
@@ -573,7 +536,6 @@ Public Class BeffsEasyNotes
 
         End If
     End Sub
-
     Private Sub NormalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NormalToolStripMenuItem.Click
         If Not textbox1.SelectionFont Is Nothing Then
 
@@ -587,13 +549,8 @@ Public Class BeffsEasyNotes
     End Sub
 
     Private Sub PrintDocument1_BeginPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles PrintDocument1.BeginPrint
-
-
         checkPrint = 0
-
     End Sub
-
-
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
 
         checkPrint = textbox1.Print(checkPrint, textbox1.TextLength, e)
@@ -609,9 +566,6 @@ Public Class BeffsEasyNotes
     Private Sub textbox1_TextChanged_1(sender As Object, e As EventArgs) Handles textbox1.TextChanged
         wordcount()
     End Sub
-
-
-
     Private Sub PictureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PictureToolStripMenuItem.Click
         InsertPicture()
     End Sub
@@ -636,28 +590,16 @@ Public Class BeffsEasyNotes
         Catch ex As Exception
         End Try
     End Sub
-
     Public Property DetectUrls As Boolean
-
-
     Private Sub textbox1_LinkClicked(sender As Object, e As LinkClickedEventArgs) Handles textbox1.LinkClicked
-
         BBMain.CheckBox2.Checked = True
         BBMain.ToolStripTextBox1.Text = e.LinkText
-
     End Sub
     Private Sub Link_Clicked(sender As Object, e As System.Windows.Forms.LinkClickedEventArgs)
         System.Diagnostics.Process.Start(e.LinkText)
         BBMain.CheckBox2.Checked = True
         BBMain.ToolStripTextBox1.Text = e.LinkText
-    End Sub 'Link_Clicked
-
-
-
-
-
-    
-
+    End Sub
     Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
         textbox1.SelectionFont = New Font(Me.textbox1.SelectionFont, FontStyle.Strikeout)
         textbox1.Focus()
@@ -674,7 +616,8 @@ Public Class BeffsEasyNotes
     Private Sub SaveFile(ByVal strFileName As String)
 
         If strFileName = String.Empty Then
-            strFileName = My.Computer.FileSystem.SpecialDirectories.MyDocuments & Date.Now.ToString("MM-dd-yyyy HH\hmm\minss\s") & ".rtf"
+            'strFileName = "C:\Documents\" & Date.Now.ToString("MM-dd-yyyy HH\hmm\minss\s") & ".rtf"
+            strFileName = My.Computer.FileSystem.SpecialDirectories.MyDocuments & Date.Now.ToString("MM-dd-yyyy HH\hmm\minss\s") & My.Settings.EasyNoteExt
 
         End If
 
@@ -701,7 +644,10 @@ Public Class BeffsEasyNotes
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         SaveFile(currentFile)
         Timer1.Stop()
-
+        Timer2.Start()
     End Sub
 
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        SaveFile(currentFile)
+    End Sub
 End Class
