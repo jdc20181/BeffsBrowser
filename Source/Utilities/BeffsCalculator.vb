@@ -1,8 +1,8 @@
-'This is the full code of BeffsCalculator and is up to date!
 Public Class BeffsCalculator
     Dim value1 As String = ""
     Dim value2 As String = ""
     Dim value3 As Double = 0.0
+
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
         value1 = ""
         value2 = ""
@@ -27,11 +27,14 @@ Public Class BeffsCalculator
         ElseIf value2 > "" And value2 = "/" Then
             Button1.Text = Val(value1) / Val(Button1.Text)
             value3 = Button1.Text
-        Else
+        ElseIf value2 > "" And value2 = "^" Then
+            Button1.Text = Val(value1) ^ Val(Button1.Text)
+            value3 = Button1.Text
+
         End If
 
     End Sub
-    Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button17.Click, Button13.Click, Button9.Click, Button5.Click
+    Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button17.Click, Button13.Click, Button9.Click, Button5.Click, Button20.Click
         value2 = sender.text
         value1 = Button1.Text
     End Sub
@@ -75,6 +78,84 @@ Public Class BeffsCalculator
         End If
     End Sub
 
+    Private Sub BeffsCalculator_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        My.Settings.calculations = Button1.Text
+    End Sub
 
-    
+    Private Sub BeffsCalculator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Button1.Text = My.Settings.Calculations
+    End Sub
+
+    Private Sub Button1_KeyDown(sender As Object, e As KeyEventArgs)
+        If (e.KeyCode = Keys.C) Then
+            My.Computer.Clipboard.Clear()
+            My.Computer.Clipboard.SetText(Button1.Text)
+        End If
+
+    End Sub
+
+
+
+
+    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+        Button1.Focus()
+        SendKeys.Send("{BACKSPACE}")
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        Me.WindowState = FormWindowState.Minimized
+
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        SquareRootCalculator.Show()
+    End Sub
+    Private IsFormBeingDragged As Boolean = False
+    Private MouseDownX As Integer
+    Private MouseDownY As Integer
+
+    Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles MyBase.MouseDown
+
+        If e.Button = MouseButtons.Left Then
+            IsFormBeingDragged = True
+            MouseDownX = e.X
+            MouseDownY = e.Y
+        End If
+    End Sub
+
+    Private Sub Form1_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles MyBase.MouseUp
+
+        If e.Button = MouseButtons.Left Then
+            IsFormBeingDragged = False
+        End If
+    End Sub
+
+    Private Sub Form1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles MyBase.MouseMove
+
+        If IsFormBeingDragged Then
+            Dim temp As Point = New Point()
+
+            temp.X = Me.Location.X + (e.X - MouseDownX)
+            temp.Y = Me.Location.Y + (e.Y - MouseDownY)
+            Me.Location = temp
+            temp = Nothing
+        End If
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        RoundNumbers.Show()
+
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        My.Computer.Clipboard.Clear()
+
+        My.Computer.Clipboard.SetText(Button1.Text)
+
+
+    End Sub
 End Class
