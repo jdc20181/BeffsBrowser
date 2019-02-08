@@ -1,3 +1,9 @@
+
+
+**DEVELOPMENT HAS BEEN DISCONTINUED FOR BLU**
+
+Development has been cancelled, this document will be deleted in 2 weeks. 
+
 **Introducing Blu, an AI Assistant!**
 
 Currently in Development, and will be launched in both BeffsBrowser, and LightBrowse very soon as a Beta Feature. 
