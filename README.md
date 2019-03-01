@@ -1,5 +1,13 @@
 # Announcments
 
+
+**Notice:** 
+
+Development is suspended for approximately 5-12 weeks, as the visual studio file became corrupt and requires a rebuild. 2.4.3.1 has been post poned until further notice. 
+
+
+
+**3 years of development**
 BeffsBrowser is celebrating 3 years! [Read More](https://github.com/jdc20181/BeffsBrowser/wiki/Celebrating-BeffsBrowser's-3rd-Birthday!)
 
 
