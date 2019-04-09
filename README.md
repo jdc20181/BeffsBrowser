@@ -1,6 +1,14 @@
 # Announcments
 
 
+**Krypto Browser**
+
+Introducing Krypto, a new version of BeffsBrowser, coming very soon! 
+
+
+
+
+
 **Notice:** 
 
 Development is suspended for approximately 5-12 weeks, as the visual studio file became corrupt and requires a rebuild. 2.4.3.1 has been post poned until further notice. 
