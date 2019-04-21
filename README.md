@@ -15,11 +15,6 @@ Development is suspended for approximately 5-12 weeks, as the visual studio file
 
 
 
-**3 years of development**
-BeffsBrowser is celebrating 3 years! [Read More](https://github.com/jdc20181/BeffsBrowser/wiki/Celebrating-BeffsBrowser's-3rd-Birthday!)
-
-
-
 
 
 **StartPage is discontinued**
