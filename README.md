@@ -55,8 +55,4 @@ The new policy will reflect on effeciency in the open source community, providin
 In short, you should keep your application up to date with the latest version to avoid missing bug fixes and resolving issues which you may post about well after they are resolved with the next release. 
 
 
-# LightBrowse
-
-
-A new Browser is awakening! [LightBrowse](https://github.com/jdc20181/BeffsBrowser/wiki/Introducing-LightBrowse:-A-Simple-lighter,-but-powerful-Browser) - Its a sub-project based on the same core concepts to BeffsBrowser. 
 
