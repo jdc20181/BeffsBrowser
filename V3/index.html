@@ -1,53 +1,465 @@
-<html>
+<html> 
 <head>
-   <link rel="stylesheet" type="text/css" href="https://beffsbrowser.org/main.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127735815-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127735815-1');
+</script>
+
+<title>El Rodeo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="shortcut icon" type="image/x-icon" href="https://beffsbrowser.org/favicon.ico">
-   <title>Krypto Revolution</title>
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Begin References to External Sources-->
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!--End References to external sources-->
 
-</head>
-<body>
-<div class="bar">
-<ul >
- <li class="active"> <a  href="https://beffsbrowser.org/V3">Krypto</a></li>
- <li> <a  href="https://beffsbrowser.org">BeffsBrowser</a> </li>
- <!--<li> <a  href="#">Releaes Coming Soon! </a></li>-->
-    <li> <a  href="https://beffsbrowser.org/LightBrowse">LightBrowse</a></li>
+<!--Begin Styling to be merged into a CSS File -->
+<style>
+/*Custom Scrollbar*/
 
-   <!--<li> <a href="#"></a></li>-->
-</ul>
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+   border-decoration:none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb { 
+    background: #352925;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+
+}
+
+/*End Custom Scroll*/
+.item{
+color: white;
+font-weight: bold;
+font-size:20px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.w1-container{
+  height:100px;
+  min-height:100px;
+
+  width:100%;
+}
+
+.w2-container{
+  height:200px;
+  min-height:200px;
+
+  width:70%;
+  margin-left:220px
+}
+
+.menu-img{
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+.close-button{
+
+  background: white;
+  color: black;
+  line-height: 25px;
+  position: in-line;
+  right: 20px;
+  float:right;
+  top: -9px;
+
+  font-weight: bold;
+}
+
+#text{
+  display:none;
+  color:red;
+  font-weight: bold;
+}
+
+.w0-container{
+  margin-bottom: 0px;
+}
+
+.title {
+  width: 100%;
+  color: #ffffff;
+  font-size: 6rem !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subTitle {
+  width: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.3rem !important;
+  font-weight: lighter;
+  text-align: center;
+}
+.butTitle {
+  width: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.5rem !important;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.w3-button:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgb(200, 200, 200) !important
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  margin: 100px 0 100px 0;
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.cardHeader {
+  font-size: 32px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.cardSubHeader {
+  margin-top: 25px;
+  height: 25px;
+  width: 100%;
+  font-size: 25px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.info {
+  margin: 25px 75px 25px 75px;
+  font-size: 20px;
+  text-align: justify
+}
+
+.teamMemberCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   /*display: table;*/
+}
+
+.teamMemberCard {
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  flex: 1 0 20%;
+  height: 325px;
+  width: 250px;
+  box-shadow: unset !important;
+}
+
+.teamMemberImageContainer {
+  position: relative;
+  height: 200px
+}
+
+.teamMemberImage {
+  height: 150px;
+  width: 150px;
+  bottom: unset;
+  box-shadow: 0px 2px 10px 0px #0000009c;
+}
+
+.teamMemberImageBackground{
+  z-index: -1;
+  height: 150px;
+  width: 150px;
+  bottom: unset;
+}
+
+.socialMediaCards {
+  display: table;
+  max-width: 50%;
+  margin: auto;
+}
+
+.socialMediaCard {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  height: 150px;
+  width: 150px;
+  box-shadow: unset !important;
+  font-size: 100px;
+}
+
+.socialMediaButton {
+  height: 100%;
+  width: 100%;
+}
+
+#socialMedia {
+  margin-bottom: 100px;
+}
+
+.active{
+  color: light-grey;
+}
+
+.menu {
+  padding: 10px;
+  background-color: rgba(53, 41, 37, 0);
+}
+
+.menu .w3-button {
+  background: unset !important;
+}
+
+.text-align-center {
+  margin: 0 -50%;
+}
+
+.home {
+  height: 100%;
+  background-image: url("https://ermgrblx.com/img/splash.jpg");
+  background-repeat: round;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.footer {
+  padding: 15px;
+}
+
+.footer h5 {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+.padding{
+  padding:left 4;
+ padding: right 4;
+ padding: top bottom 2;
+}
+
+
+/*Phone/tablet Adjustments*/
+
+@media (min-width: 320px) and (max-width: 1024px) {
+
+.cardHeader {
+  font-size: 28px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.cardSubHeader {
+
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+.teamMemberCards {
+  display: flex;
+   flex-direction: column;
+ /* flex-wrap: wrap;*/
+   /*display: table;*/
+}
+
+.socialMediaCards {
+  display: flex;
+  flex-direction:column;
+  max-width: 50%;
+  margin: auto;
+}
+
+}
+@media (min-width: 320px) and (max-width: 374px) {
+    .item{
+color: white;
+font-weight: bold;
+font-size:10px;
+}
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+
+.item{
+color: white;
+font-weight: bold;
+font-size:18px;
+}
+}
+</style>
+<!---End Styles-->
+  </head>
+<!--Begin Header + Menu Stuff  [Top layer]-->
+
+<div class="w3-top">
+  <div id="menu" class="w3-bar menu">
+      <a href="#home" class="item w3-button w3-mobile w3-padding-small">HOME</a>
+      <a href="#aboutUs" class="item w3-button w3-mobile w3-padding-small">ABOUT US</a>
+      <a href="#applications" class="item w3-button w3-mobile w3-padding-small">CONTRIBUTE</a>
+      <a href="#ourTeam" class="item w3-button w3-mobile w3-padding-small">OUR TEAM</a>
+      <a href="#socialMedia" class="item w3-button w3-mobile w3-padding-small">SOCIAL MEDIA</a>
+  </div>
 </div>
-<div class="content">
+<div id="home" class="w3-display-container home">
+  <div class="w3-display-middle" style="width: 100%">
+    <h1 class="title">Krypto</h1>
+    <p class="subTitle"> An open source Lightweight Browser with utilities</p>
+  <a class="butTitle w3-button">Download Krypto </a>
+  </div>
+</div>
+<div class="w3-container" style="height: auto">
+<div id="aboutUs"></div>
+  <div  class="section">
+    <h1 class="header">About Krypto</h1>
+    <p class="info">
+      &emsp;&emsp;Krypto started out as BeffsBrowser, back when I was in my early years of Highschool, when I got my first download I was so excited of what I had just done. And here we are some time later with a complete remake. Krypto is designed to be open, and increase productivity with the simple things first. And most of all, Krypto is open source and built using open source. 
+    </p>
+  </div>
+  <div id="applications"></div>
+  <div  class="section">
+    <h1 class="header">CONTRIBUTE</h1>
+    <p class="info">
+Contribute to Krypto by finding bugs, testing our latest Beta release, editing docs, and much more! 
+Contributing from community members is what makes this project and any open source project work! See our <a href="https://github.com/jdc20181/Krypto/blob/master/Docs/contributing.md">Contriubting Guide</a>
+    </p>
+  </div>
+  <div id="ourTeam"></div>
+  <div class="section w3-mobile">
+    <h1 class="header">Our Team Members</h1>
+    <div class="teamMemberCards">
+     
+      
+    
+ 
+           <div class=" w3-card teamMemberCard">
+        <div class="w3-container">
+          <div class="text-align-center">
+            <h1 class="cardHeader">Jdc20181</h1>
+          </div>
+        </div>
+      <a href="https://github.com/jdc20181">  <div class="teamMemberImageContainer">
+          <img src="https://avatars2.githubusercontent.com/u/13263110?s=460&v=4" alt="jdc" class="w3-circle w3-display-bottommiddle teamMemberImage"></a>
+          <!--<img src="https://i.imgur.com/0UaLDcd.png" alt="" class="w3-circle w3-display-bottommiddle teamMemberImageBackground"></a>-->
+          <h2 class="cardSubHeader w3-display-bottommiddle">Project Founder, Lead Programmer</h2>
+        </div>
+<br>
+<br>
+      </div>
+      <div class=" w3-card teamMemberCard">
+        <div class="w3-container">
+          <div class="text-align-center">
+            <h1 class="cardHeader">Bootsie123</h1>
+          </div>
+        </div>
+        <a href="https://github.com/bootsie123"><div class="teamMemberImageContainer">
+          <img src="https://avatars3.githubusercontent.com/u/22622963?s=400&v=4" alt="boot" class="w3-circle w3-display-bottommiddle teamMemberImage"></a>
+          <!--<img src="img/wood_icon.png" alt="" class="w3-circle w3-display-bottommiddle teamMemberImageBackground">-->
+          <h2 class="cardSubHeader w3-display-bottommiddle">Co-Founder, Co-Lead Programmer, Lead Graphics Designer</h2>
+        </div>
+      </div>
+    
 
-<!--<ul>
- <li class="active"> <a  href="http://beffsbrowser.tk">Home</a></li>
- <li> <a  href="Archives.html">Archives</a> </li>
- <li> <a  href="https://github.com/jdc20181/BeffsBrowser/wiki/2.3.1-Patch-Release-Coming-soon">Release Notes </a></li>
-<li> <a href="#"></a></li>
-</ul>-->
-  <!--<script src="https://widget.battleforthenet.com/widget.js" async></script>-->
 
-  <h1> BeffsBrowser Krypto</h1>
   
-  <p>
-  "A Simple but powerful Webbrowser with utilities" </p>
-   <p> The future is here, introducing BeffsBrowser Krypto, a complete rebuild of BeffsBrowser, and formally V3</p>
+      </div>
+    </div>
+  </div>
+  <div id="socialMedia"></div>
+  <div class="section w3-mobile" style="margin-bottom: 150px;">
+    <h1 class="header">Where To Find Us</h1>
+    <div class="socialMediaCards">
+      <div class="w3-card socialMediaCard">
+          <a href="https://twitter.com/El_rodeo_Rblx" class="socialMediaButton w3-button">
+            <i class="fab fa-twitter w3-display-middle w3-hover-opacity" style="color: #1DA1F2"></i>
+          </a>
+      </div>
+      <div class="w3-card socialMediaCard">
+          <a href="https://discord.gg/QwkU22W" class="socialMediaButton w3-button">
+            <i class="fab fa-discord w3-display-middle w3-hover-opacity" style="color: #7289DA"></i>
+          </a>
+      </div>
+          <div class="w3-card socialMediaCard">
+          <a href="https://www.roblox.com/Groups/group.aspx?gid=3933186" class="socialMediaButton w3-button">
+             <i class="fab fa-facebook w3-display-middle w3-hover-opacity" style="color: #3b5998"></i>
+          </a>
+      </div>
+    <div class="w3-card socialMediaCard">
+          <a href="https://www.roblox.com/Groups/group.aspx?gid=3933186" class="socialMediaButton w3-button">
+             <i class="fab fa-github w3-display-middle w3-hover-opacity" style="color: #333"></i>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="w3-container footer" style="background-color: #352925;">
+  <h5>Krypto</h5>
+  <p>Copyright&copy; <script type="text/javascript">var currentDate = new Date(); document.write(currentDate.getFullYear())</script> Krypto, a BeffsBrowser </p>
+<p>Project Licensed under MIT <a href="">license</a></p>
+</footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+  /*$("div a").click(function() {
+    var target = $(this).attr("href");
 
-  <p>
-  <br>
-     <div class="bttn-container">
-           <div class="Mobile"></div>
-  <a class="btn" href="#">Krypto is Coming Soon!</a>
-  <!-- <div class="Mobile"></div>-->
-   </div>
-   </div>
-  
- <footer>
- <p>  © 2015-2019 BeffsBrowser & Beffsbrowser Krypto </p>
-   <br>
-   <p> BeffsBrowser & BeffsBrowser Krypto is Licensed under the MIT license. </p>
-  </footer> 
-</body>
+    $("body, html").animate({
+      scrollTop: $(target).offset().top
+    }, 300);
+  });*/
+
+  $(window).scroll(function () {
+    var imageHeight = $("#home").height();
+    var scrollTop = $(window).scrollTop();
+
+    var navColor = $(".menu").css("background-color");
+
+    navColor = navColor.substring(navColor.indexOf("(") + 1, navColor.length - 1).split(", ");
+    navColor = `rgba(${navColor[0]},${navColor[1]},${navColor[2]},`;
+
+    $(".menu").css({
+      "background-color": navColor + String(scrollTop/imageHeight) + ")"
+    });
+  });
+</script>
 </html>
