@@ -1,5 +1,7 @@
 # Light Browse a Light Browser for Light Browsing! 
 
+**LightBrowse is now Archived!** 
+
 Head on over to the [LightBrowse Respo](https://github.com/jdc20181/LightBrowse)! 
 
 
