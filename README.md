@@ -1,3 +1,10 @@
+# NOTICE
+
+This respo is Public for demonstration purposes only. Much of the code here is very old, works but is old, and is not feasible. 
+
+I did this project as a skill show-off while learning VB.NET and general programming from 2017 until an attempted [remake](https://github.com/jdc20181/Krypto-Browser) in 2019. The code here demonstrates my knowledge of concept - and how much I have grown since. 
+
+
 # Announcments
 
 
